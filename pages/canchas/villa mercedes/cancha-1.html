@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="F5 - Futbol 5 es un sitio dedicado a la organización de partidos de futbol 5, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5 - Futbol 5</title>
+
+    <link rel="stylesheet" href="../../../assets/styles/style.css">
+    <link rel="stylesheet" href="../../../assets/styles/fields-style.css">
+
+    <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../../assets/favicon/site.webmanifest"> 
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="../../../index.html" class="logo">
+            <h1>F5</h1>
+        </a>
+
+        <!-- Desktop Search -->
+        <div class="search desktop-search">
+            <input type="text" placeholder="Buscar canchas, precios...">
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="nav desktop-nav">
+            <ul>
+
+                <li class="dropdown">
+                    <a href="#" class="quick-link">
+                        Enlaces rapidos <i class="fas fa-chevron-down arrow"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="../../../index.html"> Inicio</a></li>
+                        <li><a href="../../../pages/all-fields-page.html"> Todas las canchas</a></li>
+                        <li><a href="../../../pages/reserve-field.html"> Reservar</a></li>
+                        <li><a href="../../../pages/my-reservations.html"> Mis reservas</a></li>
+                        <li><a href="../../../pages/help-support.html"> Ayuda y soporte</a></li>
+                        <li><a href="../../../pages/terms-conditions.html"> Términos y condiciones</a></li>
+                        <li><a href="../../../pages/contact.html"> Contacto</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ================= MOBILE ================= -->
+
+        <!-- Mobile Controls -->
+        <div class="controls mobile-only">
+            <i class="fas fa-search" id="search-toggle"></i>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Search -->
+        <div class="search mobile-search" id="mobile-search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../../pages/all-fields-page.html">Todas las canchas</a></li>
+                <li><a href="../../../pages/reserve-field.html">Reservar</a></li>
+                <li><a href="../../../pages/my-reservations.html">Mis reservas</a></li>
+                <li><a href="../../../pages/help-support.html">Ayuda y soporte</a></li>
+                <li><a href="../../../pages/terms-conditions.html">Términos y condiciones</a></li>
+                <li><a href="../../../pages/contact.html">Contacto</a></li>
+
+                <li>
+                    <button class="theme-toggle mobile-theme">
+                        <i class="fas fa-moon"></i> Theme
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="field-detail">
+
+    <!-- BACK -->
+    <a href="../../all-fields-page.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Volver a las canchas
+    </a>
+
+    <!-- CONTENT -->
+    <div class="field-content-grid">
+
+        <!-- LEFT -->
+        <div class="field-left">
+
+            <!-- IMAGE -->
+            <div class="field-hero">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp">
+            </div>
+
+            <!-- TITLE -->
+            <div class="field-title">
+                <h2>Predio La Bombonera <span class="tag">Techada</span></h2>
+
+                <div class="title-meta">
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> La Boca</span>
+                </div>
+
+                <p class="address">Av. Calle 1234, CABA</p>
+            </div>
+
+            <p class="description">
+                Cancha techada de primera categoría con todas las comodidades.
+                Ideal para partidos nocturnos.
+            </p>
+
+            <!-- PRECIOS -->
+            <div class="card-section">
+                <h3><i class="fas fa-dollar-sign"></i> Precios</h3>
+
+               <div class="price-row">
+    <span>Lunes a Viernes</span>
+    <div class="price">
+        <strong>$8,500</strong>
+        <small>/ h</small>
+    </div>
+</div>
+
+<div class="price-row">
+    <span>Sábados y Domingos</span>
+    <div class="price">
+        <strong>$12,000</strong>
+        <small>/ h</small>
+    </div>
+</div>
+            </div>
+
+            <!-- HORARIOS -->
+            <div class="card-section">
+                <h3><i class="fas fa-clock"></i> Horarios</h3>
+
+                <div class="schedule-row">
+                    <span>Lunes a Viernes</span>
+                    <strong>09:00 - 23:00</strong>
+                </div>
+
+                <div class="schedule-row">
+                    <span>Sábados y Domingos</span>
+                    <strong>08:00 - 00:00</strong>
+                </div>
+            </div>
+
+            <!-- COMODIDADES -->
+            <div class="card-section">
+                <h3><i class="fas fa-star"></i> Comodidades</h3>
+
+                <div class="tags">
+                    <span><i class="fas fa-lightbulb"></i> Iluminación</span>
+                    <span><i class="fas fa-warehouse"></i> Techada</span>
+                    <span><i class="fas fa-shirt"></i> Vestuarios</span>
+                    <span><i class="fas fa-shower"></i> Duchas</span>
+                    <span><i class="fas fa-restroom"></i> Baños</span>
+                    <span><i class="fas fa-car"></i> Estacionamiento</span>
+                </div>
+            </div>
+
+            <!-- BUFFET -->
+            <div class="card-section">
+                <h3><i class="fas fa-utensils"></i> Buffet</h3>
+
+                <div class="tags">
+                    <span>Empanadas</span>
+                    <span>Pizzas</span>
+                    <span>Hamburguesas</span>
+                    <span>Bebidas</span>
+                </div>
+            </div>
+
+            <!-- INFO EXTRA -->
+            <div class="card-section">
+                <h3><i class="fas fa-info-circle"></i> Información adicional</h3>
+
+                <div class="info-list">
+                    <p><strong>Estacionamiento:</strong> 15 espacios disponibles</p>
+                    <p><strong>Cajero automático:</strong> 50m (Banco Galicia)</p>
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="card-section">
+                <h3><i class="fas fa-map"></i> Ubicación</h3>
+
+                <div 
+                    id="field-map" 
+                    class="field-map"
+                    data-lat="-34.6037"
+                    data-lng="-58.4100">
+                </div>
+
+                <p class="map-address">
+                    Av. Calle 1234, CABA
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT - STICKY BOOKING BOX -->
+        <div class="field-right">
+            <div class="booking-box sticky">
+
+                <p class="price-highlight">
+                    Desde <strong>$8,500</strong> <span>/ h</span>
+                </p>
+
+                <div class="booking-info">
+                    <p><i class="fas fa-users"></i> 5 vs 5</p>
+                    <p><i class="fas fa-layer-group"></i> Césped sintético</p>
+                </div>
+
+                <button class="btn-primary">
+                    Consultar Disponibilidad
+                </button>
+
+                <a href="tel:+541112345678" class="call-link">
+                    <i class="fas fa-phone"></i> Llamar
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <a href="../../../index.html" class="footer-logo">F5 Canchas</a>
+
+            <p>
+                La plataforma número 1 de Argentina para encontrar y reservar tu próxima cancha de fútbol 5.
+                Jugá con amigos, nosotros nos encargamos del resto.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../../pages/all-fields-page.html">Todas las canchas</a></li>
+                <li><a href="../../../pages/how-it-works.html">Cómo funciona</a></li>
+                <li><a href="../../../pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="../../../pages/contact.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>Av. Calle 1234, Provincia, Argentina</p>
+            <p>+54 11 1234-5678</p>
+            <p>email@f5canchas.com.ar</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h4>Seguinos</h4>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+    <p>© 2026 F5 Canchas. Todos los derechos reservados.</p>
+
+    <p class="developer">
+        Desarrollado por <a href="https://zonofal.com" target="_blank">Zonofal</a>
+    </p>
+
+    <div class="footer-legal">
+        <a href="#">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="#">Política de Privacidad</a>
+        <span>•</span>
+        <a href="#">Sumá tu cancha</a>
+    </div>
+</div>
+
+</footer>
+
+<script type="module" src="../../../assets/scripts/main.js"></script>
+</body>
+</html>

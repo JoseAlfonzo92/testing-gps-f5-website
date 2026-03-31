@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="F5 - Futbol 5 es un sitio dedicado a la organización de partidos de futbol 5, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5 - Futbol 5</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest"> 
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <h1>F5</h1>
+        </a>
+
+        <!-- Desktop Search -->
+        <div class="search desktop-search">
+            <input type="text" placeholder="Buscar canchas, precios...">
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="nav desktop-nav">
+            <ul>
+
+                <li class="dropdown">
+                    <a href="#" class="quick-link">
+                        Enlaces rapidos <i class="fas fa-chevron-down arrow"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html"> Inicio</a></li>
+                        <li><a href="pages/all-fields-page.html"> Todas las canchas</a></li>
+                        <li><a href="pages/reserve-field.html"> Reservar</a></li>
+                        <li><a href="pages/my-reservations.html"> Mis reservas</a></li>
+                        <li><a href="pages/help-support.html"> Ayuda y soporte</a></li>
+                        <li><a href="pages/terms-conditions.html"> Términos y condiciones</a></li>
+                        <li><a href="pages/contact.html"> Contacto</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ================= MOBILE ================= -->
+
+        <!-- Mobile Controls -->
+        <div class="controls mobile-only">
+            <i class="fas fa-search" id="search-toggle"></i>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Search -->
+        <div class="search mobile-search" id="mobile-search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/all-fields-page.html">Todas las canchas</a></li>
+                <li><a href="pages/reserve-field.html">Reservar</a></li>
+                <li><a href="pages/my-reservations.html">Mis reservas</a></li>
+                <li><a href="pages/help-support.html">Ayuda y soporte</a></li>
+                <li><a href="pages/terms-conditions.html">Términos y condiciones</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+
+                <li>
+                    <button class="theme-toggle mobile-theme">
+                        <i class="fas fa-moon"></i> Theme
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Encontrá la cancha perfecta para tu partido</h2>
+        <p>Las mejores canchas de fútbol 5 en tu zona. Reservá fácil y rápido.</p>
+
+        <a href="pages/all-fields-page.html" class="btn-primary">Explorar canchas <i class="fas fa-chevron-right"></i></a>
+    </div>
+</section>
+
+<!-- ================= FEATURED ================= -->
+<section class="featured">
+    <div class="section-header">
+        <h3>Canchas Destacadas</h3>
+        <a href="#" class="see-all">Ver todas</a>
+    </div>
+
+    <div class="cards">
+
+        <!-- CARD 1 (TECHADA) -->
+        <a href="" class="card">
+            <div class="card-image">
+    <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-techo_dyj5m4.jpg" alt="Cancha La Mano de Dios">
+
+    <span class="tag-main-cards">Techada</span>
+</div>
+
+            <div class="card-body">
+                <h4>La Mano de Dios</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Caballito</p>
+
+                <div class="card-footer">
+                    <span class="price">$8,500</span>
+                    <span class="rating">★ 4.8</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="#" class="card">
+            <div class="card-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-sin-techo_chwki3.jpg" alt=" Cancha Real Atlético Palermo">
+            </div>
+
+            <div class="card-body">
+                <h4>Real Atlético Palermo</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Palermo</p>
+
+                <div class="card-footer">
+                    <span class="price">$10,000</span>
+                    <span class="rating">★ 4.5</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a href="#" class="card">
+            <div class="card-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-sin-techo_mtcz9c.jpg" alt=" Cancha Potrero del 10">
+            </div>
+
+            <div class="card-body">
+                <h4>Potrero del 10</h4>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Villa Crespo</p>
+
+                <div class="card-footer">
+                    <span class="price">$7,000</span>
+                    <span class="rating">★ 4.3</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+<section class="all-fields">
+
+    <div class="section-header">
+        <h3>Más Canchas</h3>
+    </div>
+
+    <div class="fields-list">
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg" alt=" Cancha El Templo del Gol">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>La Mano de Dios</h4>
+                    <span class="rating">★ 4.8</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Caballito</p>
+                <p class="price">$8,500 - $12,000</p>
+                <p class="schedule">09:00 - 23:00</p>
+
+                <div class="features">
+                    <span>Estacionamiento</span>
+                    <span>Buffet</span>
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg" alt=" Cancha Real Atlético Palermo">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>Real Atlético Palermo</h4>
+                    <span class="rating">★ 4.5</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Palermo</p>
+                <p class="price">$10,000 - $14,000</p>
+                <p class="schedule">10:00 - 23:00</p>
+
+                <div class="features">
+                    <span>Buffet</span>
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg" alt=" Cancha Potrero del 10">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>Potrero del 10</h4>
+                    <span class="rating">★ 4.3</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Villa Crespo</p>
+                <p class="price">$7,000 - $10,000</p>
+                <p class="schedule">08:00 - 22:00</p>
+
+                <div class="features">
+                    <span>Estacionamiento</span>
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp" alt=" Cancha El Templo del Gol">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>El Templo del Gol <span class="tag">Techada</span></h4>
+                    <span class="rating">★ 4.9</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Belgrano</p>
+                <p class="price">$11,000 - $15,000</p>
+                <p class="schedule">07:00 - 23:00</p>
+
+                <div class="features">
+                    <span>Estacionamiento</span>
+                    <span>Buffet</span>
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg" alt=" Cancha La Bombonera 5">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>La Bombonera 5</h4>
+                    <span class="rating">★ 4.2</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Boedo</p>
+                <p class="price">$6,500 - $9,500</p>
+                <p class="schedule">09:00 - 22:00</p>
+
+                <div class="features">
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- CARD -->
+        <a href="#" class="field-card">
+            <div class="field-image">
+                <img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg" alt=" Cancha La Joya de Núñez">
+            </div>
+
+            <div class="field-content">
+                <div class="field-top">
+                    <h4>La Joya de Núñez <span class="tag">Techada</span></h4>
+                    <span class="rating">★ 4.6</span>
+                </div>
+
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Núñez</p>
+                <p class="price">$9,000 - $13,000</p>
+                <p class="schedule">08:00 - 23:00</p>
+
+                <div class="features">
+                    <span>Estacionamiento</span>
+                    <span>Buffet</span>
+                    <span>Cajero cerca</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="see-more-wrapper">
+        <a href="pages/all-fields-page.html" class="btn-secondary">Ver Todas las Canchas <i class="fas fa-chevron-right"></i></a>
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">F5 Canchas</a>
+
+            <p>
+                La plataforma número 1 de Argentina para encontrar y reservar tu próxima cancha de fútbol 5.
+                Jugá con amigos, nosotros nos encargamos del resto.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Todas las canchas</a></li>
+                <li><a href="#">Cómo funciona</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>Av. Calle 1234, Provincia, Argentina</p>
+            <p>+54 11 1234-5678</p>
+            <p>email@f5canchas.com.ar</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h4>Seguinos</h4>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+    <p>© 2026 F5 Canchas. Todos los derechos reservados.</p>
+
+    <p class="developer">
+        Desarrollado por <a href="https://zonofal.com" target="_blank">Zonofal</a>
+    </p>
+
+    <div class="footer-legal">
+        <a href="#">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="#">Política de Privacidad</a>
+        <span>•</span>
+        <a href="#">Sumá tu cancha</a>
+    </div>
+</div>
+
+</footer>
+
+<script type="module" src="assets/scripts/main.js"></script>
+</body>
+</html>

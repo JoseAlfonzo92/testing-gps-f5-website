@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="F5 - Futbol 5 es un sitio dedicado a la organización de partidos de futbol 5, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5 - Futbol 5</title>
+
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/all-fields-page.css">
+
+    <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../assets/favicon/site.webmanifest"> 
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Routing Machine CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+<!-- Routing Machine JS -->
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <h1>F5</h1>
+        </a>
+
+        <!-- Desktop Search -->
+        <div class="search desktop-search">
+            <input type="text" placeholder="Buscar canchas, precios...">
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="nav desktop-nav">
+            <ul>
+
+                <li class="dropdown">
+                    <a href="#" class="quick-link">
+                        Enlaces rapidos <i class="fas fa-chevron-down arrow"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html"> Inicio</a></li>
+                        <li><a href="#"> Todas las canchas</a></li>
+                        <li><a href="#"> Reservar</a></li>
+                        <li><a href="#"> Mis reservas</a></li>
+                        <li><a href="#"> Ayuda y soporte</a></li>
+                        <li><a href="#"> Términos y condiciones</a></li>
+                        <li><a href="#"> Contacto</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ================= MOBILE ================= -->
+
+        <!-- Mobile Controls -->
+        <div class="controls mobile-only">
+            <i class="fas fa-search" id="search-toggle"></i>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Search -->
+        <div class="search mobile-search" id="mobile-search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Todas las canchas</a></li>
+                <li><a href="#">Reservar</a></li>
+                <li><a href="#">Mis reservas</a></li>
+                <li><a href="#">Ayuda y soporte</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+
+                <li>
+                    <button class="theme-toggle mobile-theme">
+                        <i class="fas fa-moon"></i> Theme
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+
+
+<section class="fields-page">
+
+    <div class="fields-page-header">
+        <h3>Explorar Canchas</h3>
+
+        <!-- SEARCH + FILTER -->
+        <div class="fields-filters">
+
+    <input type="text" id="search-input" placeholder="Buscar por nombre o zona...">
+
+    <select id="filter-location">
+        <option value="">Zona</option>
+        <option value="palermo">Palermo</option>
+        <option value="belgrano">Belgrano</option>
+        <option value="caballito">Caballito</option>
+        <option value="nuñez">Núñez</option>
+        <option value="boedo">Boedo</option>
+        <option value="villa crespo">Villa Crespo</option>
+        <option value="villa mercedes">Villa Mercedes</option>
+    </select>
+
+    <select id="filter-type">
+        <option value="">Tipo</option>
+        <option value="techada">Techada</option>
+        <option value="abierta">Abierta</option>
+    </select>
+
+    <!-- NEW SORT -->
+    <select id="sort-by">
+        <option value="">Ordenar</option>
+        <option value="price-high">Precio ↑</option>
+        <option value="price-low">Precio ↓</option>
+        <option value="rating">Mejor valoradas</option>
+    </select>
+
+    <!-- CLEAR -->
+    <button id="clear-filters" class="btn-clear">
+        Limpiar
+    </button>
+
+    <div class="location-toggle">
+    <label class="switch">
+        <input type="checkbox" id="use-location-toggle">
+        <span class="slider"></span>
+    </label>
+    <span>Usar mi ubicación</span>
+</div>
+</div>
+
+<div class="view-toggle">
+
+    <button id="grid-view-btn" class="view-btn active">
+        <i class="fas fa-th"></i> Grid
+    </button>
+
+    <button id="map-view-btn" class="view-btn">
+        <i class="fas fa-map"></i> Mapa
+    </button>
+
+</div>
+    </div>
+
+    <!-- GRID -->
+<div class="fields-page-list" id="fields-container">
+
+<!-- 1 -->
+<a href="#" class="fields-page-card" data-name="la mano de dios" data-location="caballito" data-type="abierta">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La Mano de Dios</h4>
+<span class="rating">★ 4.8</span>
+</div>
+<p class="location">Caballito</p>
+<p class="price">$8,500 - $12,000</p>
+</div>
+</a>
+
+<!-- 2 -->
+<a href="#" class="fields-page-card" data-name="el templo del gol" data-location="belgrano" data-type="techada" data-lat="-34.555" data-lng="-58.450">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>El Templo del Gol <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.9</span>
+</div>
+<p class="location">Belgrano</p>
+<p class="price">$11,000 - $15,000</p>
+</div>
+</a>
+
+<!-- 3 -->
+<a href="#" class="fields-page-card" data-name="potrero del 10" data-location="villa crespo" data-type="abierta" data-lat="-34.600" data-lng="-58.430">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Potrero del 10</h4>
+<span class="rating">★ 4.3</span>
+</div>
+<p class="location">Villa Crespo</p>
+<p class="price">$7,000 - $10,000</p>
+</div>
+</a>
+
+<!-- 4 -->
+<a href="#" class="fields-page-card" data-name="la joya de nuñez" data-location="nuñez" data-type="techada" data-lat="-34.540" data-lng="-58.470">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La Joya de Núñez <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.6</span>
+</div>
+<p class="location">Núñez</p>
+<p class="price">$9,000 - $13,000</p>
+</div>
+</a>
+
+<!-- 5 -->
+<a href="#" class="fields-page-card" data-name="real atletico palermo" data-location="palermo" data-type="abierta" data-lat="-34.580" data-lng="-58.420">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Real Atlético Palermo</h4>
+<span class="rating">★ 4.5</span>
+</div>
+<p class="location">Palermo</p>
+<p class="price">$10,000 - $14,000</p>
+</div>
+</a>
+
+<!-- 6 -->
+<a href="#" class="fields-page-card" data-name="la gambeta eterna" data-location="boedo" data-type="abierta" data-lat="-34.610" data-lng="-58.410">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La Gambeta Eterna</h4>
+<span class="rating">★ 4.2</span>
+</div>
+<p class="location">Boedo</p>
+<p class="price">$6,500 - $9,500</p>
+</div>
+</a>
+
+<!-- 7 -->
+<a href="#" class="fields-page-card" data-name="el caño perfecto" data-location="palermo" data-type="techada" data-lat="-34.575" data-lng="-58.425">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>El Caño Perfecto <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.7</span>
+</div>
+<p class="location">Palermo</p>
+<p class="price">$10,500 - $13,000</p>
+</div>
+</a>
+
+<!-- 8 -->
+<a href="#" class="fields-page-card" data-name="potrero central" data-location="caballito" data-type="abierta" data-lat="-34.565" data-lng="-58.455">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Potrero Central</h4>
+<span class="rating">★ 4.4</span>
+</div>
+<p class="location">Caballito</p>
+<p class="price">$8,000 - $11,000</p>
+</div>
+</a>
+
+<!-- 9 -->
+<a href="#" class="fields-page-card" data-name="la 10 eterna" data-location="belgrano" data-type="abierta" data-lat="-34.550" data-lng="-58.460">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La 10 Eterna</h4>
+<span class="rating">★ 4.6</span>
+</div>
+<p class="location">Belgrano</p>
+<p class="price">$9,000 - $12,500</p>
+</div>
+</a>
+
+<!-- 10 -->
+<a href="#" class="fields-page-card" data-name="estadio del barrio" data-location="villa crespo" data-type="abierta" data-lat="-34.595" data-lng="-58.435">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Estadio del Barrio</h4>
+<span class="rating">★ 4.1</span>
+</div>
+<p class="location">Villa Crespo</p>
+<p class="price">$7,500 - $10,000</p>
+</div>
+</a>
+
+<!-- 11 -->
+<a href="#" class="fields-page-card" data-name="gol de media cancha" data-location="nuñez" data-type="techada" data-lat="-34.540" data-lng="-58.470">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Gol de Media Cancha <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.8</span>
+</div>
+<p class="location">Núñez</p>
+<p class="price">$10,000 - $13,500</p>
+</div>
+</a>
+
+<!-- 12 -->
+<a href="#" class="fields-page-card" data-name="la cancha del pueblo" data-location="boedo" data-type="abierta" data-lat="-34.610" data-lng="-58.410">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La Cancha del Pueblo</h4>
+<span class="rating">★ 4.3</span>
+</div>
+<p class="location">Boedo</p>
+<p class="price">$6,500 - $9,000</p>
+</div>
+</a>
+
+<!-- 13 -->
+<a href="#" class="fields-page-card" data-name="el clasico 5" data-location="palermo" data-type="abierta" data-lat="-34.580" data-lng="-58.420">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>El Clásico 5</h4>
+<span class="rating">★ 4.5</span>
+</div>
+<p class="location">Palermo</p>
+<p class="price">$10,000 - $13,000</p>
+</div>
+</a>
+
+<!-- 14 -->
+<a href="#" class="fields-page-card" data-name="potrero elite" data-location="belgrano" data-type="techada" data-lat="-34.555" data-lng="-58.450">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Potrero Elite <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.7</span>
+</div>
+<p class="location">Belgrano</p>
+<p class="price">$11,000 - $14,500</p>
+</div>
+</a>
+
+<!-- 15 -->
+<a href="#" class="fields-page-card" data-name="la zurda magica" data-location="caballito" data-type="abierta" data-lat="-34.565" data-lng="-58.455">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>La Zurda Mágica</h4>
+<span class="rating">★ 4.4</span>
+</div>
+<p class="location">Caballito</p>
+<p class="price">$8,000 - $11,500</p>
+</div>
+</a>
+
+<!-- 16 -->
+<a href="#" class="fields-page-card" data-name="cancha leyenda" data-location="nuñez" data-type="techada" data-lat="-34.540" data-lng="-58.470">
+<div class="field-image">
+<img src="https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg">
+</div>
+<div class="field-content">
+<div class="field-top">
+<h4>Cancha Leyenda <span class="tag">Techada</span></h4>
+<span class="rating">★ 4.9</span>
+</div>
+<p class="location">Núñez</p>
+<p class="price">$11,500 - $15,000</p>
+</div>
+</a>
+
+<a href="../pages/canchas/villa mercedes/cancha-1.html" class="fields-page-card" data-name="de cabeza futbol" data-location="villa mercedes" data-type="abierta" data-lat="-33.6875393" data-lng="-65.4375539">
+
+<div class="field-image">
+    <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68">
+</div>
+
+<div class="field-content">
+    <div class="field-top">
+        <h4>De Cabeza Fútbol</h4>
+        <span class="rating">★ 4.5</span>
+    </div>
+
+    <p class="location">Villa Mercedes</p>
+    <p class="price">$8,000 - $12,000</p>
+</div>
+</a>
+
+<a href="#" class="fields-page-card" data-name="el bernabeu mercedes" data-location="villa mercedes" data-type="techada" data-lat="-33.7087688" data-lng="-65.4662115">
+
+<div class="field-image">
+    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+</div>
+
+<div class="field-content">
+    <div class="field-top">
+        <h4>El Bernabéu Mercedes <span class="tag">Techada</span></h4>
+        <span class="rating">★ 5.0</span>
+    </div>
+
+    <p class="location">Villa Mercedes</p>
+    <p class="price">$10,000 - $15,000</p>
+</div>
+</a>
+
+<a href="#" class="fields-page-card" data-name="potrero lainez" data-location="villa mercedes" data-type="abierta" data-lat="-33.6722699" data-lng="-65.4697574">
+
+<div class="field-image">
+    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6">
+</div>
+
+<div class="field-content">
+    <div class="field-top">
+        <h4>Potrero Lainez</h4>
+        <span class="rating">★ 4.6</span>
+    </div>
+
+    <p class="location">Villa Mercedes</p>
+    <p class="price">$7,000 - $11,000</p>
+</div>
+</a>
+
+<a href="#" class="fields-page-card" data-name="el bosque futbol" data-location="villa mercedes" data-type="abierta" data-lat="-33.7148971" data-lng="-65.4696884">
+
+<div class="field-image">
+    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2">
+</div>
+
+<div class="field-content">
+    <div class="field-top">
+        <h4>El Bosque Fútbol</h4>
+        <span class="rating">★ 4.2</span>
+    </div>
+
+    <p class="location">Villa Mercedes</p>
+    <p class="price">$6,500 - $10,500</p>
+</div>
+</a>
+
+</div>
+
+<div id="map-container" class="map-container"></div>
+
+<p id="no-results" class="no-results">
+    No se encontraron canchas
+</p>
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">F5 Canchas</a>
+
+            <p>
+                La plataforma número 1 de Argentina para encontrar y reservar tu próxima cancha de fútbol 5.
+                Jugá con amigos, nosotros nos encargamos del resto.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Todas las canchas</a></li>
+                <li><a href="#">Cómo funciona</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>Av. Calle 1234, Provincia, Argentina</p>
+            <p>+54 11 1234-5678</p>
+            <p>email@f5canchas.com.ar</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h4>Seguinos</h4>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+    <p>© 2026 F5 Canchas. Todos los derechos reservados.</p>
+
+    <p class="developer">
+        Desarrollado por <a href="https://zonofal.com" target="_blank">Zonofal</a>
+    </p>
+
+    <div class="footer-legal">
+        <a href="#">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="#">Política de Privacidad</a>
+        <span>•</span>
+        <a href="#">Sumá tu cancha</a>
+    </div>
+</div>
+
+</footer>
+
+
+
+<script type="module" src="../assets/scripts/main.js"></script>
+</body>
+</html>
