@@ -10,16 +10,16 @@ export function initFieldsFilter() {
     const clearBtn = document.getElementById("clear-filters");
     const noResults = document.getElementById("no-results");
 
-    // NEW (view toggle)
+    //  view toggle
     const gridBtn = document.getElementById("grid-view-btn");
     const mapBtn = document.getElementById("map-view-btn");
     const grid = document.querySelector(".fields-page-list");
     const map = document.getElementById("map-container");
 
 
-    // =========================
+    
     // FILTER + SORT + ANIMATE
-    // =========================
+    
     function updateFields() {
 
         const search = searchInput?.value.toLowerCase() || "";
@@ -35,7 +35,7 @@ export function initFieldsFilter() {
 
         let visibleCards = [];
 
-        // ================= FILTER =================
+        //  FILTER
         cards.forEach(card => {
 
             const name = card.dataset.name || "";
@@ -55,7 +55,7 @@ export function initFieldsFilter() {
             }
         });
 
-        // ================= SORT =================
+        //  SORT 
         if (sort) {
             visibleCards.sort((a, b) => {
 
@@ -73,10 +73,10 @@ export function initFieldsFilter() {
             });
         }
 
-        // ================= REORDER DOM =================
+        //  REORDER DOM 
         visibleCards.forEach(card => container.appendChild(card));
 
-        // ================= FLIP ANIMATION =================
+        //  FLIP ANIMATION 
         cards.forEach(card => {
 
             const first = firstPositions.get(card);
@@ -96,12 +96,12 @@ export function initFieldsFilter() {
             }
         });
 
-        // ================= STAGGER =================
+        //  STAGGER 
         visibleCards.forEach((card, index) => {
             card.style.transitionDelay = `${index * 0.03}s`;
         });
 
-        // ================= EMPTY STATE =================
+        //  EMPTY STATE 
         if (visibleCards.length === 0) {
             noResults?.classList.add("active");
         } else {
@@ -113,9 +113,9 @@ export function initFieldsFilter() {
     }
 
 
-    // =========================
+    
     // HELPERS
-    // =========================
+    
     function extractPrice(card) {
         const el = card.querySelector(".price");
         if (!el) return 0;
@@ -133,9 +133,9 @@ export function initFieldsFilter() {
     }
 
 
-    // =========================
+    
     // CLEAR FILTERS
-    // =========================
+    
     clearBtn?.addEventListener("click", () => {
         if (searchInput) searchInput.value = "";
         if (filterLocation) filterLocation.value = "";
@@ -146,18 +146,18 @@ export function initFieldsFilter() {
     });
 
 
-    // =========================
+    
     // EVENTS
-    // =========================
+    
     searchInput?.addEventListener("input", updateFields);
     filterLocation?.addEventListener("change", updateFields);
     filterType?.addEventListener("change", updateFields);
     sortBy?.addEventListener("change", updateFields);
 
 
-    // =========================
-    // VIEW TOGGLE (NEW)
-    // =========================
+    
+    // VIEW TOGGLE 
+    
     gridBtn?.addEventListener("click", () => {
         grid?.classList.remove("hide");
         map?.classList.remove("active");
@@ -175,8 +175,8 @@ export function initFieldsFilter() {
     });
 
 
-    // =========================
+    
     // INIT
-    // =========================
+    
     updateFields();
 }

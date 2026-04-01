@@ -6,9 +6,9 @@ export function initFieldsMap() {
     const cards = Array.from(document.querySelectorAll(".fields-page-card"));
     const locationToggle = document.getElementById("use-location-toggle");
 
-    // =========================
+    
     // INIT MAP
-    // =========================
+    
     const map = L.map("map-container").setView([-34.6037, -58.3816], 12);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -20,9 +20,9 @@ export function initFieldsMap() {
     let userLocation = null;
     let routingControl = null; 
 
-    // =========================
+    
     // CLEAR HELPERS
-    // =========================
+    
     function clearMarkers() {
         markers.forEach(m => map.removeLayer(m));
         markers = [];
@@ -35,9 +35,9 @@ export function initFieldsMap() {
         }
     }
 
-    // =========================
+    
     // USER LOCATION
-    // =========================
+    
     function enableUserLocation() {
 
         if (!navigator.geolocation) return;
@@ -72,9 +72,9 @@ export function initFieldsMap() {
         clearRoute();
     }
 
-    // =========================
+    
     // ROUTE (REAL ROUTING)
-    // =========================
+    
     function createRoute(lat, lng) {
 
         if (!userLocation) return;
@@ -95,9 +95,9 @@ export function initFieldsMap() {
         }).addTo(map);
     }
 
-    // =========================
+    
     // MARKERS
-    // =========================
+    
     function renderMarkers() {
 
         clearMarkers();
@@ -147,9 +147,9 @@ export function initFieldsMap() {
         }
     }
 
-    // =========================
+    
     // FILTER SYNC
-    // =========================
+    
     const observer = new MutationObserver(() => {
         renderMarkers();
     });
@@ -158,9 +158,9 @@ export function initFieldsMap() {
         observer.observe(card, { attributes: true, attributeFilter: ["class"] });
     });
 
-    // =========================
+    
     // LOCATION TOGGLE
-    // =========================
+    
     locationToggle?.addEventListener("change", (e) => {
         if (e.target.checked) {
             enableUserLocation();
@@ -169,17 +169,17 @@ export function initFieldsMap() {
         }
     });
 
-    // =========================
+    
     // MAP RESIZE FIX
-    // =========================
+    
     const mapBtn = document.getElementById("map-view-btn");
 
     mapBtn?.addEventListener("click", () => {
         setTimeout(() => map.invalidateSize(), 200);
     });
 
-    // =========================
+    
     // INIT
-    // =========================
+    
     renderMarkers();
 }

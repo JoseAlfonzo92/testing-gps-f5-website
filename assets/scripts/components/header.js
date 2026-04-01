@@ -1,7 +1,10 @@
 export function initHeader() {
     initMobileMenu();
     initMobileSearch();
+    
 }
+
+
 
 //menu
 function initMobileMenu() {

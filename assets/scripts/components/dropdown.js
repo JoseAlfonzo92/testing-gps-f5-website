@@ -4,9 +4,10 @@ export function initDropdown() {
     if (!dropdown) return;
 
     dropdown.addEventListener("click", (e) => {
-        // prevent link navigation
-        e.preventDefault();
-
-        dropdown.classList.toggle("active");
+        // Only prevent default for the dropdown toggle, not links
+        if (e.target.closest(".dropdown-toggle")) {
+            e.preventDefault();
+            dropdown.classList.toggle("active");
+        }
     });
 }

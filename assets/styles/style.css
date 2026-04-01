@@ -1,6 +1,3 @@
-/* =========================
-   VARIABLES (SINGLE SOURCE)
-========================= */
 :root {
     --color-bg: hsl(0, 0%, 100%);
     --color-surface: hsl(0, 0%, 97.6%);
@@ -40,17 +37,15 @@
     --transition: 0.3s ease;
 }
 
-/* =========================
-   DARK THEME
-========================= */
+/* DARK THEME */
 [data-theme="dark"] {
-    --color-bg: #121212;
-    --color-surface: #1a1a1a;
-    --color-text: #eaeaea;
-    --color-text-muted: #aaa;
+    --color-bg: hsl(0, 0%, 7.1%);
+    --color-surface: hsl(0, 0%, 10.2%);
+    --color-text: hsl(0, 0%, 91.8%);
+    --color-text-muted: hsl(0, 0%, 66.7%);
 
-    --color-primary: #3ddc84;
-    --color-primary-hover: #2fb76c;
+    --color-primary: hsl(147, 70.8%, 40%);
+    --color-primary-hover: hsl(147, 62.5%, 32%);
 
     --color-warning: hsl(45, 100%, 51.2%);
 
@@ -62,9 +57,7 @@
     --shadow-lg: 0 8px 20px rgba(0,0,0,0.7);
 }
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -75,9 +68,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* =========================
-   BASE
-========================= */
+/* BASE */
 body {
     font-family: var(--font-main);
     background: var(--color-bg);
@@ -90,9 +81,7 @@ a {
     color: inherit;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 .header {
     position: sticky;
     top: 0;
@@ -102,9 +91,7 @@ a {
     box-shadow: var(--shadow-sm);
 }
 
-/* =========================
-   LAYOUT
-========================= */
+/* LAYOUT */
 .container {
     width: 90%;
     margin: auto;
@@ -123,9 +110,7 @@ a {
     color: var(--color-primary);
 }
 
-/* =========================
-   CONTROLS (MOBILE ICONS)
-========================= */
+/* CONTROLS */
 .controls {
     display: none;
     gap: var(--space-md);
@@ -141,9 +126,7 @@ a {
     color: var(--color-primary);
 }
 
-/* =========================
-   HAMBURGER
-========================= */
+/* HAMBURGER */
 .menu-toggle {
     width: 25px;
     height: 18px;
@@ -173,9 +156,7 @@ a {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* =========================
-   SEARCH
-========================= */
+/* SEARCH */
 .search {
     display: flex;
     justify-content: center;
@@ -191,9 +172,7 @@ a {
     font-size: var(--font-size-md);
 }
 
-/* =========================
-   NAV (DESKTOP)
-========================= */
+/* NAV (DESKTOP) */
 .nav ul {
     list-style: none;
     display: flex;
@@ -201,9 +180,7 @@ a {
     gap: var(--space-md);
 }
 
-/* =========================
-   DROPDOWN
-========================= */
+/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -248,9 +225,7 @@ a {
     background: var(--color-hover);
 }
 
-/* =========================
-   ARROW
-========================= */
+/* ARROW */
 .arrow {
     transition: transform var(--transition);
     color: var(--color-primary);
@@ -260,9 +235,7 @@ a {
     transform: rotate(180deg);
 }
 
-/* =========================
-   THEME ICON (FIXED)
-========================= */
+/* THEME ICON */
 .theme-toggle {
     background: transparent;
     border: none;
@@ -304,9 +277,7 @@ a {
     transform: rotate(180deg);
 }
 
-/* =========================
-   VISIBILITY
-========================= */
+/* VISIBILITY */
 .desktop-nav,
 .desktop-search {
     display: flex;
@@ -319,9 +290,7 @@ a {
     display: none;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 @media (max-width: 768px) {
 
     .container {
@@ -384,18 +353,18 @@ a {
     }
 
      .mobile-nav ul {
-        list-style: none; /* remove bullets */
+        list-style: none; 
         display: flex;
         flex-direction: column;
         padding: var(--space-md);
         gap: var(--space-md);
-        align-items: flex-end; /* push everything to the right */
+        align-items: flex-end; 
     }
 
     .mobile-nav ul li {
         width: 100%;
         display: flex;
-        justify-content: flex-end; /* ensure right alignment */
+        justify-content: flex-end; 
     }
 
     .mobile-nav ul li a {
@@ -413,9 +382,7 @@ a {
 
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 .hero {
     padding: var(--space-lg) 0;
     text-align: center;
@@ -452,7 +419,7 @@ a {
     display: inline-block;
     padding: var(--space-sm) var(--space-md);
     background: var(--color-primary);
-    color: white;
+    color: var(--color-text);
     border-radius: var(--border-radius-md);
     transition: var(--transition);
 }
@@ -461,9 +428,7 @@ a {
     background: var(--color-primary-hover);
 }
 
-/* =========================
-   FEATURED SECTION
-========================= */
+/* FEATURED SECTION  */
 .featured {
     width: 90%;
     margin: var(--space-lg) auto;
@@ -486,9 +451,7 @@ a {
     color: var(--color-primary);
 }
 
-/* =========================
-   CARDS
-========================= */
+/* CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -532,7 +495,7 @@ a {
     left: var(--space-sm);
 
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-text);
 
     padding: 4px 8px;
     font-size: 12px;
@@ -572,7 +535,7 @@ a {
     color: var(--color-warning);
 }
 
-/* TAG (Techada, etc.) */
+/* TAG (small-cards) */
 .card-image {
     position: relative;
 }
@@ -583,7 +546,7 @@ a {
     left: var(--space-sm);
 
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-text);
 
     padding: 4px 8px;
     font-size: 12px;
@@ -592,9 +555,7 @@ a {
     box-shadow: var(--shadow-sm);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 @media (max-width: 768px) {
 
     .hero h2 {
@@ -609,9 +570,7 @@ a {
 
 
 
-/* =========================
-   ALL FIELDS
-========================= */
+/* ALL FIELDS */
 .all-fields {
     width: 90%;
     margin: var(--space-lg) auto;
@@ -619,9 +578,21 @@ a {
 
 /* LIST */
 .fields-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
+}
+
+@media (max-width: 1024px) {
+    .fields-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fields-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* CARD */
@@ -646,7 +617,7 @@ a {
     min-height: 140px;
     overflow: hidden;
     border-radius: var(--border-radius-md);
-    flex-shrink: 0; /* prevents shrinking in flex layouts */
+    flex-shrink: 0; 
 }
 
 /* IMAGE */
@@ -712,9 +683,7 @@ a {
     color: var(--color-warning);
 }
 
-/* =========================
-   SEE MORE BUTTON
-========================= */
+/* SEE MORE BUTTON  */
 .see-more-wrapper {
     text-align: center;
     margin-top: var(--space-lg);
@@ -727,26 +696,24 @@ a {
     border-radius: var(--border-radius-md);
     transition: var(--transition);
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-text);
 }
 
 .btn-secondary:hover {
     background: var(--color-secondary-hover);
-    color: black;
+    color: var(--color-bg);
 }
 
 .tag {
     background: var(--color-primary);
-    color: white;
+    color: var(--color-text);
     font-size: 12px;
     padding: 2px 6px;
     border-radius: var(--border-radius-sm);
     margin-left: var(--space-xs);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE  */
 @media (max-width: 768px) {
 
     .field-card {
@@ -762,9 +729,7 @@ a {
 
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 .footer {
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
@@ -844,9 +809,7 @@ a {
     transform: scale(1.2);
 }
 
-/* =========================
-   BOTTOM
-========================= */
+/* BOTTOM */
 .footer-bottom {
     border-top: 1px solid var(--color-border);
     padding: var(--space-md);
@@ -890,9 +853,7 @@ a {
     text-decoration: underline;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE  */
 @media (max-width: 768px) {
 
     .footer-container {
