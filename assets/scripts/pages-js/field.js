@@ -32,42 +32,52 @@ export function initFieldPage() {
     document.getElementById("price-from").textContent = `$${field.priceFrom}`;
 
     // SCHEDULE
-document.getElementById("schedule-week").textContent = field.schedule.week;
-document.getElementById("schedule-weekend").textContent = field.schedule.weekend;
+    document.getElementById("schedule-week").textContent = field.schedule.week;
+    document.getElementById("schedule-weekend").textContent = field.schedule.weekend;
 
-// FEATURES
-const featuresContainer = document.getElementById("features-container");
-featuresContainer.innerHTML = field.features
-  .map(f => `<span>${f}</span>`)
-  .join("");
+    // FEATURES
+    const featuresContainer = document.getElementById("features-container");
+    featuresContainer.innerHTML = field.features
+        .map(f => `<span>${f}</span>`)
+        .join("");
 
-// BUFFET
-const buffetContainer = document.getElementById("buffet-container");
-buffetContainer.innerHTML = field.buffet
-  .map(item => `<span>${item}</span>`)
-  .join("");
+    // BUFFET
+    const buffetContainer = document.getElementById("buffet-container");
+    buffetContainer.innerHTML = field.buffet
+        .map(item => `<span>${item}</span>`)
+        .join("");
 
-// EXTRA INFO
-const extraContainer = document.getElementById("extra-info-container");
-extraContainer.innerHTML = field.extraInfo
-  .map(info => `<p>${info}</p>`)
-  .join("");
+    // EXTRA INFO
+    const extraContainer = document.getElementById("extra-info-container");
+    extraContainer.innerHTML = field.extraInfo
+        .map(info => `<p>${info}</p>`)
+        .join("");
 
-// BOOKING
-document.getElementById("booking-players").innerHTML =
-  `<i class="fas fa-users"></i> ${field.booking.players}`;
+    // BOOKING
+    document.getElementById("booking-players").innerHTML =
+        `<i class="fas fa-users"></i> ${field.booking.players}`;
 
-document.getElementById("booking-surface").innerHTML =
-  `<i class="fas fa-layer-group"></i> ${field.booking.surface}`;
+    document.getElementById("booking-surface").innerHTML =
+        `<i class="fas fa-layer-group"></i> ${field.booking.surface}`;
 
-const phoneLink = document.getElementById("booking-phone");
-phoneLink.href = `tel:${field.booking.phone}`;
-phoneLink.innerHTML = `<i class="fas fa-phone"></i> Llamar`;
+    // Clean phone (works for both tel + WhatsApp)
+    const cleanPhone = field.booking.phone.replace(/\D/g, "");
 
-    // MAP
+    const phoneLink = document.getElementById("booking-phone");
+    phoneLink.href = `tel:+${cleanPhone}`;
+    phoneLink.innerHTML = `<i class="fas fa-phone"></i> Llamar`;
+
+    // WhatsApp
+    const whatsappBtn = document.getElementById("booking-whatsapp");
+    const message = `Hola! 👋 Quiero consultar disponibilidad para ${field.name} (${field.location})`;
+
+    whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
+
+    // MAP DATA 
     const map = document.getElementById("field-map");
     map.dataset.lat = field.lat;
     map.dataset.lng = field.lng;
+    map.dataset.name = field.name;
 
     document.getElementById("map-address").textContent = field.address;
 }

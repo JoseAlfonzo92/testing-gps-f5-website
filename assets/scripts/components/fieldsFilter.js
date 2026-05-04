@@ -16,8 +16,6 @@ export function initFieldsFilter() {
     const grid = document.querySelector(".fields-page-list");
     const map = document.getElementById("map-container");
 
-
-    
     // FILTER + SORT + ANIMATE
     
     function updateFields() {
@@ -112,8 +110,6 @@ export function initFieldsFilter() {
         container.offsetHeight;
     }
 
-
-    
     // HELPERS
     
     function extractPrice(card) {
@@ -132,8 +128,6 @@ export function initFieldsFilter() {
         return parseFloat(text.replace("★", "")) || 0;
     }
 
-
-    
     // CLEAR FILTERS
     
     clearBtn?.addEventListener("click", () => {
@@ -145,8 +139,6 @@ export function initFieldsFilter() {
         updateFields();
     });
 
-
-    
     // EVENTS
     
     searchInput?.addEventListener("input", updateFields);
@@ -154,8 +146,6 @@ export function initFieldsFilter() {
     filterType?.addEventListener("change", updateFields);
     sortBy?.addEventListener("change", updateFields);
 
-
-    
     // VIEW TOGGLE 
     
     gridBtn?.addEventListener("click", () => {
@@ -174,9 +164,6 @@ export function initFieldsFilter() {
         gridBtn?.classList.remove("active");
     });
 
-
-    
     // INIT
-    
     updateFields();
 }

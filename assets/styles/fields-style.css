@@ -293,6 +293,12 @@
      color: var(--color-primary);
 }
 
+#booking-whatsapp {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
 
 
 @media (max-width: 1024px) {
@@ -320,3 +326,4 @@
           align-items: flex-start;
      }
 }
+

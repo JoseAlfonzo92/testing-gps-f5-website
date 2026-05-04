@@ -3,10 +3,9 @@ import { initDropdown } from "./components/dropdown.js";
 import { initHeader } from "./components/header.js";
 import { initTheme } from "./components/theme.js";
 import { initFieldsFilter } from "./components/fieldsFilter.js";
-import { initFieldsMap } from "./components/fieldsmap.js";
+import { initFieldsMap } from "./components/fieldsMap.js";
 import { initFieldDetailMap } from "./components/detailedMap.js";
 import { initFieldPage } from "./pages-js/field.js";
-
 
 document.addEventListener("DOMContentLoaded", () => {
     // Global (runs everywhere)

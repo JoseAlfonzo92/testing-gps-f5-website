@@ -4,8 +4,6 @@ export function initHeader() {
     
 }
 
-
-
 //menu
 function initMobileMenu() {
     const toggle = document.getElementById("menu-toggle");

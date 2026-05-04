@@ -676,6 +676,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-xs);
+    align-items: center;
 }
 
 .features span {

@@ -17,6 +17,12 @@
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
 </head>
 <body>
   <header class="header">
@@ -206,9 +212,9 @@
                     <p id="booking-surface"></p>
                 </div>
 
-                <button class="btn-primary">
-                    Consultar Disponibilidad
-                </button>
+<a id="booking-whatsapp" class="btn-primary" target="_blank">
+   <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad
+</a>
 
                 <a id="booking-phone" class="call-link"></a>
 
@@ -287,6 +293,9 @@
 
 </footer>
 
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- Main JS File -->
 <script type="module" src="../assets/scripts/main.js"></script>
 </body>
 </html>
