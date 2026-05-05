@@ -658,7 +658,7 @@ export const fields = [
     priceTo: 12000,
     lat: -33.6875393,
     lng: -65.4375539,
-    image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-14_sbuear.jpg",
     description: "Cancha abierta en Villa Mercedes.",
     address: "Villa Mercedes, San Luis",
     schedule: {
@@ -696,7 +696,7 @@ export const fields = [
     priceTo: 15000,
     lat: -33.7087688,
     lng: -65.4662115,
-    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-17_stytcw.jpg",
     description: "Infraestructura techada en Mercedes.",
     address: "Villa Mercedes, San Luis",
     schedule: {
@@ -736,7 +736,7 @@ export const fields = [
     priceTo: 11000,
     lat: -33.6722699,
     lng: -65.4697574,
-    image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-15_xfdf4z.jpg",
     description: "Potrero abierto con buena cancha.",
     address: "Villa Mercedes, San Luis",
     schedule: {
@@ -773,7 +773,7 @@ export const fields = [
     priceTo: 10500,
     lat: -33.7148971,
     lng: -65.4696884,
-    image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_sb9zbp.jpg",
     description: "Potrero abierto rodeado de verde.",
     address: "Villa Mercedes, San Luis",
     schedule: {

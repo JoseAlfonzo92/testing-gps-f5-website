@@ -456,7 +456,19 @@ a {
 
 .see-all {
     font-size: var(--font-size-sm);
-    color: var(--color-primary);
+    color: var(--color-text-buttons);
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-primary);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    
+}
+
+.see-all:hover {
+    background: var(--color-primary-hover);
+    
 }
 
 /* CARDS */
@@ -572,6 +584,11 @@ a {
 
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    .see-all {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: var(--font-size-xs);
     }
 
 }

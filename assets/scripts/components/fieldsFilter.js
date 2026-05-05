@@ -9,6 +9,7 @@ export function initFieldsFilter() {
     const sortBy = document.getElementById("sort-by");
     const clearBtn = document.getElementById("clear-filters");
     const noResults = document.getElementById("no-results");
+    const useLocationToggle = document.getElementById("use-location-toggle");
 
     //  view toggle
     const gridBtn = document.getElementById("grid-view-btn");
@@ -131,13 +132,16 @@ export function initFieldsFilter() {
     // CLEAR FILTERS
     
     clearBtn?.addEventListener("click", () => {
-        if (searchInput) searchInput.value = "";
-        if (filterLocation) filterLocation.value = "";
-        if (filterType) filterType.value = "";
-        if (sortBy) sortBy.value = "";
+    if (searchInput) searchInput.value = "";
+    if (filterLocation) filterLocation.value = "";
+    if (filterType) filterType.value = "";
+    if (sortBy) sortBy.value = "";
+    if (useLocationToggle) {
+        useLocationToggle.checked = false;
+    }
 
-        updateFields();
-    });
+    updateFields();
+});
 
     // EVENTS
     
