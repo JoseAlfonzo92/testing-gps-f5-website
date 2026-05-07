@@ -6,6 +6,7 @@ import { initFieldsFilter } from "./components/fieldsFilter.js";
 import { initFieldsMap } from "./components/fieldsMap.js";
 import { initFieldDetailMap } from "./components/detailedMap.js";
 import { initFieldPage } from "./pages-js/field.js";
+import { initGlobalSearch } from "./components/globalSearch.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Global (runs everywhere)
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initDropdown();
     initHeader();
     initTheme();
+    initGlobalSearch();
 
     // All fields page
     if (document.querySelector("#fields-container")) {
