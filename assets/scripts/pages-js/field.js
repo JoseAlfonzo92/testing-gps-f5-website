@@ -5,6 +5,8 @@ export function initFieldPage() {
     const id = params.get("id");
 
     const field = fields.find(f => f.id === id);
+    
+    document.title = `${field.name} | Fulbo 5`;
 
     if (!field) {
         console.error("Field not found:", id);
@@ -69,7 +71,7 @@ export function initFieldPage() {
 
     // WhatsApp
     const whatsappBtn = document.getElementById("booking-whatsapp");
-    const message = `Hola! 👋 Quiero consultar disponibilidad para ${field.name} (${field.location})`;
+    const message = `Hola! Quiero consultar disponibilidad para ${field.name} (${field.location})`;
 
     whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
 

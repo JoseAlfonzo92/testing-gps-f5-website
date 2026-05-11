@@ -8,6 +8,8 @@ import { initFieldDetailMap } from "./components/detailedMap.js";
 import { initFieldPage } from "./pages-js/field.js";
 import { initGlobalSearch } from "./components/globalSearch.js";
 import { initLocationFilters } from "./data/locationFilters.js";
+import { renderFields } from "./pages-js/fieldsRenderer.js";
+import { renderFeaturedFields, renderHomeFields } from "./pages-js/cardRenderer.js";
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -19,6 +21,8 @@ document.addEventListener(
         initHeader();
         initTheme();
         initGlobalSearch();
+        renderFeaturedFields();
+        renderHomeFields();
 
         // FIELDS PAGE
         if (
@@ -26,6 +30,8 @@ document.addEventListener(
                 "#fields-container"
             )
         ) {
+
+            renderFields();
 
             initLocationFilters();
 

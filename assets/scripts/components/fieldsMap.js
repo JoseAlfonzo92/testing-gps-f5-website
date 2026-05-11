@@ -58,10 +58,10 @@ export function initFieldsMap() {
 
         }, err => {
             console.warn(
-    "Location error:",
-    err.code,
-    err.message
-);
+            "Location error:",
+                err.code,
+                err.message
+            );
         });
     }
 

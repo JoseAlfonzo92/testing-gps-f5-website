@@ -1,5 +1,3 @@
-// js/data/locationfilters.js
-
 import {
     getProvinces,
     getCities,

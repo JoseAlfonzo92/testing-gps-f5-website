@@ -902,6 +902,1007 @@ export const fields = [
       surface: "Césped",
       phone: "+541112345678",
       whatsapp: "5491112345678"
-    }
-  }
+    },
+
+    
+
+
+  },
+
+  {
+    id: "el-potrero-nueva-cordoba",
+    name: "El Potrero",
+    location: "Nueva Córdoba",
+    province: "Córdoba",
+    city: "Córdoba Capital",
+    zone: "Nueva Córdoba",
+    type: "techada",
+    rating: 4.6,
+    priceFrom: 7500,
+    priceTo: 11000,
+    lat: -31.4265,
+    lng: -64.1888,
+    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo de fútbol 5 en Nueva Córdoba",
+    address: "Nueva Córdoba, Córdoba",
+    schedule: {
+      week: "10:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Estacionamiento",
+      "Wifi",
+      "Iluminación LED"
+    ],
+    buffet: [
+      "Bebidas",
+      "Snacks",
+      "Pizzas",
+      "Lomitos"
+    ],
+    extraInfo: [
+      "Ambiente familiar",
+      "Vestuario",
+      "Zona segura",
+      "Canchas renovadas"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+543514567890",
+      whatsapp: "5493514567890"
+    },
+},
+
+{
+    id: "canchas-del-centro",
+    name: "Canchas del Centro",
+    location: "Alta Córdoba",
+    province: "Córdoba",
+    city: "Córdoba Capital",
+    zone: "Alta Córdoba",
+    type: "abierta",
+    rating: 4.4,
+    priceFrom: 6000,
+    priceTo: 9200,
+    lat: -31.3992,
+    lng: -64.1815,
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
+    description: "Fútbol 5 y fútbol 7 en Alta Córdoba",
+    address: "Alta Córdoba, Córdoba",
+    schedule: {
+      week: "08:00 - 23:00",
+      weekend: "08:00 - 00:00"
+    },
+    features: [
+      "Buffet",
+      "Duchas",
+      "Parking cercano"
+    ],
+    buffet: [
+      "Bebidas",
+      "Hamburguesas",
+      "Empanadas",
+      "Café"
+    ],
+    extraInfo: [
+      "Buen acceso",
+      "Ideal para torneos",
+      "Zona iluminada",
+      "Ambiente competitivo"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Césped sintético",
+      phone: "+543514112233",
+      whatsapp: "5493514112233"
+    },
+},
+
+{
+    id: "golazo-futbol-club",
+    name: "Golazo Fútbol Club",
+    location: "Villa Belgrano",
+    province: "Córdoba",
+    city: "Córdoba Capital",
+    zone: "Villa Belgrano",
+    type: "semi-techada",
+    rating: 4.8,
+    priceFrom: 8500,
+    priceTo: 12500,
+    lat: -31.3521,
+    lng: -64.2486,
+    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol amateur",
+    address: "Villa Belgrano, Córdoba",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Estacionamiento privado",
+      "Streaming de partidos",
+      "Wifi",
+      "Vestuarios"
+    ],
+    buffet: [
+      "Bebidas",
+      "Cervezas sin alcohol",
+      "Pizzas",
+      "Lomitos",
+      "Picadas"
+    ],
+    extraInfo: [
+      "Ambiente premium",
+      "Ideal para eventos",
+      "Zona tranquila",
+      "Excelente iluminación"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+543517778899",
+      whatsapp: "5493517778899"
+    },
+},
+
+{
+    id: "patagonia-futbol-center",
+    name: "Patagonia Fútbol Center",
+    location: "Centro",
+    province: "Neuquén",
+    city: "Neuquén Capital",
+    zone: "Centro",
+    type: "techada",
+    rating: 4.5,
+    priceFrom: 7800,
+    priceTo: 11800,
+    lat: -38.9516,
+    lng: -68.0591,
+    image: "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo moderno de fútbol 5 en Neuquén",
+    address: "Centro, Neuquén",
+    schedule: {
+      week: "10:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Estacionamiento",
+      "Vestuarios"
+    ],
+    buffet: [
+      "Bebidas",
+      "Snacks",
+      "Pizzas",
+      "Hamburguesas"
+    ],
+    extraInfo: [
+      "Ambiente familiar",
+      "Zona céntrica",
+      "Buena iluminación",
+      "Ideal para torneos"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+542994556677",
+      whatsapp: "5492994556677"
+    },
+},
+
+{
+    id: "la-barda-futbol",
+    name: "La Barda Fútbol",
+    location: "Alta Barda",
+    province: "Neuquén",
+    city: "Neuquén Capital",
+    zone: "Alta Barda",
+    type: "abierta",
+    rating: 4.3,
+    priceFrom: 6200,
+    priceTo: 9300,
+    lat: -38.9342,
+    lng: -68.0845,
+    image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop",
+    description: "Canchas de fútbol amateur en Alta Barda",
+    address: "Alta Barda, Neuquén",
+    schedule: {
+      week: "08:00 - 23:00",
+      weekend: "08:00 - 00:00"
+    },
+    features: [
+      "Buffet",
+      "Iluminación LED",
+      "Parking cercano"
+    ],
+    buffet: [
+      "Bebidas",
+      "Empanadas",
+      "Panchos",
+      "Café"
+    ],
+    extraInfo: [
+      "Buen ambiente",
+      "Zona tranquila",
+      "Ideal para amigos",
+      "Acceso fácil"
+    ],
+    booking: {
+      players: "6 vs 6",
+      surface: "Césped sintético",
+      phone: "+542994112244",
+      whatsapp: "5492994112244"
+    },
+},
+
+{
+    id: "gol-patagonico",
+    name: "Gol Patagónico",
+    location: "Valentina Sur",
+    province: "Neuquén",
+    city: "Neuquén Capital",
+    zone: "Valentina Sur",
+    type: "semi-techada",
+    rating: 4.7,
+    priceFrom: 8800,
+    priceTo: 13000,
+    lat: -38.9828,
+    lng: -68.0987,
+    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol en Neuquén",
+    address: "Valentina Sur, Neuquén",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Streaming de partidos",
+      "Wifi",
+      "Vestuarios",
+      "Estacionamiento privado"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Lomitos",
+      "Picadas"
+    ],
+    extraInfo: [
+      "Ambiente premium",
+      "Excelente iluminación",
+      "Zona segura",
+      "Canchas nuevas"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+542994778899",
+      whatsapp: "5492994778899"
+    },
+},
+
+// TUCUMÁN
+
+{
+    id: "norte-futbol-club",
+    name: "Norte Fútbol Club",
+    location: "Yerba Buena",
+    province: "Tucumán",
+    city: "San Miguel de Tucumán",
+    zone: "Yerba Buena",
+    type: "techada",
+    rating: 4.6,
+    priceFrom: 7200,
+    priceTo: 10800,
+    lat: -26.8167,
+    lng: -65.2833,
+    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo moderno de fútbol 5 en Yerba Buena",
+    address: "Yerba Buena, Tucumán",
+    schedule: {
+      week: "10:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Estacionamiento",
+      "Vestuarios"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Empanadas",
+      "Hamburguesas"
+    ],
+    extraInfo: [
+      "Ambiente familiar",
+      "Excelente iluminación",
+      "Zona segura",
+      "Ideal para torneos"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+543814556677",
+      whatsapp: "5493814556677"
+    },
+},
+
+{
+    id: "el-deca-futbol",
+    name: "El Deca Fútbol",
+    location: "Centro",
+    province: "Tucumán",
+    city: "San Miguel de Tucumán",
+    zone: "Centro",
+    type: "abierta",
+    rating: 4.2,
+    priceFrom: 5800,
+    priceTo: 8900,
+    lat: -26.8241,
+    lng: -65.2226,
+    image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop",
+    description: "Canchas de fútbol amateur en el centro tucumano",
+    address: "Centro, Tucumán",
+    schedule: {
+      week: "08:00 - 23:00",
+      weekend: "08:00 - 00:00"
+    },
+    features: [
+      "Buffet",
+      "Iluminación LED",
+      "Parking cercano"
+    ],
+    buffet: [
+      "Bebidas",
+      "Snacks",
+      "Panchos",
+      "Café"
+    ],
+    extraInfo: [
+      "Buen ambiente",
+      "Acceso fácil",
+      "Zona transitada",
+      "Ideal para amigos"
+    ],
+    booking: {
+      players: "6 vs 6",
+      surface: "Césped sintético",
+      phone: "+543814223344",
+      whatsapp: "5493814223344"
+    },
+},
+
+{
+    id: "gol-del-jardin",
+    name: "Gol del Jardín",
+    location: "Tafí Viejo",
+    province: "Tucumán",
+    city: "Tafí Viejo",
+    zone: "Tafí Viejo",
+    type: "semi-techada",
+    rating: 4.8,
+    priceFrom: 8300,
+    priceTo: 12400,
+    lat: -26.7321,
+    lng: -65.2598,
+    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol amateur",
+    address: "Tafí Viejo, Tucumán",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Streaming de partidos",
+      "Wifi",
+      "Vestuarios",
+      "Estacionamiento privado"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Lomitos",
+      "Picadas"
+    ],
+    extraInfo: [
+      "Ambiente premium",
+      "Excelente césped",
+      "Zona tranquila",
+      "Canchas renovadas"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+543814778899",
+      whatsapp: "5493814778899"
+    },
+},
+
+// JUJUY
+
+{
+    id: "altura-futbol",
+    name: "Altura Fútbol",
+    location: "Palpalá",
+    province: "Jujuy",
+    city: "San Salvador de Jujuy",
+    zone: "Palpalá",
+    type: "abierta",
+    rating: 4.3,
+    priceFrom: 5400,
+    priceTo: 8600,
+    lat: -24.2565,
+    lng: -65.2116,
+    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    description: "Canchas de fútbol 5 en Palpalá",
+    address: "Palpalá, Jujuy",
+    schedule: {
+      week: "08:00 - 22:00",
+      weekend: "08:00 - 23:00"
+    },
+    features: [
+      "Buffet",
+      "Iluminación LED"
+    ],
+    buffet: [
+      "Bebidas",
+      "Empanadas",
+      "Snacks",
+      "Café"
+    ],
+    extraInfo: [
+      "Ambiente familiar",
+      "Zona tranquila",
+      "Buen acceso",
+      "Ideal para grupos"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Césped",
+      phone: "+543884556677",
+      whatsapp: "5493884556677"
+    },
+},
+
+{
+    id: "quebrada-sports",
+    name: "Quebrada Sports",
+    location: "Centro",
+    province: "Jujuy",
+    city: "San Salvador de Jujuy",
+    zone: "Centro",
+    type: "techada",
+    rating: 4.5,
+    priceFrom: 6900,
+    priceTo: 10200,
+    lat: -24.1858,
+    lng: -65.2995,
+    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo techado de fútbol amateur",
+    address: "Centro, Jujuy",
+    schedule: {
+      week: "09:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Vestuarios",
+      "Estacionamiento"
+    ],
+    buffet: [
+      "Bebidas",
+      "Hamburguesas",
+      "Pizzas",
+      "Panchos"
+    ],
+    extraInfo: [
+      "Excelente iluminación",
+      "Zona segura",
+      "Ideal para torneos",
+      "Buen ambiente"
+    ],
+    booking: {
+      players: "6 vs 6",
+      surface: "Sintético",
+      phone: "+543884112233",
+      whatsapp: "5493884112233"
+    },
+},
+
+{
+    id: "puna-gol-center",
+    name: "Puna Gol Center",
+    location: "Alto Comedero",
+    province: "Jujuy",
+    city: "San Salvador de Jujuy",
+    zone: "Alto Comedero",
+    type: "semi-techada",
+    rating: 4.7,
+    priceFrom: 7900,
+    priceTo: 11900,
+    lat: -24.2319,
+    lng: -65.2471,
+    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol en Jujuy",
+    address: "Alto Comedero, Jujuy",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Streaming de partidos",
+      "Wifi",
+      "Vestuarios",
+      "Parking privado"
+    ],
+    buffet: [
+      "Bebidas",
+      "Picadas",
+      "Pizzas",
+      "Lomitos"
+    ],
+    extraInfo: [
+      "Ambiente premium",
+      "Zona moderna",
+      "Excelente césped",
+      "Canchas nuevas"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+543884778899",
+      whatsapp: "5493884778899"
+    },
+},
+
+// MENDOZA
+
+{
+    id: "andes-futbol-center",
+    name: "Andes Fútbol Center",
+    location: "Godoy Cruz",
+    province: "Mendoza",
+    city: "Mendoza Capital",
+    zone: "Godoy Cruz",
+    type: "techada",
+    rating: 4.7,
+    priceFrom: 8200,
+    priceTo: 12200,
+    lat: -32.9282,
+    lng: -68.8448,
+    image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol en Mendoza",
+    address: "Godoy Cruz, Mendoza",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Wifi",
+      "Vestuarios",
+      "Estacionamiento privado"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Lomitos",
+      "Picadas"
+    ],
+    extraInfo: [
+      "Excelente iluminación",
+      "Ambiente premium",
+      "Zona segura"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+542614556677",
+      whatsapp: "5492614556677"
+    },
+},
+
+// SANTA CRUZ
+
+{
+    id: "patagonia-sur-futbol",
+    name: "Patagonia Sur Fútbol",
+    location: "Centro",
+    province: "Santa Cruz",
+    city: "Río Gallegos",
+    zone: "Centro",
+    type: "semi-techada",
+    rating: 4.4,
+    priceFrom: 7600,
+    priceTo: 11400,
+    lat: -51.6230,
+    lng: -69.2168,
+    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo de fútbol amateur en Río Gallegos",
+    address: "Centro, Río Gallegos",
+    schedule: {
+      week: "10:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Calefacción",
+      "Wifi",
+      "Buffet"
+    ],
+    buffet: [
+      "Bebidas",
+      "Snacks",
+      "Hamburguesas"
+    ],
+    extraInfo: [
+      "Ideal en invierno",
+      "Zona céntrica",
+      "Buen ambiente"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+542966556677",
+      whatsapp: "5492966556677"
+    },
+},
+
+// CHUBUT
+
+{
+    id: "gol-del-sur",
+    name: "Gol del Sur",
+    location: "Centro",
+    province: "Chubut",
+    city: "Comodoro Rivadavia",
+    zone: "Centro",
+    type: "abierta",
+    rating: 4.3,
+    priceFrom: 6900,
+    priceTo: 9800,
+    lat: -45.8641,
+    lng: -67.4966,
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
+    description: "Canchas de fútbol 5 en Comodoro",
+    address: "Centro, Comodoro Rivadavia",
+    schedule: {
+      week: "08:00 - 23:00",
+      weekend: "08:00 - 00:00"
+    },
+    features: [
+      "Iluminación LED",
+      "Parking cercano"
+    ],
+    buffet: [
+      "Bebidas",
+      "Empanadas",
+      "Panchos"
+    ],
+    extraInfo: [
+      "Buen acceso",
+      "Ambiente competitivo",
+      "Zona transitada"
+    ],
+    booking: {
+      players: "6 vs 6",
+      surface: "Césped sintético",
+      phone: "+542974112233",
+      whatsapp: "5492974112233"
+    },
+},
+
+// TIERRA DEL FUEGO
+
+{
+    id: "fin-del-mundo-futbol",
+    name: "Fin del Mundo Fútbol",
+    location: "Centro",
+    province: "Tierra del Fuego",
+    city: "Ushuaia",
+    zone: "Centro",
+    type: "techada",
+    rating: 4.8,
+    priceFrom: 9500,
+    priceTo: 13800,
+    lat: -54.8019,
+    lng: -68.3030,
+    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo techado de fútbol en Ushuaia",
+    address: "Centro, Ushuaia",
+    schedule: {
+      week: "10:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Calefacción",
+      "Streaming de partidos",
+      "Wifi"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Picadas"
+    ],
+    extraInfo: [
+      "Ideal para clima frío",
+      "Ambiente premium",
+      "Excelente césped"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+542901556677",
+      whatsapp: "5492901556677"
+    },
+},
+
+// SAN JUAN
+
+{
+    id: "cuyo-futbol-arena",
+    name: "Cuyo Fútbol Arena",
+    location: "Rivadavia",
+    province: "San Juan",
+    city: "San Juan",
+    zone: "Rivadavia",
+    type: "semi-techada",
+    rating: 4.5,
+    priceFrom: 7100,
+    priceTo: 10600,
+    lat: -31.5375,
+    lng: -68.5364,
+    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo moderno de fútbol amateur",
+    address: "Rivadavia, San Juan",
+    schedule: {
+      week: "09:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Vestuarios",
+      "Estacionamiento"
+    ],
+    buffet: [
+      "Bebidas",
+      "Lomitos",
+      "Empanadas"
+    ],
+    extraInfo: [
+      "Zona tranquila",
+      "Excelente iluminación",
+      "Ideal para amigos"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+542644556677",
+      whatsapp: "5492644556677"
+    },
+},
+
+// LA RIOJA
+
+{
+    id: "rioja-gol-club",
+    name: "Rioja Gol Club",
+    location: "Centro",
+    province: "La Rioja",
+    city: "La Rioja",
+    zone: "Centro",
+    type: "abierta",
+    rating: 4.2,
+    priceFrom: 5600,
+    priceTo: 8700,
+    lat: -29.4131,
+    lng: -66.8558,
+    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    description: "Canchas de fútbol amateur en La Rioja",
+    address: "Centro, La Rioja",
+    schedule: {
+      week: "08:00 - 22:00",
+      weekend: "08:00 - 23:00"
+    },
+    features: [
+      "Buffet",
+      "Iluminación LED"
+    ],
+    buffet: [
+      "Bebidas",
+      "Snacks",
+      "Panchos"
+    ],
+    extraInfo: [
+      "Buen ambiente",
+      "Zona céntrica",
+      "Acceso fácil"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Césped",
+      phone: "+543804556677",
+      whatsapp: "5493804556677"
+    },
+},
+
+// SANTIAGO DEL ESTERO
+
+{
+    id: "termas-futbol",
+    name: "Termas Fútbol",
+    location: "La Banda",
+    province: "Santiago del Estero",
+    city: "Santiago del Estero",
+    zone: "La Banda",
+    type: "abierta",
+    rating: 4.4,
+    priceFrom: 5900,
+    priceTo: 9100,
+    lat: -27.7335,
+    lng: -64.2428,
+    image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo de fútbol amateur en Santiago",
+    address: "La Banda, Santiago del Estero",
+    schedule: {
+      week: "08:00 - 23:00",
+      weekend: "08:00 - 00:00"
+    },
+    features: [
+      "Parking cercano",
+      "Buffet"
+    ],
+    buffet: [
+      "Bebidas",
+      "Empanadas",
+      "Hamburguesas"
+    ],
+    extraInfo: [
+      "Ambiente familiar",
+      "Zona segura",
+      "Ideal para torneos"
+    ],
+    booking: {
+      players: "6 vs 6",
+      surface: "Sintético",
+      phone: "+543854556677",
+      whatsapp: "5493854556677"
+    },
+},
+
+// SALTA
+
+{
+    id: "salta-futbol-pro",
+    name: "Salta Fútbol Pro",
+    location: "Tres Cerritos",
+    province: "Salta",
+    city: "Salta Capital",
+    zone: "Tres Cerritos",
+    type: "techada",
+    rating: 4.7,
+    priceFrom: 8400,
+    priceTo: 12600,
+    lat: -24.7612,
+    lng: -65.3931,
+    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo premium de fútbol en Salta",
+    address: "Tres Cerritos, Salta",
+    schedule: {
+      week: "09:00 - 01:00",
+      weekend: "09:00 - 02:00"
+    },
+    features: [
+      "Streaming de partidos",
+      "Wifi",
+      "Vestuarios"
+    ],
+    buffet: [
+      "Pizzas",
+      "Picadas",
+      "Lomitos"
+    ],
+    extraInfo: [
+      "Excelente césped",
+      "Zona premium",
+      "Buen ambiente"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético profesional",
+      phone: "+543874556677",
+      whatsapp: "5493874556677"
+    },
+},
+
+// CORRIENTES
+
+{
+    id: "litoral-futbol",
+    name: "Litoral Fútbol",
+    location: "Centro",
+    province: "Corrientes",
+    city: "Corrientes Capital",
+    zone: "Centro",
+    type: "semi-techada",
+    rating: 4.3,
+    priceFrom: 6100,
+    priceTo: 9400,
+    lat: -27.4692,
+    lng: -58.8306,
+    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo de fútbol amateur en Corrientes",
+    address: "Centro, Corrientes",
+    schedule: {
+      week: "08:00 - 00:00",
+      weekend: "08:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Buffet"
+    ],
+    buffet: [
+      "Bebidas",
+      "Panchos",
+      "Empanadas"
+    ],
+    extraInfo: [
+      "Buen acceso",
+      "Zona segura",
+      "Ambiente familiar"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+543794556677",
+      whatsapp: "5493794556677"
+    },
+},
+
+// ENTRE RÍOS
+
+{
+    id: "parana-futbol-club",
+    name: "Paraná Fútbol Club",
+    location: "Centro",
+    province: "Entre Ríos",
+    city: "Paraná",
+    zone: "Centro",
+    type: "techada",
+    rating: 4.6,
+    priceFrom: 7400,
+    priceTo: 11200,
+    lat: -31.7319,
+    lng: -60.5238,
+    image: "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1200&auto=format&fit=crop",
+    description: "Complejo techado de fútbol 5 en Paraná",
+    address: "Centro, Paraná",
+    schedule: {
+      week: "09:00 - 00:00",
+      weekend: "09:00 - 01:00"
+    },
+    features: [
+      "Wifi",
+      "Vestuarios",
+      "Parking"
+    ],
+    buffet: [
+      "Bebidas",
+      "Pizzas",
+      "Hamburguesas"
+    ],
+    extraInfo: [
+      "Excelente iluminación",
+      "Buen ambiente",
+      "Ideal para torneos"
+    ],
+    booking: {
+      players: "5 vs 5",
+      surface: "Sintético",
+      phone: "+543434556677",
+      whatsapp: "5493434556677"
+    },
+},
+  
+
 ];

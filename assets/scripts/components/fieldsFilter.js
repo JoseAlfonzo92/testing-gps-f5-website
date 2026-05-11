@@ -15,8 +15,17 @@ export function initFieldsFilter() {
     const searchInput =
         document.getElementById("search-input");
 
-    const filterLocation =
-        document.getElementById("filter-location");
+    //const filterLocation = document.getElementById("filter-location");
+
+    const filterProvince =
+    document.getElementById("filter-province");
+
+const filterCity =
+    document.getElementById("filter-city");
+
+const filterZone =
+    document.getElementById("filter-zone");
+
 
     const filterType =
         document.getElementById("filter-type");
@@ -172,8 +181,16 @@ export function initFieldsFilter() {
                 .toLowerCase()
                 .trim() || "";
 
-        const location =
-            filterLocation?.value || "";
+        //const location = filterLocation?.value || "";
+
+        const province =
+    filterProvince?.value || "";
+
+const city =
+    filterCity?.value || "";
+
+const zone =
+    filterZone?.value || "";
 
         const type =
             filterType?.value || "";
@@ -211,24 +228,40 @@ export function initFieldsFilter() {
                 .toLowerCase()
                 .trim();
 
-            const cardLocation =
-                card.dataset.location || "";
+            const cardProvince =
+    card.dataset.province || "";
 
-            const cardType =
-                card.dataset.type || "";
+const cardCity =
+    card.dataset.city || "";
 
-            const match =
-                searchableText.includes(search) &&
+const cardZone =
+    card.dataset.zone || "";
 
-                (
-                    location === "" ||
-                    cardLocation === location
-                ) &&
+const cardType =
+    card.dataset.type || "";
 
-                (
-                    type === "" ||
-                    cardType === type
-                );
+const match =
+    searchableText.includes(search) &&
+
+    (
+        province === "" ||
+        cardProvince === province
+    ) &&
+
+    (
+        city === "" ||
+        cardCity === city
+    ) &&
+
+    (
+        zone === "" ||
+        cardZone === zone
+    ) &&
+
+    (
+        type === "" ||
+        cardType === type
+    );
 
             if (match) {
 
@@ -427,9 +460,17 @@ export function initFieldsFilter() {
                 input.value = "";
             });
 
-            if (filterLocation) {
-                filterLocation.value = "";
-            }
+            if (filterProvince) {
+    filterProvince.value = "";
+}
+
+if (filterCity) {
+    filterCity.value = "";
+}
+
+if (filterZone) {
+    filterZone.value = "";
+}
 
             if (filterType) {
                 filterType.value = "";
@@ -463,10 +504,20 @@ export function initFieldsFilter() {
         updateFields
     );
 
-    filterLocation?.addEventListener(
-        "change",
-        updateFields
-    );
+    filterProvince?.addEventListener(
+    "change",
+    updateFields
+);
+
+filterCity?.addEventListener(
+    "change",
+    updateFields
+);
+
+filterZone?.addEventListener(
+    "change",
+    updateFields
+);
 
     filterType?.addEventListener(
         "change",
