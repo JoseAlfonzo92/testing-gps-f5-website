@@ -122,15 +122,16 @@
 
     <input type="text" id="search-input" class="global-search" placeholder="Buscar por nombre o zona...">
 
-    <select id="filter-location">
+     <select id="filter-province">
+       <option value="">Provincia</option>
+     </select>
+
+    <select id="filter-city">
+        <option value="">Ciudad</option>
+    </select>
+
+    <select id="filter-zone">
         <option value="">Zona</option>
-        <option value="palermo">Palermo</option>
-        <option value="belgrano">Belgrano</option>
-        <option value="caballito">Caballito</option>
-        <option value="nuñez">Núñez</option>
-        <option value="boedo">Boedo</option>
-        <option value="villa crespo">Villa Crespo</option>
-        <option value="villa mercedes">Villa Mercedes</option>
     </select>
 
     <select id="filter-type">
@@ -158,10 +159,10 @@
         <span class="slider"></span>
     </label>
     <span>Usar mi ubicación</span>
-</div>
-</div>
+     </div>
+  </div>
 
-<div class="view-toggle">
+   <div class="view-toggle">
 
     <button id="grid-view-btn" class="view-btn active">
         <i class="fas fa-th"></i> Grid

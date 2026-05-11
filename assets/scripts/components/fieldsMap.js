@@ -57,7 +57,11 @@ export function initFieldsMap() {
             map.setView(userLocation, 14);
 
         }, err => {
-            console.warn("Location error:", err);
+            console.warn(
+    "Location error:",
+    err.code,
+    err.message
+);
         });
     }
 
@@ -179,6 +183,12 @@ export function initFieldsMap() {
     });
 
     
+
+    // INIT USER LOCATION
+
+if (locationToggle?.checked) {
+    enableUserLocation();
+}
     // INIT
     
     renderMarkers();

@@ -7,24 +7,43 @@ import { initFieldsMap } from "./components/fieldsMap.js";
 import { initFieldDetailMap } from "./components/detailedMap.js";
 import { initFieldPage } from "./pages-js/field.js";
 import { initGlobalSearch } from "./components/globalSearch.js";
+import { initLocationFilters } from "./data/locationFilters.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Global (runs everywhere)
-    initMenu();
-    initDropdown();
-    initHeader();
-    initTheme();
-    initGlobalSearch();
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-    // All fields page
-    if (document.querySelector("#fields-container")) {
-        initFieldsFilter();
-        initFieldsMap();
+        // GLOBAL
+        initMenu();
+        initDropdown();
+        initHeader();
+        initTheme();
+        initGlobalSearch();
+
+        // FIELDS PAGE
+        if (
+            document.querySelector(
+                "#fields-container"
+            )
+        ) {
+
+            initLocationFilters();
+
+            initFieldsFilter();
+
+            initFieldsMap();
+        }
+
+        // FIELD DETAIL PAGE
+        if (
+            document.querySelector(
+                "#field-name"
+            )
+        ) {
+
+            initFieldPage();
+
+            initFieldDetailMap();
+        }
     }
-
-    // Field detail page
-    if (document.querySelector("#field-name")) {
-        initFieldPage();
-        initFieldDetailMap();
-    }
-});
+);
