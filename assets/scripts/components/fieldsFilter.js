@@ -1,75 +1,123 @@
+import { fields } from "../data/fields.js";
+
 export function initFieldsFilter() {
 
     const container =
-        document.getElementById("fields-container");
+        document.getElementById(
+            "fields-container"
+        );
 
     const cards = Array.from(
-        document.querySelectorAll(".fields-page-card")
+        document.querySelectorAll(
+            ".fields-page-card"
+        )
     );
 
     const searchInputs = Array.from(
-        document.querySelectorAll(".global-search")
+        document.querySelectorAll(
+            ".global-search"
+        )
+    );
+
+    // FIELD MAP
+    const fieldMap = new Map(
+        fields.map(field => [
+            field.id,
+            field
+        ])
     );
 
     // Main search input used for filtering
     const searchInput =
-        document.getElementById("search-input");
+        document.getElementById(
+            "search-input"
+        );
 
     //const filterLocation = document.getElementById("filter-location");
 
     const filterProvince =
-    document.getElementById("filter-province");
+        document.getElementById(
+            "filter-province"
+        );
 
-const filterCity =
-    document.getElementById("filter-city");
+    const filterCity =
+        document.getElementById(
+            "filter-city"
+        );
 
-const filterZone =
-    document.getElementById("filter-zone");
-
+    const filterZone =
+        document.getElementById(
+            "filter-zone"
+        );
 
     const filterType =
-        document.getElementById("filter-type");
+        document.getElementById(
+            "filter-type"
+        );
 
     const sortBy =
-        document.getElementById("sort-by");
+        document.getElementById(
+            "sort-by"
+        );
 
     const clearBtn =
-        document.getElementById("clear-filters");
+        document.getElementById(
+            "clear-filters"
+        );
 
     const noResults =
-        document.getElementById("no-results");
+        document.getElementById(
+            "no-results"
+        );
 
     const useLocationToggle =
-        document.getElementById("use-location-toggle");
+        document.getElementById(
+            "use-location-toggle"
+        );
 
     // VIEW TOGGLE
     const gridBtn =
-        document.getElementById("grid-view-btn");
+        document.getElementById(
+            "grid-view-btn"
+        );
 
     const mapBtn =
-        document.getElementById("map-view-btn");
+        document.getElementById(
+            "map-view-btn"
+        );
 
     const grid =
-        document.querySelector(".fields-page-list");
+        document.querySelector(
+            ".fields-page-list"
+        );
 
     const map =
-        document.getElementById("map-container");
+        document.getElementById(
+            "map-container"
+        );
 
     // APPLY SEARCH FROM URL ONLY ONCE
-    const params = new URLSearchParams(
-        window.location.search
-    );
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
 
     const searchFromURL =
         params.get("search");
 
-    if (searchFromURL && searchInput) {
+    if (
+        searchFromURL &&
+        searchInput
+    ) {
 
-        searchInput.value = searchFromURL;
+        searchInput.value =
+            searchFromURL;
 
         // Sync all visible search inputs
         searchInputs.forEach(input => {
-            input.value = searchFromURL;
+
+            input.value =
+                searchFromURL;
         });
 
         // Clean URL after applying
@@ -89,7 +137,8 @@ const filterZone =
             );
 
         useLocationToggle.checked =
-            savedLocationState === "true";
+            savedLocationState ===
+            "true";
 
         // SAVE STATE ON CHANGE
         useLocationToggle.addEventListener(
@@ -107,26 +156,31 @@ const filterZone =
     }
 
     // GEOLOCATION
-
-
     let userPosition = null;
 
     function requestLocation() {
 
-        if (!navigator.geolocation) return;
+        if (
+            !navigator.geolocation
+        ) return;
 
         navigator.geolocation.getCurrentPosition(
+
             position => {
 
                 userPosition = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
+                    lat:
+                        position.coords.latitude,
+
+                    lng:
+                        position.coords.longitude
                 };
 
                 updateFields();
             },
 
             error => {
+
                 console.warn(error);
             },
 
@@ -146,17 +200,24 @@ const filterZone =
         const R = 6371;
 
         const dLat =
-            (lat2 - lat1) * Math.PI / 180;
+            (lat2 - lat1) *
+            Math.PI / 180;
 
         const dLng =
-            (lng2 - lng1) * Math.PI / 180;
+            (lng2 - lng1) *
+            Math.PI / 180;
 
         const a =
             Math.sin(dLat / 2) *
             Math.sin(dLat / 2) +
 
-            Math.cos(lat1 * Math.PI / 180) *
-            Math.cos(lat2 * Math.PI / 180) *
+            Math.cos(
+                lat1 * Math.PI / 180
+            ) *
+
+            Math.cos(
+                lat2 * Math.PI / 180
+            ) *
 
             Math.sin(dLng / 2) *
             Math.sin(dLng / 2);
@@ -170,10 +231,7 @@ const filterZone =
         return R * c;
     }
 
-
     // FILTER + SORT + ANIMATE
-
-
     function updateFields() {
 
         const search =
@@ -181,16 +239,14 @@ const filterZone =
                 .toLowerCase()
                 .trim() || "";
 
-        //const location = filterLocation?.value || "";
-
         const province =
-    filterProvince?.value || "";
+            filterProvince?.value || "";
 
-const city =
-    filterCity?.value || "";
+        const city =
+            filterCity?.value || "";
 
-const zone =
-    filterZone?.value || "";
+        const zone =
+            filterZone?.value || "";
 
         const type =
             filterType?.value || "";
@@ -199,7 +255,8 @@ const zone =
             sortBy?.value || "";
 
         // Save FIRST positions (FLIP)
-        const firstPositions = new Map();
+        const firstPositions =
+            new Map();
 
         cards.forEach(card => {
 
@@ -212,181 +269,206 @@ const zone =
         let visibleCards = [];
 
         // FILTER
-
-
         cards.forEach(card => {
 
+            const field =
+                fieldMap.get(
+                    card.dataset.id
+                );
+
+            if (!field) return;
+
             const searchableText = `
-                ${card.dataset.name || ""}
-                ${card.dataset.location || ""}
-                ${card.dataset.type || ""}
-                ${card.dataset.description || ""}
-                ${card.dataset.features || ""}
-                ${card.dataset.buffet || ""}
-                ${card.dataset.address || ""}
+                ${field.name || ""}
+                ${field.location || ""}
+                ${field.type || ""}
+                ${field.description || ""}
+                ${field.features?.join(" ") || ""}
+                ${field.buffet?.join(" ") || ""}
+                ${field.address || ""}
             `
-                .toLowerCase()
-                .trim();
+            .toLowerCase()
+            .trim();
 
-            const cardProvince =
-    card.dataset.province || "";
+            const match =
 
-const cardCity =
-    card.dataset.city || "";
+                searchableText.includes(
+                    search
+                ) &&
 
-const cardZone =
-    card.dataset.zone || "";
+                (
+                    province === "" ||
 
-const cardType =
-    card.dataset.type || "";
+                    field.province ===
+                    province
+                ) &&
 
-const match =
-    searchableText.includes(search) &&
+                (
+                    city === "" ||
 
-    (
-        province === "" ||
-        cardProvince === province
-    ) &&
+                    field.city === city
+                ) &&
 
-    (
-        city === "" ||
-        cardCity === city
-    ) &&
+                (
+                    zone === "" ||
 
-    (
-        zone === "" ||
-        cardZone === zone
-    ) &&
+                    field.zone === zone
+                ) &&
 
-    (
-        type === "" ||
-        cardType === type
-    );
+                (
+                    type === "" ||
+
+                    field.type === type
+                );
 
             if (match) {
 
-                card.classList.remove("hidden");
+                card.classList.remove(
+                    "hidden"
+                );
 
                 // Save live distance
                 if (
                     userPosition &&
-                    card.dataset.lat &&
-                    card.dataset.lng
+                    field.lat &&
+                    field.lng
                 ) {
 
                     const distance =
                         getDistanceKm(
                             userPosition.lat,
                             userPosition.lng,
-                            parseFloat(card.dataset.lat),
-                            parseFloat(card.dataset.lng)
+                            field.lat,
+                            field.lng
                         );
 
-                    card.dataset.distance = distance;
+                    card.dataset.distance =
+                        distance;
 
                 } else {
 
-                    card.dataset.distance = "";
+                    card.dataset.distance =
+                        "";
                 }
 
                 visibleCards.push(card);
 
             } else {
 
-                card.classList.add("hidden");
+                card.classList.add(
+                    "hidden"
+                );
             }
         });
 
-
         // SORT
-
-
         if (
             sort ||
+
             (
-                useLocationToggle?.checked &&
+                useLocationToggle
+                    ?.checked &&
+
                 userPosition
             )
         ) {
 
-            visibleCards.sort((a, b) => {
+            visibleCards.sort(
+                (a, b) => {
 
-                // LOCATION PRIORITY
-                if (
-                    useLocationToggle?.checked &&
-                    userPosition
-                ) {
+                    const fieldA =
+                        fieldMap.get(
+                            a.dataset.id
+                        );
 
-                    const distanceA =
-                        parseFloat(
-                            a.dataset.distance
-                        ) || Infinity;
+                    const fieldB =
+                        fieldMap.get(
+                            b.dataset.id
+                        );
 
-                    const distanceB =
-                        parseFloat(
-                            b.dataset.distance
-                        ) || Infinity;
+                    // LOCATION PRIORITY
+                    if (
+                        useLocationToggle
+                            ?.checked &&
 
-                    if (distanceA !== distanceB) {
+                        userPosition
+                    ) {
+
+                        const distanceA =
+                            parseFloat(
+                                a.dataset.distance
+                            ) || Infinity;
+
+                        const distanceB =
+                            parseFloat(
+                                b.dataset.distance
+                            ) || Infinity;
+
+                        if (
+                            distanceA !==
+                            distanceB
+                        ) {
+
+                            return (
+                                distanceA -
+                                distanceB
+                            );
+                        }
+                    }
+
+                    if (
+                        sort ===
+                        "price-low"
+                    ) {
 
                         return (
-                            distanceA - distanceB
+                            fieldA.priceFrom -
+                            fieldB.priceFrom
                         );
                     }
+
+                    if (
+                        sort ===
+                        "price-high"
+                    ) {
+
+                        return (
+                            fieldB.priceFrom -
+                            fieldA.priceFrom
+                        );
+                    }
+
+                    if (
+                        sort ===
+                        "rating"
+                    ) {
+
+                        return (
+                            fieldB.rating -
+                            fieldA.rating
+                        );
+                    }
+
+                    return 0;
                 }
-
-                const priceA =
-                    parseFloat(
-                        a.dataset.pricefrom
-                    ) || 0;
-
-                const priceB =
-                    parseFloat(
-                        b.dataset.pricefrom
-                    ) || 0;
-
-                const ratingA =
-                    parseFloat(
-                        a.dataset.rating
-                    ) || 0;
-
-                const ratingB =
-                    parseFloat(
-                        b.dataset.rating
-                    ) || 0;
-
-                if (sort === "price-low") {
-                    return priceA - priceB;
-                }
-
-                if (sort === "price-high") {
-                    return priceB - priceA;
-                }
-
-                if (sort === "rating") {
-                    return ratingB - ratingA;
-                }
-
-                return 0;
-            });
+            );
         }
 
-
         // REORDER DOM
-
-
         visibleCards.forEach(card => {
-            container.appendChild(card);
+
+            container.appendChild(
+                card
+            );
         });
 
-
         // FLIP ANIMATION
-
-
         cards.forEach(card => {
 
             const first =
-                firstPositions.get(card);
+                firstPositions.get(
+                    card
+                );
 
             const last =
                 card.getBoundingClientRect();
@@ -405,20 +487,20 @@ const match =
                 card.style.transition =
                     "none";
 
-                requestAnimationFrame(() => {
+                requestAnimationFrame(
+                    () => {
 
-                    card.style.transform = "";
+                        card.style.transform =
+                            "";
 
-                    card.style.transition =
-                        "transform 0.4s ease";
-                });
+                        card.style.transition =
+                            "transform 0.4s ease";
+                    }
+                );
             }
         });
 
-
         // STAGGER
-
-
         visibleCards.forEach(
             (card, index) => {
 
@@ -427,17 +509,20 @@ const match =
             }
         );
 
-
         // EMPTY STATE
+        if (
+            visibleCards.length === 0
+        ) {
 
-
-        if (visibleCards.length === 0) {
-
-            noResults?.classList.add("active");
+            noResults?.classList.add(
+                "active"
+            );
 
         } else {
 
-            noResults?.classList.remove("active");
+            noResults?.classList.remove(
+                "active"
+            );
         }
 
         // Force reflow
@@ -445,32 +530,34 @@ const match =
     }
 
     // EXPOSE GLOBALLY
-    window.updateFields = updateFields;
-
+    window.updateFields =
+        updateFields;
 
     // CLEAR FILTERS
-
-
     clearBtn?.addEventListener(
         "click",
         () => {
 
             // Clear ALL search inputs
-            searchInputs.forEach(input => {
-                input.value = "";
-            });
+            searchInputs.forEach(
+                input => {
+
+                    input.value = "";
+                }
+            );
 
             if (filterProvince) {
-    filterProvince.value = "";
-}
+                filterProvince.value =
+                    "";
+            }
 
-if (filterCity) {
-    filterCity.value = "";
-}
+            if (filterCity) {
+                filterCity.value = "";
+            }
 
-if (filterZone) {
-    filterZone.value = "";
-}
+            if (filterZone) {
+                filterZone.value = "";
+            }
 
             if (filterType) {
                 filterType.value = "";
@@ -481,9 +568,12 @@ if (filterZone) {
             }
 
             // Disable + save location toggle
-            if (useLocationToggle) {
+            if (
+                useLocationToggle
+            ) {
 
-                useLocationToggle.checked = false;
+                useLocationToggle.checked =
+                    false;
 
                 localStorage.setItem(
                     "useLocationToggle",
@@ -495,29 +585,26 @@ if (filterZone) {
         }
     );
 
-
     // EVENTS
-
-
     searchInput?.addEventListener(
         "input",
         updateFields
     );
 
     filterProvince?.addEventListener(
-    "change",
-    updateFields
-);
+        "change",
+        updateFields
+    );
 
-filterCity?.addEventListener(
-    "change",
-    updateFields
-);
+    filterCity?.addEventListener(
+        "change",
+        updateFields
+    );
 
-filterZone?.addEventListener(
-    "change",
-    updateFields
-);
+    filterZone?.addEventListener(
+        "change",
+        updateFields
+    );
 
     filterType?.addEventListener(
         "change",
@@ -529,21 +616,26 @@ filterZone?.addEventListener(
         updateFields
     );
 
-
     // VIEW TOGGLE
-
-
     gridBtn?.addEventListener(
         "click",
         () => {
 
-            grid?.classList.remove("hide");
+            grid?.classList.remove(
+                "hide"
+            );
 
-            map?.classList.remove("active");
+            map?.classList.remove(
+                "active"
+            );
 
-            gridBtn.classList.add("active");
+            gridBtn.classList.add(
+                "active"
+            );
 
-            mapBtn?.classList.remove("active");
+            mapBtn?.classList.remove(
+                "active"
+            );
         }
     );
 
@@ -551,21 +643,29 @@ filterZone?.addEventListener(
         "click",
         () => {
 
-            grid?.classList.add("hide");
+            grid?.classList.add(
+                "hide"
+            );
 
-            map?.classList.add("active");
+            map?.classList.add(
+                "active"
+            );
 
-            mapBtn.classList.add("active");
+            mapBtn.classList.add(
+                "active"
+            );
 
-            gridBtn?.classList.remove("active");
+            gridBtn?.classList.remove(
+                "active"
+            );
         }
     );
 
-
     // INIT
+    if (
+        useLocationToggle?.checked
+    ) {
 
-
-    if (useLocationToggle?.checked) {
         requestLocation();
     }
 
