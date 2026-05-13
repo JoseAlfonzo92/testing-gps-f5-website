@@ -922,7 +922,7 @@ export const fields = [
     priceTo: 11000,
     lat: -31.4265,
     lng: -64.1888,
-    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-20_gzohuw.avif",
     description: "Complejo de fútbol 5 en Nueva Córdoba",
     address: "Nueva Córdoba, Córdoba",
     schedule: {
@@ -967,7 +967,7 @@ export const fields = [
     priceTo: 9200,
     lat: -31.3992,
     lng: -64.1815,
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif",
     description: "Fútbol 5 y fútbol 7 en Alta Córdoba",
     address: "Alta Córdoba, Córdoba",
     schedule: {
@@ -1012,7 +1012,7 @@ export const fields = [
     priceTo: 12500,
     lat: -31.3521,
     lng: -64.2486,
-    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-22_xfa9ex.avif",
     description: "Complejo premium de fútbol amateur",
     address: "Villa Belgrano, Córdoba",
     schedule: {
@@ -1059,7 +1059,7 @@ export const fields = [
     priceTo: 11800,
     lat: -38.9516,
     lng: -68.0591,
-    image: "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif",
     description: "Complejo moderno de fútbol 5 en Neuquén",
     address: "Centro, Neuquén",
     schedule: {
@@ -1104,7 +1104,7 @@ export const fields = [
     priceTo: 9300,
     lat: -38.9342,
     lng: -68.0845,
-    image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-24_yrvrga.avif",
     description: "Canchas de fútbol amateur en Alta Barda",
     address: "Alta Barda, Neuquén",
     schedule: {
@@ -1149,7 +1149,7 @@ export const fields = [
     priceTo: 13000,
     lat: -38.9828,
     lng: -68.0987,
-    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-sin-techo_chwki3.jpg", //repeated change later
     description: "Complejo premium de fútbol en Neuquén",
     address: "Valentina Sur, Neuquén",
     schedule: {
@@ -1197,7 +1197,7 @@ export const fields = [
     priceTo: 10800,
     lat: -26.8167,
     lng: -65.2833,
-    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
     description: "Complejo moderno de fútbol 5 en Yerba Buena",
     address: "Yerba Buena, Tucumán",
     schedule: {
@@ -1242,7 +1242,7 @@ export const fields = [
     priceTo: 8900,
     lat: -26.8241,
     lng: -65.2226,
-    image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-26_oq4jcl.avif",
     description: "Canchas de fútbol amateur en el centro tucumano",
     address: "Centro, Tucumán",
     schedule: {
@@ -1287,7 +1287,7 @@ export const fields = [
     priceTo: 12400,
     lat: -26.7321,
     lng: -65.2598,
-    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
     description: "Complejo premium de fútbol amateur",
     address: "Tafí Viejo, Tucumán",
     schedule: {
@@ -1335,7 +1335,7 @@ export const fields = [
     priceTo: 8600,
     lat: -24.2565,
     lng: -65.2116,
-    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-28_oil8j8.avif",
     description: "Canchas de fútbol 5 en Palpalá",
     address: "Palpalá, Jujuy",
     schedule: {
@@ -1379,7 +1379,7 @@ export const fields = [
     priceTo: 10200,
     lat: -24.1858,
     lng: -65.2995,
-    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp", //repeated change later
     description: "Complejo techado de fútbol amateur",
     address: "Centro, Jujuy",
     schedule: {
@@ -1424,7 +1424,7 @@ export const fields = [
     priceTo: 11900,
     lat: -24.2319,
     lng: -65.2471,
-    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif",
     description: "Complejo premium de fútbol en Jujuy",
     address: "Alto Comedero, Jujuy",
     schedule: {
@@ -1472,7 +1472,7 @@ export const fields = [
     priceTo: 12200,
     lat: -32.9282,
     lng: -68.8448,
-    image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-30_ewvnhc.avif",
     description: "Complejo premium de fútbol en Mendoza",
     address: "Godoy Cruz, Mendoza",
     schedule: {
@@ -1518,7 +1518,7 @@ export const fields = [
     priceTo: 11400,
     lat: -51.6230,
     lng: -69.2168,
-    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif",
     description: "Complejo de fútbol amateur en Río Gallegos",
     address: "Centro, Río Gallegos",
     schedule: {
@@ -1563,7 +1563,7 @@ export const fields = [
     priceTo: 9800,
     lat: -45.8641,
     lng: -67.4966,
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-32_bpj0or.avif",
     description: "Canchas de fútbol 5 en Comodoro",
     address: "Centro, Comodoro Rivadavia",
     schedule: {
@@ -1607,7 +1607,7 @@ export const fields = [
     priceTo: 13800,
     lat: -54.8019,
     lng: -68.3030,
-    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-33_sb1kyc.avif",
     description: "Complejo techado de fútbol en Ushuaia",
     address: "Centro, Ushuaia",
     schedule: {
@@ -1652,7 +1652,7 @@ export const fields = [
     priceTo: 10600,
     lat: -31.5375,
     lng: -68.5364,
-    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif", //repeated change later
     description: "Complejo moderno de fútbol amateur",
     address: "Rivadavia, San Juan",
     schedule: {
@@ -1697,7 +1697,7 @@ export const fields = [
     priceTo: 8700,
     lat: -29.4131,
     lng: -66.8558,
-    image: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-34_oij32l.avif",
     description: "Canchas de fútbol amateur en La Rioja",
     address: "Centro, La Rioja",
     schedule: {
@@ -1741,7 +1741,7 @@ export const fields = [
     priceTo: 9100,
     lat: -27.7335,
     lng: -64.2428,
-    image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-35_fu8qjh.avif",
     description: "Complejo de fútbol amateur en Santiago",
     address: "La Banda, Santiago del Estero",
     schedule: {
@@ -1785,7 +1785,7 @@ export const fields = [
     priceTo: 12600,
     lat: -24.7612,
     lng: -65.3931,
-    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
     description: "Complejo premium de fútbol en Salta",
     address: "Tres Cerritos, Salta",
     schedule: {
@@ -1830,7 +1830,7 @@ export const fields = [
     priceTo: 9400,
     lat: -27.4692,
     lng: -58.8306,
-    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
     description: "Complejo de fútbol amateur en Corrientes",
     address: "Centro, Corrientes",
     schedule: {
@@ -1874,7 +1874,7 @@ export const fields = [
     priceTo: 11200,
     lat: -31.7319,
     lng: -60.5238,
-    image: "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1200&auto=format&fit=crop",
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif", //repeated change later
     description: "Complejo techado de fútbol 5 en Paraná",
     address: "Centro, Paraná",
     schedule: {
@@ -1902,6 +1902,185 @@ export const fields = [
       phone: "+543434556677",
       whatsapp: "5493434556677"
     },
+},
+
+// SANTA FE
+
+{
+  id: "rosario-futbol-zone",
+  name: "Rosario Fútbol Zone",
+  location: "Pichincha",
+  province: "Santa Fe",
+  city: "Rosario",
+  zone: "Pichincha",
+  type: "techada",
+  rating: 4.7,
+  priceFrom: 8500,
+  priceTo: 12800,
+  lat: -32.9442,
+  lng: -60.6505,
+  image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
+  description: "Complejo premium de fútbol en Rosario",
+  address: "Pichincha, Rosario",
+  schedule: {
+    week: "09:00 - 01:00",
+    weekend: "09:00 - 02:00"
+  },
+  features: [
+    "Wifi",
+    "Vestuarios",
+    "Streaming de partidos"
+  ],
+  buffet: [
+    "Pizzas",
+    "Hamburguesas",
+    "Bebidas"
+  ],
+  extraInfo: [
+    "Excelente iluminación",
+    "Zona segura",
+    "Ideal para torneos"
+  ],
+  booking: {
+    players: "5 vs 5",
+    surface: "Sintético profesional",
+    phone: "+543414556677",
+    whatsapp: "5493414556677"
+  },
+},
+
+// MISIONES
+
+{
+  id: "cataratas-futbol",
+  name: "Cataratas Fútbol",
+  location: "Centro",
+  province: "Misiones",
+  city: "Puerto Iguazú",
+  zone: "Centro",
+  type: "semi-techada",
+  rating: 4.5,
+  priceFrom: 6800,
+  priceTo: 10200,
+  lat: -25.5972,
+  lng: -54.5786,
+  image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
+  description: "Complejo de fútbol amateur en Iguazú",
+  address: "Centro, Puerto Iguazú",
+  schedule: {
+    week: "08:00 - 00:00",
+    weekend: "08:00 - 01:00"
+  },
+  features: [
+    "Buffet",
+    "Wifi",
+    "Iluminación LED"
+  ],
+  buffet: [
+    "Bebidas",
+    "Empanadas",
+    "Snacks"
+  ],
+  extraInfo: [
+    "Ambiente familiar",
+    "Zona turística",
+    "Buen acceso"
+  ],
+  booking: {
+    players: "5 vs 5",
+    surface: "Sintético",
+    phone: "+543757556677",
+    whatsapp: "5493757556677"
+  },
+},
+
+// CHACO
+
+{
+  id: "resistencia-gol",
+  name: "Resistencia Gol",
+  location: "Centro",
+  province: "Chaco",
+  city: "Resistencia",
+  zone: "Centro",
+  type: "abierta",
+  rating: 4.3,
+  priceFrom: 5900,
+  priceTo: 9100,
+  lat: -27.4514,
+  lng: -58.9867,
+  image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif", //repeated change later
+  description: "Canchas de fútbol amateur en Resistencia",
+  address: "Centro, Resistencia",
+  schedule: {
+    week: "08:00 - 23:00",
+    weekend: "08:00 - 00:00"
+  },
+  features: [
+    "Buffet",
+    "Parking cercano"
+  ],
+  buffet: [
+    "Bebidas",
+    "Panchos",
+    "Hamburguesas"
+  ],
+  extraInfo: [
+    "Buen ambiente",
+    "Zona transitada",
+    "Ideal para grupos"
+  ],
+  booking: {
+    players: "6 vs 6",
+    surface: "Césped sintético",
+    phone: "+543624556677",
+    whatsapp: "5493624556677"
+  },
+},
+
+// RÍO NEGRO
+
+{
+  id: "bariloche-futbol-arena",
+  name: "Bariloche Fútbol Arena",
+  location: "Centro",
+  province: "Río Negro",
+  city: "San Carlos de Bariloche",
+  zone: "Centro",
+  type: "techada",
+  rating: 4.8,
+  priceFrom: 9200,
+  priceTo: 13600,
+  lat: -41.1335,
+  lng: -71.3103,
+  image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif", //repeated change later
+  description: "Complejo techado premium en Bariloche",
+  address: "Centro, Bariloche",
+  schedule: {
+    week: "10:00 - 01:00",
+    weekend: "09:00 - 02:00"
+  },
+  features: [
+    "Calefacción",
+    "Wifi",
+    "Streaming de partidos"
+  ],
+  buffet: [
+    "Pizzas",
+    "Picadas",
+    "Bebidas"
+  ],
+  extraInfo: [
+    "Ideal para invierno",
+    "Excelente césped",
+    "Ambiente premium"
+  ],
+  booking: {
+    players: "5 vs 5",
+    surface: "Sintético profesional",
+    phone: "+542944556677",
+    whatsapp: "5492944556677"
+  },
 },
   
 

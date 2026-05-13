@@ -1,5 +1,3 @@
-// fieldsRenderer.js
-
 import { fields } from "../data/fields.js";
 
 export function renderFields() {

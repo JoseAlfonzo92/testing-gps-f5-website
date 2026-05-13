@@ -1,8 +1,90 @@
-import {
-    getProvinces,
-    getCities,
-    getZones
-} from "./locations.js";
+import { fields } from "../data/fields.js";
+
+// UNIQUE VALUES
+
+function unique(values) {
+
+    return [...new Set(values)]
+
+        .filter(value =>
+
+            typeof value === "string" &&
+            value.trim() !== ""
+        )
+
+        .sort((a, b) =>
+
+            a.localeCompare(b)
+        );
+}
+
+// GET PROVINCES
+
+function getProvinces() {
+
+    return unique(
+
+        fields.map(
+            field => field.province
+        )
+    );
+}
+
+// GET CITIES
+
+function getCities(province) {
+
+    const filtered = province
+
+        ? fields.filter(
+            field =>
+                field.province === province
+        )
+
+        : fields;
+
+    return unique(
+
+        filtered.map(
+            field => field.city
+        )
+    );
+}
+
+// GET ZONES
+
+function getZones(
+    province,
+    city
+) {
+
+    let filtered = fields;
+
+    if (province) {
+
+        filtered = filtered.filter(
+
+            field =>
+                field.province === province
+        );
+    }
+
+    if (city) {
+
+        filtered = filtered.filter(
+
+            field =>
+                field.city === city
+        );
+    }
+
+    return unique(
+
+        filtered.map(
+            field => field.zone
+        )
+    );
+}
 
 export function initLocationFilters() {
 
@@ -45,40 +127,37 @@ export function initLocationFilters() {
 
         // CLEAN VALUES
         const cleanValues =
-            [...new Set(values)]
-                .filter(value =>
-                    typeof value === "string" &&
-                    value.trim() !== ""
-                )
-                .sort((a, b) =>
-                    a.localeCompare(b)
-                );
+            unique(values);
 
         // CREATE OPTIONS
         cleanValues.forEach(value => {
 
             const option =
-                document.createElement("option");
+                document.createElement(
+                    "option"
+                );
 
-            option.value =
-                value.toLowerCase();
+            // KEEP ORIGINAL VALUE
+            option.value = value;
 
             option.textContent =
                 value;
 
-            select.appendChild(option);
+            select.appendChild(
+                option
+            );
         });
 
-        // RESTORE VALUE IF STILL EXISTS
+        // RESTORE VALUE
         const hasValue =
-            cleanValues.some(
-                value =>
-                    value.toLowerCase() ===
-                    currentValue
+            cleanValues.includes(
+                currentValue
             );
 
         if (hasValue) {
-            select.value = currentValue;
+
+            select.value =
+                currentValue;
         }
     }
 
@@ -118,23 +197,33 @@ export function initLocationFilters() {
             // UPDATE CITIES
             populateSelect(
                 citySelect,
-                getCities(province),
+                getCities(
+                    province
+                ),
                 "Ciudad"
             );
 
             // UPDATE ZONES
             populateSelect(
                 zoneSelect,
-                getZones(province),
+                getZones(
+                    province
+                ),
                 "Zona"
             );
 
             // KEEP ENABLED
-            citySelect.disabled = false;
-            zoneSelect.disabled = false;
+            citySelect.disabled =
+                false;
+
+            zoneSelect.disabled =
+                false;
 
             // UPDATE FILTERS
-            if (window.updateFields) {
+            if (
+                window.updateFields
+            ) {
+
                 window.updateFields();
             }
         }
@@ -166,10 +255,14 @@ export function initLocationFilters() {
             );
 
             // KEEP ENABLED
-            zoneSelect.disabled = false;
+            zoneSelect.disabled =
+                false;
 
             // UPDATE FILTERS
-            if (window.updateFields) {
+            if (
+                window.updateFields
+            ) {
+
                 window.updateFields();
             }
         }
@@ -181,7 +274,10 @@ export function initLocationFilters() {
         "change",
         () => {
 
-            if (window.updateFields) {
+            if (
+                window.updateFields
+            ) {
+
                 window.updateFields();
             }
         }

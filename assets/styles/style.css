@@ -413,7 +413,7 @@ a {
 }
 
 .hero h2 {
-    font-size: 28px;
+    font-size: var(--font-size-3xl);
     margin-bottom: var(--space-md);
 }
 
@@ -579,7 +579,7 @@ a {
 @media (max-width: 768px) {
 
     .hero h2 {
-        font-size: 22px;
+        font-size: var(--font-size-2xl);
     }
 
     .cards {

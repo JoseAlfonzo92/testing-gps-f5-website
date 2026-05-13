@@ -14,16 +14,11 @@ export function initFieldPage() {
     }
 
     // BASIC
-    document.getElementById("field-name").innerHTML =
-        `${field.name} ${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
-
+    document.getElementById("field-name").innerHTML = `${field.name} ${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
+    
     document.getElementById("field-image").src = field.image;
-
-    document.getElementById("field-rating").innerHTML =
-        `<i class="fas fa-star"></i> ${field.rating}`;
-
-    document.getElementById("field-location").innerHTML =
-        `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
+    document.getElementById("field-rating").innerHTML = `<i class="fas fa-star"></i> ${field.rating}`;
+    document.getElementById("field-location").innerHTML = `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
 
     document.getElementById("field-address").textContent = field.address;
     document.getElementById("field-description").textContent = field.description;

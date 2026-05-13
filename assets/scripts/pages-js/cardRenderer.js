@@ -1,5 +1,3 @@
-// cardsRenderer.js
-
 import { fields } from "../data/fields.js";
 
 function formatPrice(price) {
@@ -16,7 +14,7 @@ function getFeatures(field, limit = 3) {
     return [...new Set(combined)].slice(0, limit);
 }
 
-/* FEATURED CARD */
+// FEATURED CARD
 function createFeaturedCard(field) {
 
     return `
@@ -83,7 +81,7 @@ function createFeaturedCard(field) {
     `;
 }
 
-/* SMALL CARD */
+// SMALL CARD 
 function createFieldCard(field) {
 
     return `
@@ -152,7 +150,7 @@ function createFieldCard(field) {
     `;
 }
 
-/* RENDERERS */
+// RENDERERS
 
 export function renderFeaturedFields(limit = 3) {
 

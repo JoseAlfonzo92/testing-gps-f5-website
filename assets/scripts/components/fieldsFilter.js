@@ -27,13 +27,95 @@ export function initFieldsFilter() {
         ])
     );
 
+    // NORMALIZE TEXT
+    function normalizeText(
+        text = ""
+    ) {
+
+        return text
+
+            .toString()
+
+            .toLowerCase()
+
+            // Remove accents
+            .normalize("NFD")
+
+            .replace(
+                /[\u0300-\u036f]/g,
+                ""
+            )
+
+            // Remove commas + dots
+            .replace(
+                /[.,]/g,
+                ""
+            )
+
+            // Collapse spaces
+            .replace(
+                /\s+/g,
+                " "
+            )
+
+            .trim();
+    }
+
+    // SEARCHABLE TEXT
+    function createSearchableText(
+        field
+    ) {
+
+        const text = [
+
+            // BASIC
+            field.name,
+            field.location,
+            field.province,
+            field.city,
+            field.zone,
+            field.type,
+            field.description,
+            field.address,
+
+            // SCHEDULE
+            field.schedule?.week,
+            field.schedule?.weekend,
+
+            // FEATURES
+            ...(field.features || []),
+
+            // BUFFET
+            ...(field.buffet || []),
+
+            // EXTRA INFO
+            ...(field.extraInfo || []),
+
+            // BOOKING
+            field.booking?.players,
+            field.booking?.surface,
+
+            // NUMBERS
+            field.rating?.toString(),
+            field.priceFrom?.toString(),
+            field.priceTo?.toString()
+
+        ]
+
+        .filter(Boolean)
+
+        .join(" ");
+
+        return normalizeText(
+            text
+        );
+    }
+
     // Main search input used for filtering
     const searchInput =
         document.getElementById(
             "search-input"
         );
-
-    //const filterLocation = document.getElementById("filter-location");
 
     const filterProvince =
         document.getElementById(
@@ -235,9 +317,9 @@ export function initFieldsFilter() {
     function updateFields() {
 
         const search =
-            searchInput?.value
-                .toLowerCase()
-                .trim() || "";
+            normalizeText(
+                searchInput?.value || ""
+            );
 
         const province =
             filterProvince?.value || "";
@@ -278,17 +360,10 @@ export function initFieldsFilter() {
 
             if (!field) return;
 
-            const searchableText = `
-                ${field.name || ""}
-                ${field.location || ""}
-                ${field.type || ""}
-                ${field.description || ""}
-                ${field.features?.join(" ") || ""}
-                ${field.buffet?.join(" ") || ""}
-                ${field.address || ""}
-            `
-            .toLowerCase()
-            .trim();
+            const searchableText =
+                createSearchableText(
+                    field
+                );
 
             const match =
 
