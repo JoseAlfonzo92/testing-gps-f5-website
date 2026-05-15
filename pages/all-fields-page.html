@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta name="description" content="Fulbo 5 es un sitio dedicado a la organización de partidos de futbol 5, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
     <meta charset="UTF-8">
@@ -140,15 +140,22 @@
     <!-- NEW SORT -->
     <select id="sort-by">
         <option value="">Ordenar</option>
-        <option value="price-high">Precio ↑</option>
-        <option value="price-low">Precio ↓</option>
+        <option value="price-low">Menor precio</option>
+        <option value="price-high">Mayor precio</option>
         <option value="rating">Mejor valoradas</option>
     </select>
 
     <!-- CLEAR -->
     <button id="clear-filters" class="btn-clear">
-        Limpiar
+        Limpiar filtros
     </button>
+
+    <!-- RESET ALL -->
+     <button id="reset-all" class="btn-reset-all">
+        Restablecer Todo
+    </button>
+
+
 
     <div class="location-toggle">
     <label class="switch">

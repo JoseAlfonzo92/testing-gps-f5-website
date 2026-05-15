@@ -57,6 +57,24 @@
     color: var(--color-primary);
 }
 
+/* RESET ALL */
+.btn-reset-all,
+#reset-all {
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-border);
+    background: transparent;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    color: var(--color-text);
+}
+
+.btn-reset-all:hover,
+#reset-all:hover {
+    background: var(--color-hover);
+    color: var(--color-primary);
+}
+
 /* GRID  */
 .fields-page-list {
     display: grid;

@@ -6,19 +6,35 @@ export function initFieldPage() {
 
     const field = fields.find(f => f.id === id);
     
-    document.title = `${field.name} | Fulbo 5`;
-
     if (!field) {
         console.error("Field not found:", id);
         return;
     }
 
-    // BASIC
-    document.getElementById("field-name").innerHTML = `${field.name} ${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
+    document.title = `${field.name} | Fulbo 5`;
+
+    // BASIC INFO
+    document.getElementById("field-name").innerHTML = 
+        `${field.name} ${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
     
-    document.getElementById("field-image").src = field.image;
-    document.getElementById("field-rating").innerHTML = `<i class="fas fa-star"></i> ${field.rating}`;
-    document.getElementById("field-location").innerHTML = `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
+    const fieldImage = document.getElementById("field-image");
+
+    //  LAZY LOADING 
+    if (fieldImage) {
+
+        //  native lazy loading + fallback
+        fieldImage.loading = "lazy";
+        fieldImage.alt = `${field.name} - ${field.location}`;
+        
+        //  src
+        fieldImage.src = field.image;
+    }
+
+    document.getElementById("field-rating").innerHTML = 
+        `<i class="fas fa-star"></i> ${field.rating}`;
+    
+    document.getElementById("field-location").innerHTML = 
+        `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
 
     document.getElementById("field-address").textContent = field.address;
     document.getElementById("field-description").textContent = field.description;
@@ -57,20 +73,18 @@ export function initFieldPage() {
     document.getElementById("booking-surface").innerHTML =
         `<i class="fas fa-layer-group"></i> ${field.booking.surface}`;
 
-    // Clean phone (works for both tel + WhatsApp)
+    // Phone & WhatsApp
     const cleanPhone = field.booking.phone.replace(/\D/g, "");
 
     const phoneLink = document.getElementById("booking-phone");
     phoneLink.href = `tel:+${cleanPhone}`;
     phoneLink.innerHTML = `<i class="fas fa-phone"></i> Llamar`;
 
-    // WhatsApp
     const whatsappBtn = document.getElementById("booking-whatsapp");
     const message = `Hola! Quiero consultar disponibilidad para ${field.name} (${field.location})`;
-
     whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
 
-    // MAP DATA 
+    // MAP DATA
     const map = document.getElementById("field-map");
     map.dataset.lat = field.lat;
     map.dataset.lng = field.lng;

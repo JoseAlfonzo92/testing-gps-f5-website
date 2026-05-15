@@ -2,15 +2,11 @@ import { fields } from "../data/fields.js";
 
 export function renderFields() {
 
-    const container =
-        document.getElementById(
-            "fields-container"
-        );
+    const container = document.getElementById("fields-container");
 
     if (!container) return;
 
-    container.innerHTML =
-        fields.map(field => `
+    container.innerHTML = fields.map(field => `
 
         <a 
             href="../pages/field.html?id=${field.id}" 
@@ -23,6 +19,10 @@ export function renderFields() {
                 <img
                     src="${field.image}"
                     alt="${field.name}"
+                    loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="250"
                 >
 
             </div>

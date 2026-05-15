@@ -11,9 +11,7 @@ import { initLocationFilters } from "./data/locationFilters.js";
 import { renderFields } from "./pages-js/fieldsRenderer.js";
 import { renderFeaturedFields, renderHomeFields } from "./pages-js/cardRenderer.js";
 
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
+document.addEventListener("DOMContentLoaded",() => {
 
         // GLOBAL
         initMenu();
@@ -26,29 +24,21 @@ document.addEventListener(
 
         // FIELDS PAGE
         if (
-            document.querySelector(
-                "#fields-container"
-            )
+            document.querySelector("#fields-container")
         ) {
 
             renderFields();
-
             initLocationFilters();
-
             initFieldsFilter();
-
             initFieldsMap();
         }
 
         // FIELD DETAIL PAGE
         if (
-            document.querySelector(
-                "#field-name"
-            )
+            document.querySelector("#field-name")
         ) {
 
             initFieldPage();
-
             initFieldDetailMap();
         }
     }
