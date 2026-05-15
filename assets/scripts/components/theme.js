@@ -31,7 +31,7 @@ export function initTheme() {
 
         toggles.forEach(btn => {
             btn.innerHTML = theme === "dark"
-                ? '<i class="fas fa-sun"></i>'
+                ? '<i class="fa-regular fa-sun"></i>'
                 : '<i class="fas fa-moon"></i>';
         });
     }
