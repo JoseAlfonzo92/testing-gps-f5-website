@@ -4,35 +4,57 @@ export function initTheme() {
 
     if (!toggles.length) return;
 
-    const savedTheme = localStorage.getItem("theme");
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    // Theme already set in <head>
+    let currentTheme =
+        root.getAttribute("data-theme") || "light";
 
-    let currentTheme = savedTheme || (systemDark ? "dark" : "light");
-
-    applyTheme(currentTheme);
+    updateButtons(currentTheme);
 
     toggles.forEach(toggle => {
         toggle.addEventListener("click", () => {
-            currentTheme = currentTheme === "dark" ? "light" : "dark";
-            localStorage.setItem("theme", currentTheme);
+
+            currentTheme =
+                currentTheme === "dark"
+                    ? "light"
+                    : "dark";
+
+            localStorage.setItem(
+                "theme",
+                currentTheme
+            );
+
             applyTheme(currentTheme);
         });
     });
 
+    // react only if user has no manual preference
     window.matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", e => {
+
             if (!localStorage.getItem("theme")) {
-                applyTheme(e.matches ? "dark" : "light");
+                applyTheme(
+                    e.matches
+                        ? "dark"
+                        : "light"
+                );
             }
         });
 
     function applyTheme(theme) {
-        root.setAttribute("data-theme", theme);
+        root.setAttribute(
+            "data-theme",
+            theme
+        );
 
+        updateButtons(theme);
+    }
+
+    function updateButtons(theme) {
         toggles.forEach(btn => {
-            btn.innerHTML = theme === "dark"
-                ? '<i class="fa-regular fa-sun"></i>'
-                : '<i class="fas fa-moon"></i>';
+            btn.innerHTML =
+                theme === "dark"
+                    ? '<i class="fa-regular fa-sun"></i>'
+                    : '<i class="fas fa-moon"></i>';
         });
     }
 }

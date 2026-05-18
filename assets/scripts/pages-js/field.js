@@ -52,6 +52,9 @@ export function initFieldPage() {
     document.getElementById("extra-info-container").innerHTML = 
         field.extraInfo.map(info => `<p>${info}</p>`).join("");
 
+    // NEW: MULTIPLE FIELD SIZES 
+    renderFieldSizes(field);
+
     // BOOKING
     document.getElementById("booking-players").innerHTML =
         `<i class="fas fa-users"></i> ${field.booking.players}`;
@@ -79,47 +82,202 @@ export function initFieldPage() {
 
     //  WEATHER 
     loadWeather(field);
+
+    // ==================== SHARE FUNCTIONALITY ====================
+function initShareButtons(field) {
+    const currentUrl = window.location.href;
+    const shareText = `${field.name} - ${field.location}\nDesde $${field.priceFrom} - $${field.priceTo}/h\n`;
+
+    // WhatsApp
+    document.getElementById("share-whatsapp").href = 
+        `https://wa.me/?text=${encodeURIComponent(shareText + currentUrl)}`;
+
+    // Facebook
+    document.getElementById("share-facebook").href = 
+        `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
+    // Twitter / X
+    document.getElementById("share-twitter").href = 
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`;
+
+    // Messenger
+    document.getElementById("share-messenger").href = 
+        `https://www.facebook.com/dialog/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
+
+    // Instagram (Copy link)
+    document.getElementById("share-instagram").addEventListener("click", (e) => {
+        e.preventDefault();
+        copyToClipboard(currentUrl, "✅ Enlace copiado para Instagram!");
+    });
+
+    // Copy Link Button
+    const copyBtn = document.getElementById("copy-link-btn");
+    if (copyBtn) {
+        copyBtn.addEventListener("click", () => {
+            copyToClipboard(currentUrl, "✅ Enlace copiado correctamente!");
+        });
+    }
 }
 
-//  WEATHER FUNCTIONS
+// Helper function
+function copyToClipboard(text, successMessage) {
+    navigator.clipboard.writeText(text).then(() => {
+        const originalText = event.target.innerHTML;
+        event.target.style.color = "var(--color-success)";
+        
+        if (event.target.tagName === "BUTTON") {
+            const span = event.target.querySelector("span");
+            if (span) span.textContent = "¡Copiado!";
+        }
+
+        setTimeout(() => {
+            location.reload(); // Optional: refresh to reset button
+        }, 2000);
+    }).catch(() => {
+        alert("Error al copiar el enlace");
+    });
+}
+
+    // Initialize Share Buttons
+    initShareButtons(field);
+}
+
+//  FIELD SIZES 
+function renderFieldSizes(field) {
+    const container = document.getElementById("field-sizes-container");
+    if (!container || !field.sizes || !field.sizes.length) return;
+
+    const html = field.sizes.map(size => `
+        <span class="size-tag">${size}</span>
+    `).join("");
+
+    container.innerHTML = html;
+}
+
+
+//  WEATHER FUNCTIONS 
 
 async function loadWeather(field) {
-    const container = document.getElementById("weather-container");
-    if (!container || !field?.lat || !field?.lng) {
-        if (container) container.innerHTML = `<p class="error-text">Ubicación no disponible</p>`;
+    const currentContainer = document.getElementById("weather-container");
+    const forecastContainer = document.getElementById("weather-forecast-container");
+
+    if (!field?.lat || !field?.lng) {
+        if (currentContainer) currentContainer.innerHTML = `<p class="error-text">Ubicación no disponible</p>`;
         return;
     }
 
     try {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${field.lat}&longitude=${field.lng}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&timezone=America/Argentina/Buenos_Aires`;
+        const url = `https://api.open-meteo.com/v1/forecast?` +
+                    `latitude=${field.lat}&longitude=${field.lng}` +
+                    `&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m` +
+                    `&daily=weather_code,temperature_2m_max,temperature_2m_min` +
+                    `&timezone=America/Argentina/Buenos_Aires`;
 
         const response = await fetch(url);
         if (!response.ok) throw new Error("Weather API error");
 
         const data = await response.json();
-        const current = data.current;
 
-        const weatherInfo = getWeatherInfo(current.weather_code);
-
-        container.innerHTML = `
-            <div class="weather-main">
-                <div class="weather-icon">${weatherInfo.emoji}</div>
-                <div>
-                    <strong class="temp">${Math.round(current.temperature_2m)}°C</strong>
-                    <small>Sensación: ${Math.round(current.apparent_temperature)}°C</small>
-                </div>
-            </div>
-            <p class="weather-desc">${weatherInfo.description}</p>
-            <div class="weather-extra">
-                <span>💧 ${current.relative_humidity_2m}% Humedad</span>
-                <span>🌬️ ${current.wind_speed_10m} km/h</span>
-            </div>
-        `;
+        renderCurrentWeather(data.current, currentContainer);
+        if (forecastContainer) renderForecast(data.daily, forecastContainer);
 
     } catch (error) {
         console.warn("Weather error:", error);
-        container.innerHTML = `<p class="error-text">No se pudo cargar el clima en este momento</p>`;
+        if (currentContainer) currentContainer.innerHTML = `<p class="error-text">No se pudo cargar el clima</p>`;
+        if (forecastContainer) forecastContainer.innerHTML = `<p class="error-text">Pronóstico no disponible</p>`;
     }
+}
+
+function renderCurrentWeather(current, container) {
+    if (!container) return;
+    const weatherInfo = getWeatherInfo(current.weather_code);
+
+    container.innerHTML = `
+        <div class="weather-main">
+            <div class="weather-icon">${weatherInfo.emoji}</div>
+            <div>
+                <strong class="temp">${Math.round(current.temperature_2m)}°C</strong>
+                <small>Sensación: ${Math.round(current.apparent_temperature)}°C</small>
+            </div>
+        </div>
+        <p class="weather-desc">${weatherInfo.description}</p>
+        <div class="weather-extra">
+            <span>💧 ${current.relative_humidity_2m}% Humedad</span>
+            <span>🌬️ ${current.wind_speed_10m} km/h</span>
+        </div>
+    `;
+}
+
+// 7-Day Forecast
+function renderForecast(daily, container) {
+    if (!container || !daily?.time?.length) return;
+
+    let html = `<div class="forecast-grid">`;
+
+    const today = new Date();
+
+    // normalize current day at midnight
+    today.setHours(0, 0, 0, 0);
+
+    for (let i = 0; i < 7 && i < daily.time.length; i++) {
+
+        // Build date from API safely (avoid UTC shifts)
+        const [year, month, day] = daily.time[i]
+            .split("-")
+            .map(Number);
+
+        const forecastDate = new Date(year, month - 1, day);
+
+        forecastDate.setHours(0, 0, 0, 0);
+
+        const isToday =
+            forecastDate.getTime() === today.getTime();
+
+        // Use system locale calendar names
+        const dayName = forecastDate.toLocaleDateString(
+            "es-AR",
+            {
+                weekday: "short"
+            }
+        );
+
+        const dayNumber = forecastDate.getDate();
+
+        const weatherInfo = getWeatherInfo(
+            daily.weather_code[i]
+        );
+
+        html += `
+            <div class="forecast-day ${isToday ? "today" : ""}">
+                
+                <div class="forecast-date">
+                    ${isToday ? "Hoy" : dayName}
+                </div>
+
+                <small class="forecast-day-number">
+                    ${dayNumber}
+                </small>
+
+                <div class="forecast-icon">
+                    ${weatherInfo.emoji}
+                </div>
+
+                <div class="forecast-temp">
+                    <span class="max">
+                        MAX <strong>${Math.round(daily.temperature_2m_max[i])}°</strong>
+                    </span>
+
+                    <span class="min">
+                        MIN <strong>${Math.round(daily.temperature_2m_min[i])}°</strong>
+                    </span>
+                </div>
+
+            </div>
+        `;
+    }
+
+    html += `</div>`;
+    container.innerHTML = html;
 }
 
 function getWeatherInfo(code) {

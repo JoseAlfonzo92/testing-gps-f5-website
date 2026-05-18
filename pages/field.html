@@ -23,6 +23,24 @@
   rel="stylesheet"
   href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 />
+
+<!-- prevent theme flash on load -->
+<script>
+(function () {
+    const savedTheme = localStorage.getItem("theme");
+
+    const systemDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+    ).matches;
+
+    const theme = savedTheme || (systemDark ? "dark" : "light");
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        theme
+    );
+})();
+</script>
 </head>
 <body>
   <header class="header">
@@ -174,6 +192,12 @@
                 <h3><i class="fas fa-star"></i> Comodidades</h3>
                 <div class="tags" id="features-container"></div>
             </div>
+            
+            <!-- FIELD SIZES -->
+            <div class="card-section">
+                <h3><i class="fas fa-ruler-combined"></i> Tamaños Disponibles</h3>
+                <div class="tags sizes-container" id="field-sizes-container"></div>
+            </div>
 
             <!-- BUFFET -->
             <div class="card-section">
@@ -187,6 +211,14 @@
                 <div class="info-list" id="extra-info-container"></div>
             </div>
 
+            <!-- WEATHER 7 DAYS FORECAST -->
+             <div class="card-section">
+                <h3><i class="fas fa-cloud-sun"></i> Pronóstico del clima</h3>
+                <div id="weather-forecast-container" class="weather-forecast">
+                    
+                </div>
+            </div>
+
             <!-- MAP -->
             <div class="card-section">
                 <h3><i class="fas fa-map"></i> Ubicación</h3>
@@ -195,6 +227,26 @@
 
                 <p class="map-address" id="map-address"></p>
             </div>
+
+           <!-- Share field with friends on socials -->
+            <div class="card-section">
+                <h3><i class="fas fa-share-alt"></i> Compartir cancha</h3>
+
+                <div class="social-icons">
+                    <a href="#" id="share-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" id="share-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" id="share-twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" id="share-messenger"><i class="fab fa-facebook-messenger"></i></a>
+                    <a href="#" id="share-instagram"><i class="fab fa-instagram"></i></a>
+        
+             <!-- Copy Link Button -->
+                <button id="copy-link-btn" class="copy-link-btn">
+                    <i class="fas fa-link"></i>
+                    <span>Copiar enlace</span>
+                </button>
+            </div>
+
+</div>
 
             
 

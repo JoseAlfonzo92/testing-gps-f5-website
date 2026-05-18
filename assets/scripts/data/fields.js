@@ -30,6 +30,13 @@ export const fields = [
       "Baños"
     ],
 
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Empanadas",
       "Bebidas"
@@ -83,6 +90,14 @@ export const fields = [
       "Estacionamiento"
     ],
 
+    sizes: [
+      "4 vs 4",
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Pizzas",
       "Hamburguesas",
@@ -133,6 +148,13 @@ export const fields = [
       "Baños"
     ],
 
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas"
     ],
@@ -177,6 +199,14 @@ export const fields = [
       "Vestuarios",
       "Duchas"
     ],
+
+      sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Sándwiches"
@@ -219,6 +249,14 @@ export const fields = [
       "Baños",
       "Estacionamiento"
     ],
+
+      sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Hamburguesas",
       "Bebidas"
@@ -260,6 +298,15 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+
+      sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas"
     ],
@@ -302,6 +349,12 @@ export const fields = [
       "Estacionamiento",
       "Vestuarios"
     ],
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     buffet: [
       "Pizzas",
       "Bebidas"
@@ -343,6 +396,14 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+      sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Empanadas",
       "Bebidas"
@@ -385,6 +446,14 @@ export const fields = [
       "Duchas",
       "Baños"
     ],
+
+      sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Snacks"
@@ -426,6 +495,14 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas"
     ],
@@ -468,6 +545,14 @@ export const fields = [
       "Vestuarios",
       "Duchas"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Pizzas",
       "Bebidas"
@@ -509,6 +594,15 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas"
     ],
@@ -550,6 +644,15 @@ export const fields = [
       "Vestuarios",
       "Baños"
     ],
+
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Empanadas",
       "Bebidas"
@@ -593,6 +696,15 @@ export const fields = [
       "Vestuarios",
       "Estacionamiento"
     ],
+
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Pizzas",
       "Bebidas"
@@ -634,6 +746,14 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Snacks"
@@ -678,6 +798,14 @@ export const fields = [
       "Duchas",
       "Estacionamiento"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Pizzas",
       "Bebidas",
@@ -719,6 +847,12 @@ export const fields = [
     features: [
       "Iluminación",
       "Baños"
+    ],
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
     ],
     buffet: [
       "Bebidas",
@@ -763,6 +897,14 @@ export const fields = [
       "Vestuarios",
       "Duchas"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Hamburguesas",
       "Bebidas"
@@ -804,6 +946,14 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas"
     ],
@@ -844,6 +994,14 @@ export const fields = [
       "Iluminación",
       "Baños"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Snacks"
@@ -883,6 +1041,12 @@ export const fields = [
     },
     features: [
       "Cajero cerca"
+    ],
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
     ],
     buffet: [
       "Bebidas",
@@ -934,6 +1098,12 @@ export const fields = [
       "Wifi",
       "Iluminación LED"
     ],
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     buffet: [
       "Bebidas",
       "Snacks",
@@ -974,6 +1144,12 @@ export const fields = [
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Buffet",
       "Duchas",
@@ -1025,6 +1201,14 @@ export const fields = [
       "Wifi",
       "Vestuarios"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Cervezas sin alcohol",
@@ -1077,6 +1261,14 @@ export const fields = [
       "Pizzas",
       "Hamburguesas"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     extraInfo: [
       "Ambiente familiar",
       "Zona céntrica",
@@ -1116,6 +1308,14 @@ export const fields = [
       "Iluminación LED",
       "Parking cercano"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Empanadas",
@@ -1162,6 +1362,14 @@ export const fields = [
       "Vestuarios",
       "Estacionamiento privado"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Pizzas",
@@ -1209,6 +1417,15 @@ export const fields = [
       "Estacionamiento",
       "Vestuarios"
     ],
+
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Pizzas",
@@ -1254,6 +1471,14 @@ export const fields = [
       "Iluminación LED",
       "Parking cercano"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Snacks",
@@ -1300,6 +1525,14 @@ export const fields = [
       "Vestuarios",
       "Estacionamiento privado"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Pizzas",
@@ -1346,6 +1579,14 @@ export const fields = [
       "Buffet",
       "Iluminación LED"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Empanadas",
@@ -1391,6 +1632,14 @@ export const fields = [
       "Vestuarios",
       "Estacionamiento"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Hamburguesas",
@@ -1437,6 +1686,14 @@ export const fields = [
       "Vestuarios",
       "Parking privado"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Picadas",
@@ -1479,6 +1736,12 @@ export const fields = [
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Wifi",
       "Vestuarios",
@@ -1525,6 +1788,12 @@ export const fields = [
       week: "10:00 - 00:00",
       weekend: "09:00 - 01:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Calefacción",
       "Wifi",
@@ -1570,6 +1839,12 @@ export const fields = [
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Iluminación LED",
       "Parking cercano"
@@ -1614,6 +1889,12 @@ export const fields = [
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Calefacción",
       "Streaming de partidos",
@@ -1659,6 +1940,12 @@ export const fields = [
       week: "09:00 - 00:00",
       weekend: "09:00 - 01:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Wifi",
       "Vestuarios",
@@ -1704,6 +1991,12 @@ export const fields = [
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
     },
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
     features: [
       "Buffet",
       "Iluminación LED"
@@ -1752,6 +2045,14 @@ export const fields = [
       "Parking cercano",
       "Buffet"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Empanadas",
@@ -1797,6 +2098,14 @@ export const fields = [
       "Wifi",
       "Vestuarios"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Pizzas",
       "Picadas",
@@ -1841,6 +2150,14 @@ export const fields = [
       "Wifi",
       "Buffet"
     ],
+
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
     buffet: [
       "Bebidas",
       "Panchos",
@@ -1885,6 +2202,12 @@ export const fields = [
       "Wifi",
       "Vestuarios",
       "Parking"
+    ],
+    sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
     ],
     buffet: [
       "Bebidas",
@@ -1931,6 +2254,14 @@ export const fields = [
     "Vestuarios",
     "Streaming de partidos"
   ],
+
+  sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
   buffet: [
     "Pizzas",
     "Hamburguesas",
@@ -1976,6 +2307,14 @@ export const fields = [
     "Wifi",
     "Iluminación LED"
   ],
+
+  sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
   buffet: [
     "Bebidas",
     "Empanadas",
@@ -2020,6 +2359,14 @@ export const fields = [
     "Buffet",
     "Parking cercano"
   ],
+
+  sizes: [
+      "5 vs 5",
+      "6 vs 6",
+      "7 vs 7",
+      "11 vs 11"
+    ],
+
   buffet: [
     "Bebidas",
     "Panchos",
@@ -2065,6 +2412,15 @@ export const fields = [
     "Wifi",
     "Streaming de partidos"
   ],
+  
+  sizes:[
+    "5 vs 5",
+    "6 vs 6",
+    "7 vs 7",
+    "11 vs 11"
+
+  ],
+
   buffet: [
     "Pizzas",
     "Picadas",

@@ -184,6 +184,219 @@
      margin-bottom: 0;
 }
 
+/* 7 day forecast */
+
+
+.weather-widget,
+.weather-forecast {
+    background: var(--color-surface);
+    /* border: 1px solid var(--color-border); */
+    border-radius: var(--border-radius-md);
+    padding: var(--space-lg);
+    margin-top: var(--space-sm);
+}
+
+/* Current Weather */
+.weather-main {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.weather-icon {
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.temp {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.weather-desc {
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    margin: var(--space-sm) 0;
+}
+
+.weather-extra {
+    display: flex;
+    gap: var(--space-lg);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+/* Forecast */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-sm);
+}
+
+.forecast-day {
+    background: var(--color-bg-forecast);
+    /* border: 1px solid var(--color-border); */
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-sm) var(--space-xs);
+    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.forecast-day:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.forecast-date {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text);
+    text-transform: capitalize;
+    margin-bottom: var(--space-xs);
+}
+
+.forecast-icon {
+    font-size: 2rem;
+    margin: var(--space-sm) 0;
+}
+
+.forecast-temp {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.forecast-temp .max {
+    color: var(--color-warning);        
+}
+
+.forecast-temp .min {
+    color: var(--color-text);
+}
+
+/* Responsive */
+/* @media (max-width: 768px) {
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-sm);
+    }
+    
+    .weather-main {
+        gap: var(--space-md);
+    }
+    
+    .weather-icon {
+        font-size: 2.8rem;
+    }
+} */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .forecast-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .forecast-day {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: var(--space-md);
+    }
+
+    .forecast-date {
+        min-width: 50px;
+        margin-bottom: 0;
+    }
+
+    .forecast-icon {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .forecast-temp {
+        gap: var(--space-md);
+        margin-left: auto;
+    }
+
+    .weather-main {
+        gap: var(--space-md);
+    }
+
+    .weather-icon {
+        font-size: 2.8rem;
+    }
+
+    .weather-extra {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+}
+
+
+/* testing */
+/* .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+} */
+
+.forecast-day {
+   /*  background: var(--color-surface); */
+    
+    border-radius: var(--border-radius-md);
+    /* padding: 12px 8px; */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.forecast-day.today {
+    background: var(--color-primary);
+    color: var(--color-text);
+    transform: scale(1.08);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+}
+
+.forecast-day.today .forecast-date {
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+/* .forecast-temp {
+    margin-top: 8px;
+    font-size: 0.95rem;
+} */
+
+/* .forecast-temp .max { color: #e74c3c; }
+.forecast-temp .min { color: #3498db; } */
+
+/* .forecast-day.today .max,
+.forecast-day.today .min {
+    color: var(--color-text);
+} */
+
+.forecast-day.today .forecast-temp .max {
+    color: var(--color-warning);
+}
+
+.forecast-day.today .forecast-temp .min {
+    color: var(--color-text);
+}
+
+
+
+
+
 /*  MAP */
 .field-map {
      width: 100%;
@@ -197,6 +410,86 @@
      font-size: var(--font-size-sm);
      color: var(--color-text-muted);
 }
+
+
+/* share and socials for field page */
+.card-section {
+     background: var(--color-surface);
+     padding: var(--space-md);
+     border-radius: var(--border-radius-lg);
+     box-shadow: var(--shadow-sm);
+     margin-top: var(--space-md);
+}
+.card-section h3 {
+     display: flex;
+     align-items: center;
+     gap: var(--space-xs);
+     margin-bottom: var(--space-md);
+     font-size: var(--font-size-md);
+}
+.card-section .social-icons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: var(--space-sm);
+     align-items: center;
+}
+.card-section .social-icons a {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background: var(--color-bg-alt);
+     color: var(--color-text);
+     text-decoration: none;
+     transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.card-section .social-icons a i {
+     font-size: 1.1rem;
+}
+.card-section .social-icons a:hover {
+     background: var(--color-primary);
+     color: var(--color-on-primary);
+     transform: translateY(-1px);
+}
+.card-section .copy-link-btn {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     gap: var(--space-xs);
+     padding: 0.9rem 1rem;
+     border: none;
+     border-radius: var(--border-radius-md);
+     background: var(--color-bg-alt);
+     color: var(--color-text);
+     font-size: var(--font-size-sm);
+     cursor: pointer;
+     transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.card-section .copy-link-btn:hover {
+     background: var(--color-primary);
+     color: var(--color-on-primary);
+     transform: translateY(-1px);
+}
+.card-section .copy-link-btn i {
+     font-size: 1rem;
+}
+@media (max-width: 660px) {
+     .card-section .social-icons {
+          width: 100%;
+          justify-content: space-between;
+     }
+     .card-section .copy-link-btn {
+          width: 100%;
+          justify-content: center;
+     }
+     .card-section .social-icons a {
+          flex: 1;
+          min-width: 40px;
+     }
+}
+
 
 /* RIGHT COLUMN */
 .field-right {
