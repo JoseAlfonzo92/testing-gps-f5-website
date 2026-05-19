@@ -500,7 +500,7 @@ export const fields = [
       "5 vs 5",
       "6 vs 6",
       "7 vs 7",
-      "11 vs 11"
+
     ],
 
     buffet: [
@@ -701,8 +701,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
-      "11 vs 11"
+      
     ],
 
     buffet: [
@@ -852,7 +851,7 @@ export const fields = [
       "5 vs 5",
       "6 vs 6",
       "7 vs 7",
-      "11 vs 11"
+      
     ],
     buffet: [
       "Bebidas",
@@ -1101,8 +1100,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
-      "11 vs 11"
+      
     ],
     buffet: [
       "Bebidas",
@@ -1265,7 +1263,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
+      
       "11 vs 11"
     ],
 
@@ -1310,7 +1308,7 @@ export const fields = [
     ],
 
     sizes: [
-      "5 vs 5",
+      
       "6 vs 6",
       "7 vs 7",
       "11 vs 11"
@@ -1473,7 +1471,7 @@ export const fields = [
     ],
 
     sizes: [
-      "5 vs 5",
+      
       "6 vs 6",
       "7 vs 7",
       "11 vs 11"
@@ -1636,8 +1634,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
-      "11 vs 11"
+      
     ],
 
     buffet: [
@@ -1737,10 +1734,10 @@ export const fields = [
       weekend: "09:00 - 02:00"
     },
     sizes: [
-      "5 vs 5",
-      "6 vs 6",
-      "7 vs 7",
-      "11 vs 11"
+      "5 vs 5"
+      
+      
+      
     ],
     features: [
       "Wifi",
@@ -1843,7 +1840,7 @@ export const fields = [
       "5 vs 5",
       "6 vs 6",
       "7 vs 7",
-      "11 vs 11"
+      
     ],
     features: [
       "Iluminación LED",
@@ -1943,7 +1940,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
+      
       "11 vs 11"
     ],
     features: [
@@ -2049,7 +2046,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
+      
       "11 vs 11"
     ],
 
@@ -2102,7 +2099,7 @@ export const fields = [
     sizes: [
       "5 vs 5",
       "6 vs 6",
-      "7 vs 7",
+      
       "11 vs 11"
     ],
 
@@ -2155,7 +2152,7 @@ export const fields = [
       "5 vs 5",
       "6 vs 6",
       "7 vs 7",
-      "11 vs 11"
+      
     ],
 
     buffet: [
@@ -2312,7 +2309,7 @@ export const fields = [
       "5 vs 5",
       "6 vs 6",
       "7 vs 7",
-      "11 vs 11"
+      
     ],
 
   buffet: [
@@ -2362,7 +2359,7 @@ export const fields = [
 
   sizes: [
       "5 vs 5",
-      "6 vs 6",
+      
       "7 vs 7",
       "11 vs 11"
     ],
@@ -2416,7 +2413,7 @@ export const fields = [
   sizes:[
     "5 vs 5",
     "6 vs 6",
-    "7 vs 7",
+    
     "11 vs 11"
 
   ],

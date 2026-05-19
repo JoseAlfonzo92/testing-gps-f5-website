@@ -83,7 +83,7 @@ export function initFieldPage() {
     //  WEATHER 
     loadWeather(field);
 
-    // ==================== SHARE FUNCTIONALITY ====================
+    //  SHARE FUNCTIONALITY 
 function initShareButtons(field) {
     const currentUrl = window.location.href;
     const shareText = `${field.name} - ${field.location}\nDesde $${field.priceFrom} - $${field.priceTo}/h\n`;
@@ -104,35 +104,34 @@ function initShareButtons(field) {
     document.getElementById("share-messenger").href = 
         `https://www.facebook.com/dialog/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
 
-    // Instagram (Copy link)
-    document.getElementById("share-instagram").addEventListener("click", (e) => {
-        e.preventDefault();
-        copyToClipboard(currentUrl, "✅ Enlace copiado para Instagram!");
-    });
+    // Instagram 
+     document.getElementById("share-instagram").href =
+            `https://www.instagram.com/post/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
+
 
     // Copy Link Button
     const copyBtn = document.getElementById("copy-link-btn");
     if (copyBtn) {
-        copyBtn.addEventListener("click", () => {
-            copyToClipboard(currentUrl, "✅ Enlace copiado correctamente!");
+        copyBtn.addEventListener("click", (e) => {
+            copyToClipboard(currentUrl, "Enlace copiado correctamente!", e.currentTarget);
         });
     }
 }
 
 // Helper function
-function copyToClipboard(text, successMessage) {
+function copyToClipboard(text, successMessage, target) {
     navigator.clipboard.writeText(text).then(() => {
-        const originalText = event.target.innerHTML;
-        event.target.style.color = "var(--color-success)";
-        
-        if (event.target.tagName === "BUTTON") {
-            const span = event.target.querySelector("span");
-            if (span) span.textContent = "¡Copiado!";
+        if (target) {
+            target.style.color = "var(--color-text-buttons)";
+            if (target.tagName === "BUTTON") {
+                const span = target.querySelector("span");
+                if (span) {
+                    span.textContent = successMessage;
+                } else {
+                    target.textContent = successMessage;
+                }
+            }
         }
-
-        setTimeout(() => {
-            location.reload(); // Optional: refresh to reset button
-        }, 2000);
     }).catch(() => {
         alert("Error al copiar el enlace");
     });
