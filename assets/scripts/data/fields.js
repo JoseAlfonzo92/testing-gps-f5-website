@@ -17,6 +17,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
     description: "Cancha ideal para partidos entre amigos.",
     address: "Caballito, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
 
     schedule: {
       week: "09:00 - 23:00",
@@ -76,6 +78,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
     description: "Cancha premium techada.",
     address: "Belgrano, Buenos Aires",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
 
     schedule: {
       week: "10:00 - 00:00",
@@ -137,6 +141,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
     description: "Potrero abierto ideal para partidos entre amigos.",
     address: "Villa Crespo, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -189,6 +195,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
     description: "Cancha techada moderna en Núñez.",
     address: "Núñez, Buenos Aires",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -240,6 +249,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
     description: "Campo abierto con buena superficie.",
     address: "Palermo, Buenos Aires",
+    allowedBoots: [ "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "09:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -290,6 +302,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
     description: "Potrero clásico de Boedo.",
     address: "Boedo, Buenos Aires",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -339,6 +354,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
     description: "Cancha techada top en Palermo.",
     address: "Palermo, Buenos Aires",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "10:00 - 00:00",
       weekend: "09:00 - 02:00"
@@ -388,6 +406,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
     description: "Potrero abierto céntrico en Caballito.",
     address: "Caballito, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
     schedule: {
       week: "09:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -437,6 +457,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
     description: "Cancha abierta con estilo en Belgrano.",
     address: "Belgrano, Buenos Aires",
+    allowedBoots: ["TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -487,6 +509,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
     description: "Cancha abierta ideal para partidos de barrio.",
     address: "Villa Crespo, Buenos Aires",
+    allowedBoots: ["TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "09:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -535,6 +561,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
     description: "Cancha techada premium en Núñez.",
     address: "Núñez, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -586,6 +615,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
     description: "Cancha popular de Boedo.",
     address: "Boedo, Buenos Aires",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -635,6 +667,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
     description: "Cancha abierta estilo clásico en Palermo.",
     address: "Palermo, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "09:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -686,6 +722,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
     description: "Potrero techado premium en Belgrano.",
     address: "Belgrano, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -737,6 +777,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
     description: "Cancha abierta con buena energía.",
     address: "Caballito, Buenos Aires",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "09:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -786,6 +830,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
     description: "Cancha techada legendaria en Núñez.",
     address: "Núñez, Buenos Aires",
+    allowedBoots: [ "TF", "IN"],
+    availableJerseys: ["plain"],
+
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -839,6 +887,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-14_sbuear.jpg",
     description: "Cancha abierta en Villa Mercedes.",
     address: "Villa Mercedes, San Luis",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "09:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -886,6 +938,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-17_stytcw.jpg",
     description: "Infraestructura techada en Mercedes.",
     address: "Villa Mercedes, San Luis",
+    allowedBoots: ["FG",  "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -937,6 +993,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-15_xfdf4z.jpg",
     description: "Potrero abierto con buena cancha.",
     address: "Villa Mercedes, San Luis",
+    allowedBoots: ["FG",  "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -985,6 +1044,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_sb9zbp.jpg",
     description: "Potrero abierto rodeado de verde.",
     address: "Villa Mercedes, San Luis",
+    allowedBoots: ["FG",  "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -1034,6 +1096,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777570021/la-bombonera-cancha-de-futbol-villavicencio-6628-768x432_bpg8xb.jpg",
     description: "Cancha La Bombonera 5",
     address: "La Boca, Buenos Aires",
+    allowedBoots: ["FG",  "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "09:00 - 22:00",
       weekend: "09:00 - 22:00"
@@ -1088,6 +1153,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-20_gzohuw.avif",
     description: "Complejo de fútbol 5 en Nueva Córdoba",
     address: "Nueva Córdoba, Córdoba",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "10:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1138,6 +1207,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif",
     description: "Fútbol 5 y fútbol 7 en Alta Córdoba",
     address: "Alta Córdoba, Córdoba",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -1189,6 +1261,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-22_xfa9ex.avif",
     description: "Complejo premium de fútbol amateur",
     address: "Villa Belgrano, Córdoba",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid"],
+
+    
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1244,6 +1320,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif",
     description: "Complejo moderno de fútbol 5 en Neuquén",
     address: "Centro, Neuquén",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "10:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1297,6 +1377,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-24_yrvrga.avif",
     description: "Canchas de fútbol amateur en Alta Barda",
     address: "Alta Barda, Neuquén",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -1350,6 +1434,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-sin-techo_chwki3.jpg", //repeated change later
     description: "Complejo premium de fútbol en Neuquén",
     address: "Valentina Sur, Neuquén",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal"],
+
+
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1406,6 +1494,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
     description: "Complejo moderno de fútbol 5 en Yerba Buena",
     address: "Yerba Buena, Tucumán",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
+
+
     schedule: {
       week: "10:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1460,6 +1552,8 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-26_oq4jcl.avif",
     description: "Canchas de fútbol amateur en el centro tucumano",
     address: "Centro, Tucumán",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -1513,6 +1607,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
     description: "Complejo premium de fútbol amateur",
     address: "Tafí Viejo, Tucumán",
+    allowedBoots: [ "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
+
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1569,6 +1666,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-28_oil8j8.avif",
     description: "Canchas de fútbol 5 en Palpalá",
     address: "Palpalá, Jujuy",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "gimnasia-jj"],
+
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -1621,6 +1722,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp", //repeated change later
     description: "Complejo techado de fútbol amateur",
     address: "Centro, Jujuy",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "gimnasia-jj"],
+
     schedule: {
       week: "09:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1673,6 +1777,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif",
     description: "Complejo premium de fútbol en Jujuy",
     address: "Alto Comedero, Jujuy",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal"],
+
+
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1729,6 +1837,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-30_ewvnhc.avif",
     description: "Complejo premium de fútbol en Mendoza",
     address: "Godoy Cruz, Mendoza",
+    allowedBoots: ["FG", "TF"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "independiente-rivadavia", "gimnasia-mza", "godoy-cruz"],
+
+
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1781,6 +1893,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif",
     description: "Complejo de fútbol amateur en Río Gallegos",
     address: "Centro, Río Gallegos",
+    allowedBoots: ["FG",  "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "10:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1832,6 +1948,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-32_bpj0or.avif",
     description: "Canchas de fútbol 5 en Comodoro",
     address: "Centro, Comodoro Rivadavia",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -1882,6 +2001,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-33_sb1kyc.avif",
     description: "Complejo techado de fútbol en Ushuaia",
     address: "Centro, Ushuaia",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "10:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -1933,6 +2055,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif", //repeated change later
     description: "Complejo moderno de fútbol amateur",
     address: "Rivadavia, San Juan",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    
     schedule: {
       week: "09:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -1984,6 +2109,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-34_oij32l.avif",
     description: "Canchas de fútbol amateur en La Rioja",
     address: "Centro, La Rioja",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -2034,6 +2162,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-35_fu8qjh.avif",
     description: "Complejo de fútbol amateur en Santiago",
     address: "La Banda, Santiago del Estero",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -2086,6 +2217,9 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
     description: "Complejo premium de fútbol en Salta",
     address: "Tres Cerritos, Salta",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
     schedule: {
       week: "09:00 - 01:00",
       weekend: "09:00 - 02:00"
@@ -2139,6 +2273,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
     description: "Complejo de fútbol amateur en Corrientes",
     address: "Centro, Corrientes",
+    allowedBoots: ["FG", "TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "08:00 - 00:00",
       weekend: "08:00 - 01:00"
@@ -2191,6 +2329,10 @@ export const fields = [
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif", //repeated change later
     description: "Complejo techado de fútbol 5 en Paraná",
     address: "Centro, Paraná",
+    allowedBoots: ["TF", "IN"],
+    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
+
     schedule: {
       week: "09:00 - 00:00",
       weekend: "09:00 - 01:00"
@@ -2242,6 +2384,9 @@ export const fields = [
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
   description: "Complejo premium de fútbol en Rosario",
   address: "Pichincha, Rosario",
+  allowedBoots: ["FG"],
+  availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
   schedule: {
     week: "09:00 - 01:00",
     weekend: "09:00 - 02:00"
@@ -2295,6 +2440,9 @@ export const fields = [
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
   description: "Complejo de fútbol amateur en Iguazú",
   address: "Centro, Puerto Iguazú",
+  allowedBoots: ["FG"],
+  availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+
   schedule: {
     week: "08:00 - 00:00",
     weekend: "08:00 - 01:00"
@@ -2348,6 +2496,9 @@ export const fields = [
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif", //repeated change later
   description: "Canchas de fútbol amateur en Resistencia",
   address: "Centro, Resistencia",
+  allowedBoots: ["FG", "TF"],
+  availableJerseys: ["plain"],
+
   schedule: {
     week: "08:00 - 23:00",
     weekend: "08:00 - 00:00"
@@ -2400,6 +2551,9 @@ export const fields = [
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif", //repeated change later
   description: "Complejo techado premium en Bariloche",
   address: "Centro, Bariloche",
+  allowedBoots: ["FG", "TF", "IN"],
+  availableJerseys: ["plain"],
+
   schedule: {
     week: "10:00 - 01:00",
     weekend: "09:00 - 02:00"
@@ -2435,6 +2589,4 @@ export const fields = [
     whatsapp: "5492944556677"
   },
 },
-  
-
 ];

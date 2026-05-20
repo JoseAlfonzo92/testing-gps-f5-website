@@ -118,6 +118,129 @@ function initShareButtons(field) {
     }
 }
 
+//  ALLOWED BOOTS
+function renderAllowedBoots(field) {
+    const container = document.getElementById("allowed-boots-container");
+    if (!container || !field.allowedBoots || field.allowedBoots.length === 0) {
+        if (container) container.innerHTML = `<p class="text-muted">Información no disponible</p>`;
+        return;
+    }
+
+    const bootInfo = {
+        "FG": {
+            label: "FG - Terreno Firme",
+            desc: "Canchas de pasto natural",
+            icon: "fas fa-leaf"                    
+        },
+        "TF": {
+            label: "TF - Pasto Artificial",
+            desc: "Fibras cortas (Artificial)",
+            icon: "fas fa-chess-board"             
+        },
+        "IN": {
+            label: "IN - Indoor",
+            desc: "Canchas cubiertas / lisas",
+            icon: "fas fa-home"                    
+        }
+    };
+
+    let html = `<div class="boots-grid">`;
+
+    field.allowedBoots.forEach(code => {
+        const info = bootInfo[code] || { 
+            label: code, 
+            desc: "", 
+            icon: "fas fa-shoe-prints" 
+        };
+
+        html += `
+            <div class="boot-card">
+                <div class="boot-icon">
+                    <i class="${info.icon}"></i>
+                </div>
+                <div class="boot-content">
+                    <strong>${info.label}</strong>
+                    <small>${info.desc}</small>
+                </div>
+            </div>
+        `;
+    });
+
+    html += `</div>`;
+    container.innerHTML = html;
+}
+
+    renderAllowedBoots(field);
+
+
+    //  AVAILABLE JERSEYS 
+function renderAvailableJerseys(field) {
+    const container = document.getElementById("available-jerseys-container");
+    if (!container || !field.availableJerseys || field.availableJerseys.length === 0) {
+        if (container) container.innerHTML = `<p class="text-muted">No hay información de camisetas</p>`;
+        return;
+    }
+
+    const jerseyInfo = {
+        "plain": {
+            name: "Lisas / Sin diseño",
+            icon: "fas fa-tshirt",
+            color: "#6c757d"
+        },
+        "boca": {
+            name: "Boca Juniors",
+            icon: "fas fa-tshirt",
+            color: "#0A2C7D"
+        },
+        "river": {
+            name: "River Plate",
+            icon: "fas fa-tshirt",
+            color: "#E31C2D"
+        },
+        "barcelona": {
+            name: "Barcelona",
+            icon: "fas fa-tshirt",
+            color: "#A50044"
+        },
+        "real-madrid": {
+            name: "Real Madrid",
+            icon: "fas fa-tshirt",
+            color: "#FFB81C"
+        },
+        "arsenal": {
+            name: "Arsenal",
+            icon: "fas fa-tshirt",
+            color: "#EF0107"
+        },
+        "bayern": {
+            name: "Bayern Munich",
+            icon: "fas fa-tshirt",
+            color: "#DC052D"
+        }
+        // Add more teams
+    };
+
+    let html = `<div class="jerseys-grid">`;
+
+    field.availableJerseys.forEach(code => {
+        const info = jerseyInfo[code] || { name: code, icon: "fas fa-tshirt", color: "#666" };
+
+        html += `
+            <div class="jersey-item">
+                <i class="${info.icon}" style="color: ${info.color}"></i>
+                <span>${info.name}</span>
+            </div>
+        `;
+    });
+
+    html += `</div>`;
+    container.innerHTML = html;
+}
+
+
+    renderAvailableJerseys(field);
+
+
 // Helper function
 function copyToClipboard(text, successMessage, target) {
     navigator.clipboard.writeText(text).then(() => {

@@ -11,22 +11,19 @@
 
     <!-- favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="../assets/favicon/site.webmanifest"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest"> 
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Leaflet CSS -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
+    <link rel="stylesheet"href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
-<!-- prevent theme flash on load -->
-<script>
-(function () {
+    <!-- prevent theme flash on load -->
+    <script>
+        (function () {
     const savedTheme = localStorage.getItem("theme");
 
     const systemDark = window.matchMedia(
@@ -39,8 +36,8 @@
         "data-theme",
         theme
     );
-})();
-</script>
+    })();
+    </script>
 </head>
 <body>
   <header class="header">
@@ -199,6 +196,22 @@
                 <div class="tags sizes-container" id="field-sizes-container"></div>
             </div>
 
+            <!-- BOTINES PERMITIDOS -->
+            <div class="card-section">
+                <h3><i class="fas fa-shoe-prints"></i> Botines Permitidos</h3>
+                <div class="boots-container" id="allowed-boots-container">
+        
+                </div>
+            </div>
+
+            <!-- CAMISETAS DISPONIBLES -->
+            <div class="card-section">
+                <h3><i class="fas fa-tshirt"></i> Camisetas Disponibles</h3>
+                <div class="jerseys-container" id="available-jerseys-container">
+        
+                </div>
+            </div>
+
             <!-- BUFFET -->
             <div class="card-section">
                 <h3><i class="fas fa-utensils"></i> Buffet</h3>
@@ -246,10 +259,7 @@
                 </button>
             </div>
 
-</div>
-
-            
-
+            </div>
         </div>
 
         <!-- RIGHT -->
@@ -274,9 +284,9 @@
                     <p id="booking-surface"></p>
                 </div>
 
-<a id="booking-whatsapp" class="btn-primary" target="_blank">
-   <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad
-</a>
+                <a id="booking-whatsapp" class="btn-primary" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad
+                </a>
 
                 <a id="booking-phone" class="call-link"></a>
 
