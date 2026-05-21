@@ -1,394 +1,170 @@
 import { fields } from "../data/fields.js";
 
 export function initFieldsMap() {
-
-    const mapContainer =
-        document.getElementById(
-            "map-container"
-        );
-
+    const mapContainer = document.getElementById("map-container");
     if (!mapContainer) return;
 
-    const cards = Array.from(
-        document.querySelectorAll(
-            ".fields-page-card"
-        )
-    );
-
-    const locationToggle =
-        document.getElementById(
-            "use-location-toggle"
-        );
+    const cards = Array.from(document.querySelectorAll(".fields-page-card"));
+    const locationToggle = document.getElementById("use-location-toggle");
 
     // FIELD MAP
-    const fieldMap = new Map(
-        fields.map(field => [
-            field.id,
-            field
-        ])
-    );
+    const fieldMap = new Map(fields.map(field => [field.id, field]));
 
     // INIT MAP
+    const map = L.map("map-container").setView([-34.6037, -58.3816], 12);
 
-    const map = L.map(
-        "map-container"
-    ).setView(
-        [-34.6037, -58.3816],
-        12
-    );
-
-    L.tileLayer(
-        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        {
-            attribution:
-                "&copy; OpenStreetMap"
-        }
-    ).addTo(map);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap"
+    }).addTo(map);
 
     let markers = [];
-
     let userMarker = null;
-
     let userLocation = null;
-
     let routingControl = null;
 
     // CLEAR HELPERS
-
     function clearMarkers() {
-
-        markers.forEach(marker => {
-
-            map.removeLayer(marker);
-        });
-
+        markers.forEach(marker => map.removeLayer(marker));
         markers = [];
     }
 
     function clearRoute() {
-
         if (routingControl) {
-
-            map.removeControl(
-                routingControl
-            );
-
+            map.removeControl(routingControl);
             routingControl = null;
         }
     }
 
     // USER LOCATION
-
     function enableUserLocation() {
-
-        if (
-            !navigator.geolocation
-        ) return;
+        if (!navigator.geolocation) return;
 
         navigator.geolocation.getCurrentPosition(
-
             position => {
+                const { latitude, longitude } = position.coords;
+                userLocation = [latitude, longitude];
 
-                const {
-                    latitude,
-                    longitude
-                } = position.coords;
+                if (userMarker) map.removeLayer(userMarker);
 
-                userLocation = [
-                    latitude,
-                    longitude
-                ];
+                userMarker = L.marker(userLocation)
+                    .addTo(map)
+                    .bindPopup("Tu ubicación")
+                    .openPopup();
 
-                if (userMarker) {
-
-                    map.removeLayer(
-                        userMarker
-                    );
-                }
-
-                userMarker = L.marker(
-                    userLocation
-                )
-
-                .addTo(map)
-
-                .bindPopup(
-                    "Tu ubicación"
-                )
-
-                .openPopup();
-
-                map.setView(
-                    userLocation,
-                    14
-                );
+                map.setView(userLocation, 14);
             },
-
             err => {
-
-                console.warn(
-                    "Location error:",
-                    err.code,
-                    err.message
-                );
+                console.warn("Location error:", err.code, err.message);
             }
         );
     }
 
     function disableUserLocation() {
-
         userLocation = null;
-
         if (userMarker) {
-
-            map.removeLayer(
-                userMarker
-            );
-
+            map.removeLayer(userMarker);
             userMarker = null;
         }
-
         clearRoute();
     }
 
     // ROUTE
-
-    function createRoute(
-        lat,
-        lng
-    ) {
-
+    function createRoute(lat, lng) {
         if (!userLocation) return;
 
         clearRoute();
 
-        routingControl =
-            L.Routing.control({
-
-                waypoints: [
-
-                    L.latLng(
-                        userLocation[0],
-                        userLocation[1]
-                    ),
-
-                    L.latLng(
-                        lat,
-                        lng
-                    )
-                ],
-
-                routeWhileDragging:
-                    false,
-
-                show: false,
-
-                addWaypoints:
-                    false,
-
-                draggableWaypoints:
-                    false,
-
-                fitSelectedRoutes:
-                    true,
-
-                createMarker:
-                    () => null
-
-            }).addTo(map);
+        routingControl = L.Routing.control({
+            waypoints: [
+                L.latLng(userLocation[0], userLocation[1]),
+                L.latLng(lat, lng)
+            ],
+            routeWhileDragging: false,
+            show: false,
+            addWaypoints: false,
+            draggableWaypoints: false,
+            fitSelectedRoutes: true,
+            createMarker: () => null
+        }).addTo(map);
     }
 
     // MARKERS
-
     function renderMarkers() {
-
         clearMarkers();
 
         const bounds = [];
 
         cards.forEach(card => {
+            if (card.classList.contains("hidden")) return;
 
-            if (
-                card.classList.contains(
-                    "hidden"
-                )
-            ) return;
-
-            const field =
-                fieldMap.get(
-                    card.dataset.id
-                );
-
+            const field = fieldMap.get(card.dataset.id);
             if (!field) return;
 
             const lat = field.lat;
             const lng = field.lng;
-
             if (!lat || !lng) return;
 
-            const name =
-                field.name;
+            const name = field.name;
+            const price = card.querySelector(".price")?.innerText || "";
 
-            const price =
-                card.querySelector(
-                    ".price"
-                )?.innerText || "";
-
-            const marker =
-                L.marker([
-                    lat,
-                    lng
-                ])
-
+            const marker = L.marker([lat, lng])
                 .addTo(map)
-
                 .bindPopup(`
-                    <strong>
-                        ${name}
-                    </strong>
-                    <br>
-                    ${price}
+                    <strong>${name}</strong><br>${price}
                 `);
 
-            // CLICK MARKER
+            marker.on("click", () => {
+                card.scrollIntoView({ behavior: "smooth", block: "center" });
 
-            marker.on(
-                "click",
-                () => {
+                card.style.boxShadow = "0 0 0 2px var(--color-primary)";
+                setTimeout(() => { card.style.boxShadow = ""; }, 1500);
 
-                    // Scroll to card
-                    card.scrollIntoView({
-
-                        behavior:
-                            "smooth",
-
-                        block:
-                            "center"
-                    });
-
-                    // Highlight
-                    card.style.boxShadow =
-                        "0 0 0 2px var(--color-primary)";
-
-                    setTimeout(() => {
-
-                        card.style.boxShadow =
-                            "";
-
-                    }, 1500);
-
-                    // ROUTE
-                    if (userLocation) {
-
-                        createRoute(
-                            lat,
-                            lng
-                        );
-
-                    } else {
-
-                        alert(
-                            "Activá tu ubicación para ver la ruta"
-                        );
-                    }
+                if (userLocation) {
+                    createRoute(lat, lng);
+                } else {
+                    alert("Activá tu ubicación para ver la ruta");
                 }
-            );
+            });
 
-            markers.push(
-                marker
-            );
-
-            bounds.push([
-                lat,
-                lng
-            ]);
+            markers.push(marker);
+            bounds.push([lat, lng]);
         });
 
         if (bounds.length > 0) {
-
-            map.fitBounds(
-                bounds,
-                {
-                    padding: [50, 50]
-                }
-            );
+            map.fitBounds(bounds, { padding: [50, 50] });
         }
     }
 
     // FILTER SYNC
-
-    const observer =
-        new MutationObserver(
-            () => {
-
-                renderMarkers();
-            }
-        );
+    const observer = new MutationObserver(() => renderMarkers());
 
     cards.forEach(card => {
-
-        observer.observe(
-            card,
-            {
-                attributes: true,
-                attributeFilter: [
-                    "class"
-                ]
-            }
-        );
+        observer.observe(card, {
+            attributes: true,
+            attributeFilter: ["class"]
+        });
     });
 
     // LOCATION TOGGLE
-
-    locationToggle?.addEventListener(
-        "change",
-        event => {
-
-            if (
-                event.target.checked
-            ) {
-
-                enableUserLocation();
-
-            } else {
-
-                disableUserLocation();
-            }
+    locationToggle?.addEventListener("change", event => {
+        if (event.target.checked) {
+            enableUserLocation();
+        } else {
+            disableUserLocation();
         }
-    );
+    });
 
     // MAP RESIZE FIX
-
-    const mapBtn =
-        document.getElementById(
-            "map-view-btn"
-        );
-
-    mapBtn?.addEventListener(
-        "click",
-        () => {
-
-            setTimeout(
-                () => {
-
-                    map.invalidateSize();
-
-                },
-                200
-            );
-        }
-    );
+    const mapBtn = document.getElementById("map-view-btn");
+    mapBtn?.addEventListener("click", () => {
+        setTimeout(() => map.invalidateSize(), 200);
+    });
 
     // INIT USER LOCATION
-
-    if (
-        locationToggle?.checked
-    ) {
-
+    if (locationToggle?.checked) {
         enableUserLocation();
     }
 
     // INIT
-
     renderMarkers();
 }

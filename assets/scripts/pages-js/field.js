@@ -1,163 +1,38 @@
 import { fields } from "../data/fields.js";
 
-export function initFieldPage() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+//  HELPER FUNCTIONS
 
-    const field = fields.find(f => f.id === id);
-    
-    if (!field) {
-        console.error("Field not found:", id);
-        return;
-    }
+function renderFieldSizes(field) {
+    const container = document.getElementById("field-sizes-container");
+    if (!container || !field.sizes?.length) return;
 
-    document.title = `${field.name} | Fulbo 5`;
-
-    // BASIC INFO
-    document.getElementById("field-name").innerHTML = 
-        `${field.name} ${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
-    
-    const fieldImage = document.getElementById("field-image");
-    if (fieldImage) {
-        fieldImage.loading = "lazy";
-        fieldImage.alt = `${field.name} - ${field.location}`;
-        fieldImage.src = field.image;
-    }
-
-    document.getElementById("field-rating").innerHTML = 
-        `<i class="fas fa-star"></i> ${field.rating}`;
-    
-    document.getElementById("field-location").innerHTML = 
-        `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
-
-    document.getElementById("field-address").textContent = field.address;
-    document.getElementById("field-description").textContent = field.description;
-
-    // PRICES
-    document.getElementById("price-week").textContent = `$${field.priceFrom}`;
-    document.getElementById("price-weekend").textContent = `$${field.priceTo}`;
-    document.getElementById("price-from").textContent = `$${field.priceFrom}`;
-
-    // SCHEDULE
-    document.getElementById("schedule-week").textContent = field.schedule.week;
-    document.getElementById("schedule-weekend").textContent = field.schedule.weekend;
-
-    // FEATURES, BUFFET, EXTRA INFO
-    document.getElementById("features-container").innerHTML = 
-        field.features.map(f => `<span>${f}</span>`).join("");
-
-    document.getElementById("buffet-container").innerHTML = 
-        field.buffet.map(item => `<span>${item}</span>`).join("");
-
-    document.getElementById("extra-info-container").innerHTML = 
-        field.extraInfo.map(info => `<p>${info}</p>`).join("");
-
-    // NEW: MULTIPLE FIELD SIZES 
-    renderFieldSizes(field);
-
-    // BOOKING
-    document.getElementById("booking-players").innerHTML =
-        `<i class="fas fa-users"></i> ${field.booking.players}`;
-
-    document.getElementById("booking-surface").innerHTML =
-        `<i class="fas fa-layer-group"></i> ${field.booking.surface}`;
-
-    // Phone & WhatsApp
-    const cleanPhone = field.booking.phone.replace(/\D/g, "");
-
-    const phoneLink = document.getElementById("booking-phone");
-    phoneLink.href = `tel:+${cleanPhone}`;
-    phoneLink.innerHTML = `<i class="fas fa-phone"></i> Llamar`;
-
-    const whatsappBtn = document.getElementById("booking-whatsapp");
-    const message = `Hola! Quiero consultar disponibilidad para ${field.name} (${field.location})`;
-    whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
-
-    // MAP DATA
-    const map = document.getElementById("field-map");
-    map.dataset.lat = field.lat;
-    map.dataset.lng = field.lng;
-    map.dataset.name = field.name;
-    document.getElementById("map-address").textContent = field.address;
-
-    //  WEATHER 
-    loadWeather(field);
-
-    //  SHARE FUNCTIONALITY 
-function initShareButtons(field) {
-    const currentUrl = window.location.href;
-    const shareText = `${field.name} - ${field.location}\nDesde $${field.priceFrom} - $${field.priceTo}/h\n`;
-
-    // WhatsApp
-    document.getElementById("share-whatsapp").href = 
-        `https://wa.me/?text=${encodeURIComponent(shareText + currentUrl)}`;
-
-    // Facebook
-    document.getElementById("share-facebook").href = 
-        `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
-
-    // Twitter / X
-    document.getElementById("share-twitter").href = 
-        `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`;
-
-    // Messenger
-    document.getElementById("share-messenger").href = 
-        `https://www.facebook.com/dialog/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
-
-    // Instagram 
-     document.getElementById("share-instagram").href =
-            `https://www.instagram.com/post/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
-
-
-    // Copy Link Button
-    const copyBtn = document.getElementById("copy-link-btn");
-    if (copyBtn) {
-        copyBtn.addEventListener("click", (e) => {
-            copyToClipboard(currentUrl, "Enlace copiado correctamente!", e.currentTarget);
-        });
-    }
+    container.innerHTML = field.sizes.map(size => 
+        `<span class="size-tag">${size}</span>`
+    ).join("");
 }
 
-//  ALLOWED BOOTS
 function renderAllowedBoots(field) {
     const container = document.getElementById("allowed-boots-container");
-    if (!container || !field.allowedBoots || field.allowedBoots.length === 0) {
-        if (container) container.innerHTML = `<p class="text-muted">Información no disponible</p>`;
+    if (!container) return;
+
+    if (!field.allowedBoots?.length) {
+        container.innerHTML = `<p class="text-muted">Información no disponible</p>`;
         return;
     }
 
     const bootInfo = {
-        "FG": {
-            label: "FG - Terreno Firme",
-            desc: "Canchas de pasto natural",
-            icon: "fas fa-leaf"                    
-        },
-        "TF": {
-            label: "TF - Pasto Artificial",
-            desc: "Fibras cortas (Artificial)",
-            icon: "fas fa-chess-board"             
-        },
-        "IN": {
-            label: "IN - Indoor",
-            desc: "Canchas cubiertas / lisas",
-            icon: "fas fa-home"                    
-        }
+        "FG": { label: "FG - Terreno Firme", desc: "Canchas de pasto natural", icon: "fas fa-leaf" },
+        "TF": { label: "TF - Pasto Artificial", desc: "Fibras cortas (Artificial)", icon: "fas fa-chess-board" },
+        "IN": { label: "IN - Indoor", desc: "Canchas cubiertas / lisas", icon: "fas fa-home" }
     };
 
     let html = `<div class="boots-grid">`;
 
     field.allowedBoots.forEach(code => {
-        const info = bootInfo[code] || { 
-            label: code, 
-            desc: "", 
-            icon: "fas fa-shoe-prints" 
-        };
-
+        const info = bootInfo[code] || { label: code, desc: "", icon: "fas fa-shoe-prints" };
         html += `
             <div class="boot-card">
-                <div class="boot-icon">
-                    <i class="${info.icon}"></i>
-                </div>
+                <div class="boot-icon"><i class="${info.icon}"></i></div>
                 <div class="boot-content">
                     <strong>${info.label}</strong>
                     <small>${info.desc}</small>
@@ -170,61 +45,29 @@ function renderAllowedBoots(field) {
     container.innerHTML = html;
 }
 
-    renderAllowedBoots(field);
-
-
-    //  AVAILABLE JERSEYS 
 function renderAvailableJerseys(field) {
     const container = document.getElementById("available-jerseys-container");
-    if (!container || !field.availableJerseys || field.availableJerseys.length === 0) {
-        if (container) container.innerHTML = `<p class="text-muted">No hay información de camisetas</p>`;
+    if (!container) return;
+
+    if (!field.availableJerseys?.length) {
+        container.innerHTML = `<p class="text-muted">No hay información de camisetas</p>`;
         return;
     }
 
     const jerseyInfo = {
-        "plain": {
-            name: "Lisas / Sin diseño",
-            icon: "fas fa-tshirt",
-            color: "#6c757d"
-        },
-        "boca": {
-            name: "Boca Juniors",
-            icon: "fas fa-tshirt",
-            color: "#0A2C7D"
-        },
-        "river": {
-            name: "River Plate",
-            icon: "fas fa-tshirt",
-            color: "#E31C2D"
-        },
-        "barcelona": {
-            name: "Barcelona",
-            icon: "fas fa-tshirt",
-            color: "#A50044"
-        },
-        "real-madrid": {
-            name: "Real Madrid",
-            icon: "fas fa-tshirt",
-            color: "#FFB81C"
-        },
-        "arsenal": {
-            name: "Arsenal",
-            icon: "fas fa-tshirt",
-            color: "#EF0107"
-        },
-        "bayern": {
-            name: "Bayern Munich",
-            icon: "fas fa-tshirt",
-            color: "#DC052D"
-        }
-        // Add more teams
+        "plain":      { name: "Lisas / Sin diseño", icon: "fas fa-tshirt", color: "#6c757d" },
+        "boca":       { name: "Boca Juniors", icon: "fas fa-tshirt", color: "#0A2C7D" },
+        "river":      { name: "River Plate", icon: "fas fa-tshirt", color: "#E31C2D" },
+        "barcelona":  { name: "Barcelona", icon: "fas fa-tshirt", color: "#A50044" },
+        "real-madrid":{ name: "Real Madrid", icon: "fas fa-tshirt", color: "#FFB81C" },
+        "arsenal":    { name: "Arsenal", icon: "fas fa-tshirt", color: "#EF0107" },
+        "bayern":     { name: "Bayern Munich", icon: "fas fa-tshirt", color: "#DC052D" }
     };
 
     let html = `<div class="jerseys-grid">`;
 
     field.availableJerseys.forEach(code => {
         const info = jerseyInfo[code] || { name: code, icon: "fas fa-tshirt", color: "#666" };
-
         html += `
             <div class="jersey-item">
                 <i class="${info.icon}" style="color: ${info.color}"></i>
@@ -237,45 +80,100 @@ function renderAvailableJerseys(field) {
     container.innerHTML = html;
 }
 
+function initShareButtons(field) {
+    const currentUrl = window.location.href;
+    const shareText = `${field.name} - ${field.location}\nDesde $${field.priceFrom} - $${field.priceTo}/h\n`;
 
-    renderAvailableJerseys(field);
+    document.getElementById("share-whatsapp").href = 
+        `https://wa.me/?text=${encodeURIComponent(shareText + currentUrl)}`;
 
+    document.getElementById("share-facebook").href = 
+        `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
 
-// Helper function
+    document.getElementById("share-twitter").href = 
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`;
+
+    document.getElementById("share-messenger").href = 
+        `https://www.facebook.com/dialog/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
+
+    document.getElementById("share-instagram").href = 
+        `https://www.instagram.com/post/send?link=${encodeURIComponent(currentUrl)}&redirect_uri=${encodeURIComponent(currentUrl)}`;
+
+    const copyBtn = document.getElementById("copy-link-btn");
+    if (copyBtn) {
+        copyBtn.addEventListener("click", (e) => {
+            copyToClipboard(currentUrl, "Enlace copiado correctamente!", e.currentTarget);
+        });
+    }
+}
+
 function copyToClipboard(text, successMessage, target) {
     navigator.clipboard.writeText(text).then(() => {
         if (target) {
             target.style.color = "var(--color-text-buttons)";
-            if (target.tagName === "BUTTON") {
-                const span = target.querySelector("span");
-                if (span) {
-                    span.textContent = successMessage;
-                } else {
-                    target.textContent = successMessage;
-                }
-            }
+            const span = target.querySelector("span");
+            if (span) span.textContent = successMessage;
+            else target.textContent = successMessage;
         }
-    }).catch(() => {
-        alert("Error al copiar el enlace");
-    });
+    }).catch(() => alert("Error al copiar el enlace"));
 }
 
-    // Initialize Share Buttons
-    initShareButtons(field);
-}
+function renderSimilarFields(currentField) {
+    const container = document.getElementById("similar-fields-carousel");
+    if (!container) return;
 
-//  FIELD SIZES 
-function renderFieldSizes(field) {
-    const container = document.getElementById("field-sizes-container");
-    if (!container || !field.sizes || !field.sizes.length) return;
+    const similar = fields
+        .filter(f => f.id !== currentField.id)
+        .filter(f => f.province === currentField.province || f.city === currentField.city)
+        .sort((a, b) => {
+            const scoreA = (a.province === currentField.province ? 2 : 0) + (a.city === currentField.city ? 3 : 0);
+            const scoreB = (b.province === currentField.province ? 2 : 0) + (b.city === currentField.city ? 3 : 0);
+            return scoreB - scoreA;
+        })
+        .slice(0, 12);
 
-    const html = field.sizes.map(size => `
-        <span class="size-tag">${size}</span>
+    if (similar.length === 0) {
+        container.innerHTML = `<p class="text-muted">No hay canchas similares en esta zona.</p>`;
+        return;
+    }
+
+    container.innerHTML = similar.map(f => `
+        <a href="field.html?id=${f.id}" class="similar-field-card">
+            <div class="similar-field-image">
+                <img src="${f.image}" alt="${f.name}" loading="lazy">
+                ${f.type === "techada" ? `<span class="tag">Techada</span>` : ""}
+            </div>
+            <div class="similar-field-info">
+                <h4>${f.name}</h4>
+                <p class="similar-location"><i class="fas fa-map-marker-alt"></i> ${f.location}</p>
+                <p class="similar-price">$${f.priceFrom} - $${f.priceTo}</p>
+            </div>
+        </a>
     `).join("");
 
-    container.innerHTML = html;
+    // Arrow Controls
+    const btnLeft = document.getElementById("similar-arrow-left");
+    const btnRight = document.getElementById("similar-arrow-right");
+
+    if (btnLeft && btnRight) {
+        const scrollAmount = 640;
+        btnLeft.addEventListener("click", () => container.scrollBy({ left: -scrollAmount, behavior: "smooth" }));
+        btnRight.addEventListener("click", () => container.scrollBy({ left: scrollAmount, behavior: "smooth" }));
+
+        const updateArrows = () => updateArrowVisibility(container, btnLeft, btnRight);
+        setTimeout(updateArrows, 300);
+        container.addEventListener("scroll", updateArrows);
+    }
 }
 
+function updateArrowVisibility(container, btnLeft, btnRight) {
+    if (!container) return;
+    const scrollLeft = container.scrollLeft;
+    const maxScroll = container.scrollWidth - container.clientWidth;
+
+    btnLeft.style.opacity = scrollLeft <= 30 ? "0.35" : "1";
+    btnRight.style.opacity = scrollLeft >= maxScroll - 30 ? "0.35" : "1";
+}
 
 //  WEATHER FUNCTIONS 
 
@@ -289,11 +187,7 @@ async function loadWeather(field) {
     }
 
     try {
-        const url = `https://api.open-meteo.com/v1/forecast?` +
-                    `latitude=${field.lat}&longitude=${field.lng}` +
-                    `&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m` +
-                    `&daily=weather_code,temperature_2m_max,temperature_2m_min` +
-                    `&timezone=America/Argentina/Buenos_Aires`;
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${field.lat}&longitude=${field.lng}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=America/Argentina/Buenos_Aires`;
 
         const response = await fetch(url);
         if (!response.ok) throw new Error("Weather API error");
@@ -330,70 +224,31 @@ function renderCurrentWeather(current, container) {
     `;
 }
 
-// 7-Day Forecast
 function renderForecast(daily, container) {
     if (!container || !daily?.time?.length) return;
 
     let html = `<div class="forecast-grid">`;
-
     const today = new Date();
-
-    // normalize current day at midnight
     today.setHours(0, 0, 0, 0);
 
     for (let i = 0; i < 7 && i < daily.time.length; i++) {
-
-        // Build date from API safely (avoid UTC shifts)
-        const [year, month, day] = daily.time[i]
-            .split("-")
-            .map(Number);
-
+        const [year, month, day] = daily.time[i].split("-").map(Number);
         const forecastDate = new Date(year, month - 1, day);
-
         forecastDate.setHours(0, 0, 0, 0);
 
-        const isToday =
-            forecastDate.getTime() === today.getTime();
-
-        // Use system locale calendar names
-        const dayName = forecastDate.toLocaleDateString(
-            "es-AR",
-            {
-                weekday: "short"
-            }
-        );
-
-        const dayNumber = forecastDate.getDate();
-
-        const weatherInfo = getWeatherInfo(
-            daily.weather_code[i]
-        );
+        const isToday = forecastDate.getTime() === today.getTime();
+        const dayName = forecastDate.toLocaleDateString("es-AR", { weekday: "short" });
+        const weatherInfo = getWeatherInfo(daily.weather_code[i]);
 
         html += `
             <div class="forecast-day ${isToday ? "today" : ""}">
-                
-                <div class="forecast-date">
-                    ${isToday ? "Hoy" : dayName}
-                </div>
-
-                <small class="forecast-day-number">
-                    ${dayNumber}
-                </small>
-
-                <div class="forecast-icon">
-                    ${weatherInfo.emoji}
-                </div>
-
+                <div class="forecast-date">${isToday ? "Hoy" : dayName}</div>
+                <small class="forecast-day-number">${forecastDate.getDate()}</small>
+                <div class="forecast-icon">${weatherInfo.emoji}</div>
                 <div class="forecast-temp">
-                    <span class="max">
-                        MAX <strong>${Math.round(daily.temperature_2m_max[i])}°</strong>
-                    </span>
-
-                    <span class="min">
-                        MIN <strong>${Math.round(daily.temperature_2m_min[i])}°</strong>
-                    </span>
+                    <span class="max">MAX <strong>${Math.round(daily.temperature_2m_max[i])}°</strong></span>
+                    <span class="min">MIN <strong>${Math.round(daily.temperature_2m_min[i])}°</strong></span>
                 </div>
-
             </div>
         `;
     }
@@ -415,4 +270,99 @@ function getWeatherInfo(code) {
         80: { emoji: "🌦️", description: "Chubascos" },
     };
     return map[code] || { emoji: "🌥️", description: "Clima variable" };
+}
+
+//  MAIN FUNCTION 
+
+export function initFieldPage() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    const field = fields.find(f => f.id === id);
+    if (!field) {
+        console.error("Field not found:", id);
+        return;
+    }
+
+    document.title = `${field.name} | Fulbo 5`;
+
+    // Cache DOM Elements
+    const dom = {
+        name: document.getElementById("field-name"),
+        image: document.getElementById("field-image"),
+        rating: document.getElementById("field-rating"),
+        location: document.getElementById("field-location"),
+        address: document.getElementById("field-address"),
+        description: document.getElementById("field-description"),
+        priceWeek: document.getElementById("price-week"),
+        priceWeekend: document.getElementById("price-weekend"),
+        priceFrom: document.getElementById("price-from"),
+        scheduleWeek: document.getElementById("schedule-week"),
+        scheduleWeekend: document.getElementById("schedule-weekend"),
+        features: document.getElementById("features-container"),
+        buffet: document.getElementById("buffet-container"),
+        extraInfo: document.getElementById("extra-info-container"),
+        mapEl: document.getElementById("field-map"),
+        mapAddress: document.getElementById("map-address")
+    };
+
+    // Basic Info
+    if (dom.name) dom.name.innerHTML = `${field.name}${field.type === "techada" ? '<span class="tag">Techada</span>' : ""}`;
+    
+    if (dom.image) {
+        dom.image.loading = "lazy";
+        dom.image.alt = `${field.name} - ${field.location}`;
+        dom.image.src = field.image;
+    }
+
+    if (dom.rating) dom.rating.innerHTML = `<i class="fas fa-star"></i> ${field.rating}`;
+    if (dom.location) dom.location.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${field.location}`;
+    if (dom.address) dom.address.textContent = field.address || "";
+    if (dom.description) dom.description.textContent = field.description || "";
+
+    // Prices & Schedule
+    if (dom.priceWeek) dom.priceWeek.textContent = `$${field.priceFrom}`;
+    if (dom.priceWeekend) dom.priceWeekend.textContent = `$${field.priceTo}`;
+    if (dom.priceFrom) dom.priceFrom.textContent = `$${field.priceFrom}`;
+
+    if (dom.scheduleWeek) dom.scheduleWeek.textContent = field.schedule.week;
+    if (dom.scheduleWeekend) dom.scheduleWeekend.textContent = field.schedule.weekend;
+
+    // Lists
+    if (dom.features) dom.features.innerHTML = field.features?.map(f => `<span>${f}</span>`).join("") || "";
+    if (dom.buffet) dom.buffet.innerHTML = field.buffet?.map(item => `<span>${item}</span>`).join("") || "";
+    if (dom.extraInfo) dom.extraInfo.innerHTML = field.extraInfo?.map(info => `<p>${info}</p>`).join("") || "";
+
+    // Render Sections
+    renderFieldSizes(field);
+    renderAllowedBoots(field);
+    renderAvailableJerseys(field);
+
+    // Booking
+    const cleanPhone = field.booking.phone.replace(/\D/g, "");
+    const message = `Hola! Quiero consultar disponibilidad para ${field.name} (${field.location})`;
+
+    const phoneLink = document.getElementById("booking-phone");
+    if (phoneLink) {
+        phoneLink.href = `tel:+${cleanPhone}`;
+        phoneLink.innerHTML = `<i class="fas fa-phone"></i> Llamar`;
+    }
+
+    const whatsappBtn = document.getElementById("booking-whatsapp");
+    if (whatsappBtn) whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
+
+    // Map
+    if (dom.mapEl) {
+        dom.mapEl.dataset.lat = field.lat;
+        dom.mapEl.dataset.lng = field.lng;
+        dom.mapEl.dataset.name = field.name;
+    }
+    if (dom.mapAddress) dom.mapAddress.textContent = field.address || "";
+
+    // Non-critical features (delayed for better initial load)
+    setTimeout(() => {
+        loadWeather(field);
+        renderSimilarFields(field);
+        initShareButtons(field);
+    }, 80);
 }

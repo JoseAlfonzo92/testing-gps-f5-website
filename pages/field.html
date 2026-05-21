@@ -80,8 +80,6 @@
             </ul>
         </nav>
 
-        <!-- MOBILE -->
-
         <!-- Mobile Controls -->
         <div class="controls mobile-only">
             <i class="fas fa-search" id="search-toggle"></i>
@@ -144,6 +142,7 @@
                 </div>
 
                 <p class="address" id="field-address"></p>
+                
             </div>
 
             <p class="description" id="field-description"></p>
@@ -260,6 +259,25 @@
             </div>
 
             </div>
+
+            <!-- similar fields carrousel gallery -->
+             <!-- similar fields carousel -->
+<div class="card-section">
+    <h3><i class="fas fa-thumbs-up"></i> Canchas similares</h3>
+    
+    <div class="similar-carousel-wrapper">
+        <button class="carousel-arrow arrow-left" id="similar-arrow-left" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="similar-fields-carousel" id="similar-fields-carousel"></div>
+        
+        <button class="carousel-arrow arrow-right" id="similar-arrow-right" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+            
         </div>
 
         <!-- RIGHT -->
@@ -270,10 +288,12 @@
             <div class="card-section">
                 <h3><i class="fas fa-cloud-sun"></i> Clima Actual</h3>
             <div id="weather-container" class="weather-widget">
-            <!-- JS will fill this -->
+            
                 <p class="loading-text">Cargando clima...</p>
             </div>
             </div>
+
+            
 
                 <p class="price-highlight">
                     Desde <strong id="price-from"></strong> <span>/ h</span>
@@ -294,6 +314,8 @@
         </div>
 
     </div>
+
+    
 
 </section>
 
@@ -361,9 +383,7 @@
         <a href="#">Sumá tu cancha</a>
     </div>
 </div>
-
 </footer>
-
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <!-- Main JS File -->
