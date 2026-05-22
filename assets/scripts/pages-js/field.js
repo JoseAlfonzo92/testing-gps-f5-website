@@ -54,24 +54,13 @@ function renderAvailableJerseys(field) {
         return;
     }
 
-    const jerseyInfo = {
-        "plain":      { name: "Lisas / Sin diseño", icon: "fas fa-tshirt", color: "#6c757d" },
-        "boca":       { name: "Boca Juniors", icon: "fas fa-tshirt", color: "#0A2C7D" },
-        "river":      { name: "River Plate", icon: "fas fa-tshirt", color: "#E31C2D" },
-        "barcelona":  { name: "Barcelona", icon: "fas fa-tshirt", color: "#A50044" },
-        "real-madrid":{ name: "Real Madrid", icon: "fas fa-tshirt", color: "#FFB81C" },
-        "arsenal":    { name: "Arsenal", icon: "fas fa-tshirt", color: "#EF0107" },
-        "bayern":     { name: "Bayern Munich", icon: "fas fa-tshirt", color: "#DC052D" }
-    };
-
     let html = `<div class="jerseys-grid">`;
 
-    field.availableJerseys.forEach(code => {
-        const info = jerseyInfo[code] || { name: code, icon: "fas fa-tshirt", color: "#666" };
+    field.availableJerseys.forEach(jersey => {
         html += `
             <div class="jersey-item">
-                <i class="${info.icon}" style="color: ${info.color}"></i>
-                <span>${info.name}</span>
+                <i class="fas fa-tshirt" style="color: ${jersey.color || "#666"}"></i>
+                <span>${jersey.name}</span>
             </div>
         `;
     });
@@ -365,4 +354,58 @@ export function initFieldPage() {
         renderSimilarFields(field);
         initShareButtons(field);
     }, 80);
+
+
+    // Calculate distance
+    function showDistanceToField(field) {
+    const distanceEl = document.getElementById("field-distance");
+    if (!distanceEl || !field.lat || !field.lng) return;
+
+    if (!navigator.geolocation) {
+        distanceEl.style.display = "none";
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        position => {
+            const userLat = position.coords.latitude;
+            const userLon = position.coords.longitude;
+
+            const distanceKm = calculateDistance(userLat, userLon, field.lat, field.lng);
+            
+            let displayText = "";
+
+            if (distanceKm < 1) {
+                const meters = Math.round(distanceKm * 1000);
+                displayText = `${meters} metros desde tu ubicación`;
+            } else {
+                displayText = `${distanceKm} km desde tu ubicación`;
+            }
+
+            distanceEl.innerHTML = displayText;
+            distanceEl.style.display = "inline-flex";
+        },
+        err => {
+            console.warn("Geolocation error:", err);
+            distanceEl.style.display = "none";
+        },
+        { enableHighAccuracy: true, timeout: 7000 }
+    );
+}
+
+    
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; 
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = 
+        Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return (R * c).toFixed(1); 
+}
+
+        showDistanceToField(field);
+
 }

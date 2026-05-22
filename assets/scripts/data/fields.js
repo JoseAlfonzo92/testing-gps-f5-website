@@ -18,7 +18,54 @@ export const fields = [
     description: "Cancha ideal para partidos entre amigos.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    },
+    {
+      code: "argentina",
+      name: "Selección Argentina",
+      color: "#0047AB"
+    }
+
+],
 
     schedule: {
       week: "09:00 - 23:00",
@@ -79,7 +126,49 @@ export const fields = [
     description: "Cancha premium techada.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+],
 
     schedule: {
       week: "10:00 - 00:00",
@@ -142,7 +231,54 @@ export const fields = [
     description: "Potrero abierto ideal para partidos entre amigos.",
     address: "Villa Crespo, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    },
+    {
+      code: "manchester-united",
+      name: "Manchester United",
+      color: "#DA291C"
+    }
+
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -196,7 +332,54 @@ export const fields = [
     description: "Cancha techada moderna en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    },
+    {
+      code: "liverpool",
+      name: "Liverpool",
+      color: "#C8102E"
+    }
+
+],
 
     schedule: {
       week: "10:00 - 01:00",
@@ -250,7 +433,54 @@ export const fields = [
     description: "Campo abierto con buena superficie.",
     address: "Palermo, Buenos Aires",
     allowedBoots: [ "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    },
+    {
+      code: "inter-milan",
+      name: "Inter Milan",
+      color: "#004D98"
+    }
+
+],
 
     schedule: {
       week: "09:00 - 23:00",
@@ -303,7 +533,49 @@ export const fields = [
     description: "Potrero clásico de Boedo.",
     address: "Boedo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -355,7 +627,49 @@ export const fields = [
     description: "Cancha techada top en Palermo.",
     address: "Palermo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        color: "#1E90FF"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        color: "#003087"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "10:00 - 00:00",
@@ -407,7 +721,50 @@ export const fields = [
     description: "Potrero abierto céntrico en Caballito.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
+
     schedule: {
       week: "09:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -458,7 +815,50 @@ export const fields = [
     description: "Cancha abierta con estilo en Belgrano.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
+
     schedule: {
       week: "08:00 - 22:00",
       weekend: "08:00 - 23:00"
@@ -510,7 +910,49 @@ export const fields = [
     description: "Cancha abierta ideal para partidos de barrio.",
     address: "Villa Crespo, Buenos Aires",
     allowedBoots: ["TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -562,7 +1004,49 @@ export const fields = [
     description: "Cancha techada premium en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        color: "#000000"
+    },
+    {
+        code: "olympique-de-marsella",
+        name: "Olympique de Marsella",
+        color: "#000000"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "10:00 - 01:00",
@@ -616,7 +1100,49 @@ export const fields = [
     description: "Cancha popular de Boedo.",
     address: "Boedo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -668,7 +1194,49 @@ export const fields = [
     description: "Cancha abierta estilo clásico en Palermo.",
     address: "Palermo, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -723,7 +1291,49 @@ export const fields = [
     description: "Potrero techado premium en Belgrano.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -778,7 +1388,49 @@ export const fields = [
     description: "Cancha abierta con buena energía.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -831,7 +1483,14 @@ export const fields = [
     description: "Cancha techada legendaria en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: [ "TF", "IN"],
-    availableJerseys: ["plain"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    }
+
+   ],
 
 
     schedule: {
@@ -888,7 +1547,49 @@ export const fields = [
     description: "Cancha abierta en Villa Mercedes.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0A2C7D"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+],
 
 
     schedule: {
@@ -939,7 +1640,49 @@ export const fields = [
     description: "Infraestructura techada en Mercedes.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -994,7 +1737,49 @@ export const fields = [
     description: "Potrero abierto con buena cancha.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
     
     schedule: {
       week: "08:00 - 22:00",
@@ -1045,7 +1830,49 @@ export const fields = [
     description: "Potrero abierto rodeado de verde.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -1097,7 +1924,49 @@ export const fields = [
     description: "Cancha La Bombonera 5",
     address: "La Boca, Buenos Aires",
     allowedBoots: ["FG",  "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "09:00 - 22:00",
@@ -1154,7 +2023,49 @@ export const fields = [
     description: "Complejo de fútbol 5 en Nueva Córdoba",
     address: "Nueva Córdoba, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -1208,7 +2119,49 @@ export const fields = [
     description: "Fútbol 5 y fútbol 7 en Alta Córdoba",
     address: "Alta Córdoba, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -1262,7 +2215,34 @@ export const fields = [
     description: "Complejo premium de fútbol amateur",
     address: "Villa Belgrano, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    }
+
+   ],
 
     
     schedule: {
@@ -1321,7 +2301,49 @@ export const fields = [
     description: "Complejo moderno de fútbol 5 en Neuquén",
     address: "Centro, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -1378,7 +2400,49 @@ export const fields = [
     description: "Canchas de fútbol amateur en Alta Barda",
     address: "Alta Barda, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -1435,7 +2499,49 @@ export const fields = [
     description: "Complejo premium de fútbol en Neuquén",
     address: "Valentina Sur, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
 
     schedule: {
@@ -1495,7 +2601,39 @@ export const fields = [
     description: "Complejo moderno de fútbol 5 en Yerba Buena",
     address: "Yerba Buena, Tucumán",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+      code: "atl-tucuman",
+      name: "Atl. Tucumán",
+      color: "#0073CF"
+    }
+
+   ],
 
 
     schedule: {
@@ -1553,7 +2691,40 @@ export const fields = [
     description: "Canchas de fútbol amateur en el centro tucumano",
     address: "Centro, Tucumán",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+      code: "atl-tucuman",
+      name: "Atl. Tucumán",
+      color: "#0073CF"
+    }
+
+   ],
+
     schedule: {
       week: "08:00 - 23:00",
       weekend: "08:00 - 00:00"
@@ -1608,7 +2779,39 @@ export const fields = [
     description: "Complejo premium de fútbol amateur",
     address: "Tafí Viejo, Tucumán",
     allowedBoots: [ "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "atl-tucuman"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+      code: "atl-tucuman",
+      name: "Atl. Tucumán",
+      color: "#0073CF"
+    }
+
+   ],
 
     schedule: {
       week: "09:00 - 01:00",
@@ -1667,7 +2870,39 @@ export const fields = [
     description: "Canchas de fútbol 5 en Palpalá",
     address: "Palpalá, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "gimnasia-jj"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+      code: "gimnasia-jj",
+      name: "Gimnasia Jujuy",
+      color: "#004D98"
+    }
+
+   ],
 
 
     schedule: {
@@ -1723,7 +2958,39 @@ export const fields = [
     description: "Complejo techado de fútbol amateur",
     address: "Centro, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "gimnasia-jj"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+      code: "gimnasia-jj",
+      name: "Gimnasia Jujuy",
+      color: "#004D98"
+    }
+
+   ],
 
     schedule: {
       week: "09:00 - 00:00",
@@ -1778,7 +3045,39 @@ export const fields = [
     description: "Complejo premium de fútbol en Jujuy",
     address: "Alto Comedero, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    }
+
+   ],
 
 
     schedule: {
@@ -1838,7 +3137,59 @@ export const fields = [
     description: "Complejo premium de fútbol en Mendoza",
     address: "Godoy Cruz, Mendoza",
     allowedBoots: ["FG", "TF"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern", "independiente-rivadavia", "gimnasia-mza", "godoy-cruz"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "gimnasia-mza",
+        name: "Gimnasia Mendoza",
+        color: "#000000"
+    },
+    {
+        code: "independiente-rivadavia",
+        name: "Independiente Rivadavia",
+        color: "#004D98"
+    },
+    {
+        code: "godoy-cruz",
+        name: "Godoy Cruz",
+        color: "#0073CF"
+    }
+
+   ],
 
 
     schedule: {
@@ -1894,7 +3245,44 @@ export const fields = [
     description: "Complejo de fútbol amateur en Río Gallegos",
     address: "Centro, Río Gallegos",
     allowedBoots: ["FG",  "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
 
     schedule: {
@@ -1949,7 +3337,44 @@ export const fields = [
     description: "Canchas de fútbol 5 en Comodoro",
     address: "Centro, Comodoro Rivadavia",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -2002,7 +3427,44 @@ export const fields = [
     description: "Complejo techado de fútbol en Ushuaia",
     address: "Centro, Ushuaia",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
     schedule: {
       week: "10:00 - 01:00",
@@ -2056,7 +3518,44 @@ export const fields = [
     description: "Complejo moderno de fútbol amateur",
     address: "Rivadavia, San Juan",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
     
     schedule: {
       week: "09:00 - 00:00",
@@ -2110,7 +3609,49 @@ export const fields = [
     description: "Canchas de fútbol amateur en La Rioja",
     address: "Centro, La Rioja",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -2163,7 +3704,44 @@ export const fields = [
     description: "Complejo de fútbol amateur en Santiago",
     address: "La Banda, Santiago del Estero",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -2218,7 +3796,44 @@ export const fields = [
     description: "Complejo premium de fútbol en Salta",
     address: "Tres Cerritos, Salta",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
     schedule: {
       week: "09:00 - 01:00",
@@ -2274,7 +3889,44 @@ export const fields = [
     description: "Complejo de fútbol amateur en Corrientes",
     address: "Centro, Corrientes",
     allowedBoots: ["FG", "TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    }
+
+   ],
 
 
     schedule: {
@@ -2330,7 +3982,49 @@ export const fields = [
     description: "Complejo techado de fútbol 5 en Paraná",
     address: "Centro, Paraná",
     allowedBoots: ["TF", "IN"],
-    availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+    availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "chelsea",
+        name: "Chelsea",
+        color: "#034694"
+    },
+    {
+        code: "ajax",
+        name: "Ajax",
+        color: "#FFFFFF"
+    }
+
+   ],
 
 
     schedule: {
@@ -2385,7 +4079,49 @@ export const fields = [
   description: "Complejo premium de fútbol en Rosario",
   address: "Pichincha, Rosario",
   allowedBoots: ["FG"],
-  availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+  availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        color: "#003087"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
   schedule: {
     week: "09:00 - 01:00",
@@ -2441,7 +4177,49 @@ export const fields = [
   description: "Complejo de fútbol amateur en Iguazú",
   address: "Centro, Puerto Iguazú",
   allowedBoots: ["FG"],
-  availableJerseys: ["plain", "boca", "river", "barcelona", "real-madrid", "arsenal", "bayern"],
+  availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    },
+    {
+        code: "boca",
+        name: "Boca Juniors",
+        color: "#0033A0"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        color: "#E31C2D"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        color: "#A50044"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        color: "#FDFEFE"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        color: "#EF0107"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        color: "#DC052D"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        color: "#000000"
+    }
+
+   ],
 
   schedule: {
     week: "08:00 - 00:00",
@@ -2497,7 +4275,14 @@ export const fields = [
   description: "Canchas de fútbol amateur en Resistencia",
   address: "Centro, Resistencia",
   allowedBoots: ["FG", "TF"],
-  availableJerseys: ["plain"],
+  availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    }
+
+   ],
 
   schedule: {
     week: "08:00 - 23:00",
@@ -2552,7 +4337,14 @@ export const fields = [
   description: "Complejo techado premium en Bariloche",
   address: "Centro, Bariloche",
   allowedBoots: ["FG", "TF", "IN"],
-  availableJerseys: ["plain"],
+  availableJerseys: [
+    {
+        code: "plain",
+        name: "Lisas / Sin diseño",
+        color: "#6c757d"
+    }
+
+   ],
 
   schedule: {
     week: "10:00 - 01:00",
