@@ -50,23 +50,72 @@ function renderAvailableJerseys(field) {
     if (!container) return;
 
     if (!field.availableJerseys?.length) {
-        container.innerHTML = `<p class="text-muted">No hay información de camisetas</p>`;
+        container.innerHTML =
+        `<p class="text-muted">No hay información de camisetas</p>`;
         return;
     }
 
-    let html = `<div class="jerseys-grid">`;
+    let html = `
+        <div class="jerseys-carousel-wrapper">
+
+            <button class="jersey-arrow jersey-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="jerseys-carousel">
+    `;
 
     field.availableJerseys.forEach(jersey => {
+
+        const imageUrl =
+            jersey.image ||
+            `https://res.cloudinary.com/dolmulmgp/image/upload/v1/jerseys/${jersey.code}.png`;
+
         html += `
-            <div class="jersey-item">
-                <i class="fas fa-tshirt" style="color: ${jersey.color || "#666"}"></i>
-                <span>${jersey.name}</span>
+            <div class="jersey-item" title="${jersey.name}">
+                <img
+                    src="${imageUrl}"
+                    alt="${jersey.name}"
+                    class="jersey-image"
+                    onerror="
+                    this.onerror=null;
+                    this.src='https://via.placeholder.com/90x90?text=Jersey'
+                    "
+                >
             </div>
         `;
     });
 
-    html += `</div>`;
+    html += `
+            </div>
+
+            <button class="jersey-arrow jersey-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+    `;
+
     container.innerHTML = html;
+
+    // arrows
+    const carousel = container.querySelector(".jerseys-carousel");
+
+    container.querySelector(".jersey-left")
+        .addEventListener("click", () => {
+            carousel.scrollBy({
+                left: -250,
+                behavior: "smooth"
+            });
+        });
+
+    container.querySelector(".jersey-right")
+        .addEventListener("click", () => {
+            carousel.scrollBy({
+                left: 250,
+                behavior: "smooth"
+            });
+        });
 }
 
 function initShareButtons(field) {
@@ -377,9 +426,9 @@ export function initFieldPage() {
 
             if (distanceKm < 1) {
                 const meters = Math.round(distanceKm * 1000);
-                displayText = `${meters} metros desde tu ubicación`;
+                displayText = `Aprox. a ${meters} metros desde tu ubicación`;
             } else {
-                displayText = `${distanceKm} km desde tu ubicación`;
+                displayText = `Aprox. a ${distanceKm} km desde tu ubicación`;
             }
 
             distanceEl.innerHTML = displayText;

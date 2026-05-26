@@ -22,49 +22,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
     },
     {
-      code: "argentina",
-      name: "Selección Argentina",
-      color: "#0047AB"
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
     schedule: {
@@ -130,44 +156,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
     schedule: {
@@ -235,49 +292,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
     },
     {
-      code: "manchester-united",
-      name: "Manchester United",
-      color: "#DA291C"
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
     schedule: {
@@ -336,49 +419,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
     },
     {
-      code: "liverpool",
-      name: "Liverpool",
-      color: "#C8102E"
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
     schedule: {
@@ -437,49 +546,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
     },
     {
-      code: "inter-milan",
-      name: "Inter Milan",
-      color: "#004D98"
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
     schedule: {
@@ -537,45 +672,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -631,45 +797,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "racing",
-        name: "Racing",
-        color: "#1E90FF"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
+    },
+    {
+        code: "river",
+        name: "River Plate",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
         code: "independiente",
         name: "Independiente",
-        color: "#003087"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "10:00 - 00:00",
@@ -725,45 +922,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "09:00 - 23:00",
@@ -819,45 +1047,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -914,45 +1173,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1008,45 +1298,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "paris-saint-germain",
-        name: "Paris Saint-Germain",
-        color: "#000000"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "olympique-de-marsella",
-        name: "Olympique de Marsella",
-        color: "#000000"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "10:00 - 01:00",
@@ -1104,45 +1425,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -1198,45 +1550,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1295,45 +1678,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1392,45 +1806,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1487,10 +1932,10 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1551,44 +1996,75 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0A2C7D"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
 ],
 
 
@@ -1644,45 +2120,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -1741,45 +2248,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
     
     schedule: {
       week: "08:00 - 22:00",
@@ -1834,45 +2372,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -1928,45 +2497,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "09:00 - 22:00",
@@ -2027,45 +2627,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2123,45 +2754,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -2219,30 +2881,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     
     schedule: {
@@ -2305,45 +3013,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2404,45 +3143,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2503,45 +3273,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2605,35 +3406,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
-      code: "atl-tucuman",
-      name: "Atl. Tucumán",
-      color: "#0073CF"
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2695,35 +3537,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
-      code: "atl-tucuman",
-      name: "Atl. Tucumán",
-      color: "#0073CF"
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -2783,35 +3666,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
-      code: "atl-tucuman",
-      name: "Atl. Tucumán",
-      color: "#0073CF"
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "09:00 - 01:00",
@@ -2874,35 +3798,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
-      code: "gimnasia-jj",
-      name: "Gimnasia Jujuy",
-      color: "#004D98"
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -2962,35 +3927,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+    },
+    {
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+    },
+    {
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+    },
+    {
+        code: "arsenal",
+        name: "Arsenal",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
         code: "barcelona",
         name: "Barcelona",
-        color: "#A50044"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
         code: "real-madrid",
         name: "Real Madrid",
-        color: "#FDFEFE"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
-      code: "gimnasia-jj",
-      name: "Gimnasia Jujuy",
-      color: "#004D98"
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "09:00 - 00:00",
@@ -3049,35 +4055,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+    },
+    {
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -3141,55 +4188,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
     },
     {
-        code: "gimnasia-mza",
-        name: "Gimnasia Mendoza",
-        color: "#000000"
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
     },
     {
-        code: "independiente-rivadavia",
-        name: "Independiente Rivadavia",
-        color: "#004D98"
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
     },
     {
-        code: "godoy-cruz",
-        name: "Godoy Cruz",
-        color: "#0073CF"
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -3249,40 +4317,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -3341,40 +4445,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -3431,40 +4571,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "10:00 - 01:00",
@@ -3522,40 +4698,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
     
     schedule: {
       week: "09:00 - 00:00",
@@ -3613,45 +4825,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 22:00",
@@ -3708,40 +4951,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "08:00 - 23:00",
@@ -3800,40 +5079,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
     schedule: {
       week: "09:00 - 01:00",
@@ -3893,40 +5208,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -3986,45 +5337,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
-        code: "chelsea",
-        name: "Chelsea",
-        color: "#034694"
+        code: "bayern",
+        name: "Bayern Munich",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
     },
     {
-        code: "ajax",
-        name: "Ajax",
-        color: "#FFFFFF"
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
+    },
+    {
+        code: "juventus",
+        name: "Juventus",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
 
     schedule: {
@@ -4083,45 +5465,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
-        code: "san-lorenzo",
-        name: "San Lorenzo",
-        color: "#003087"
+        code: "boca",
+        name: "Boca Juniors",
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
   schedule: {
     week: "09:00 - 01:00",
@@ -4181,45 +5594,76 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     },
     {
         code: "boca",
         name: "Boca Juniors",
-        color: "#0033A0"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
     },
     {
         code: "river",
         name: "River Plate",
-        color: "#E31C2D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
     },
     {
-        code: "barcelona",
-        name: "Barcelona",
-        color: "#A50044"
+        code: "argentina",
+        name: "Selección Argentina",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
     },
     {
-        code: "real-madrid",
-        name: "Real Madrid",
-        color: "#FDFEFE"
+        code: "independiente",
+        name: "Independiente",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+    },
+    {
+        code: "racing",
+        name: "Racing",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+    },
+    {
+        code: "san-lorenzo",
+        name: "San Lorenzo",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
     },
     {
         code: "arsenal",
         name: "Arsenal",
-        color: "#EF0107"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
     },
     {
         code: "bayern",
         name: "Bayern Munich",
-        color: "#DC052D"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821030/camiseta-bayern-munich_u1inoi.avif"
+    },
+    {
+        code: "paris-saint-germain",
+        name: "Paris Saint-Germain",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821162/camiseta-PSG_rseozd.avif"
+    },
+    {
+        code: "barcelona",
+        name: "Barcelona",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821377/camiseta-barcelona_mruxmm.webp"
+    },
+    {
+        code: "real-madrid",
+        name: "Real Madrid",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821528/camiseta-real-madrid_t5q5pj.webp"
     },
     {
         code: "juventus",
         name: "Juventus",
-        color: "#000000"
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779821786/camiseta-juventus_xtti89.webp"
+    },
+    {
+        code: "manchester-united",
+        name: "Manchester United",
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779822364/camiseta-manchester-united_kobmbe.avif"
     }
-
-   ],
+],
 
   schedule: {
     week: "08:00 - 00:00",
@@ -4279,10 +5723,10 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     }
-
-   ],
+],
 
   schedule: {
     week: "08:00 - 23:00",
@@ -4341,10 +5785,10 @@ export const fields = [
     {
         code: "plain",
         name: "Lisas / Sin diseño",
-        color: "#6c757d"
+        
+        image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
     }
-
-   ],
+],
 
   schedule: {
     week: "10:00 - 01:00",
