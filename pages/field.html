@@ -127,10 +127,20 @@
         <!-- LEFT -->
         <div class="field-left">
 
-            <!-- IMAGE -->
+            <!-- IMAGE/CAROUSEL -->
             <div class="field-hero">
-                <img loading="lazy" id="field-image" src="">
-            </div>
+
+    <button class="hero-arrow hero-left" id="hero-left" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="field-hero-carousel" id="field-hero-carousel"></div>
+
+    <button class="hero-arrow hero-right" id="hero-right" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    </div>
 
             <!-- TITLE -->
             <div class="field-title">
@@ -387,9 +397,16 @@
     </div>
 </div>
 </footer>
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<!-- Main JS File -->
-<script type="module" src="../assets/scripts/main.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+    <!-- Leaflet Routing Machine JS -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <!-- Main JS File -->
+    <script type="module" src="../assets/scripts/main.js"></script>
 </body>
 </html>

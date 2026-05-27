@@ -17,6 +17,8 @@
     --color-error: hsl(354, 70.4%, 54.1%);
     --color-warning: hsl(45, 100%, 41.2%);
 
+    --color-button-arrow: hsl(147, 44.4%, 25.1%); 
+
     --font-main: 'Segoe UI', sans-serif;
 
     --font-size-xs: 0.75rem;
@@ -57,10 +59,12 @@
     --color-primary: hsl(147, 70.8%, 40%);
     --color-primary-hover: hsl(147, 62.5%, 32%);
 
+    --color-buttons-arrow: hsl(147, 77%, 45%);
+
     --color-warning: hsl(45, 100%, 51.2%);
 
-    --color-border: #2a2a2a;
-    --color-hover: #1e2a24;
+    --color-border: hsl(0, 0%, 16.5%);
+    --color-hover: hsl(154, 18%, 14%);
 
     --shadow-sm: 0 2px 6px rgba(0,0,0,0.3);
     --shadow-md: 0 4px 10px rgba(0,0,0,0.5);

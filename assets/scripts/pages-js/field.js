@@ -1,7 +1,6 @@
 import { fields } from "../data/fields.js";
 
 //  HELPER FUNCTIONS
-
 function renderFieldSizes(field) {
     const container = document.getElementById("field-sizes-container");
     if (!container || !field.sizes?.length) return;
@@ -50,15 +49,14 @@ function renderAvailableJerseys(field) {
     if (!container) return;
 
     if (!field.availableJerseys?.length) {
-        container.innerHTML =
-        `<p class="text-muted">No hay información de camisetas</p>`;
+        container.innerHTML = `<p class="text-muted">No hay información de camisetas</p>`;
         return;
     }
 
     let html = `
         <div class="jerseys-carousel-wrapper">
 
-            <button class="jersey-arrow jersey-left">
+            <button class="jersey-arrow jersey-left" aria-label="Anterior">
                 <i class="fas fa-chevron-left"></i>
             </button>
 
@@ -66,9 +64,7 @@ function renderAvailableJerseys(field) {
     `;
 
     field.availableJerseys.forEach(jersey => {
-
-        const imageUrl =
-            jersey.image ||
+        const imageUrl = jersey.image ||
             `https://res.cloudinary.com/dolmulmgp/image/upload/v1/jerseys/${jersey.code}.png`;
 
         html += `
@@ -77,9 +73,10 @@ function renderAvailableJerseys(field) {
                     src="${imageUrl}"
                     alt="${jersey.name}"
                     class="jersey-image"
+                    loading="lazy"
                     onerror="
-                    this.onerror=null;
-                    this.src='https://via.placeholder.com/90x90?text=Jersey'
+                        this.onerror = null;
+                        this.src = 'https://via.placeholder.com/90x90?text=Jersey'
                     "
                 >
             </div>
@@ -89,7 +86,7 @@ function renderAvailableJerseys(field) {
     html += `
             </div>
 
-            <button class="jersey-arrow jersey-right">
+            <button class="jersey-arrow jersey-right" aria-label="Siguiente">
                 <i class="fas fa-chevron-right"></i>
             </button>
 
@@ -98,25 +95,126 @@ function renderAvailableJerseys(field) {
 
     container.innerHTML = html;
 
-    // arrows
+    
     const carousel = container.querySelector(".jerseys-carousel");
+    const btnLeft = container.querySelector(".jersey-left");
+    const btnRight = container.querySelector(".jersey-right");
 
-    container.querySelector(".jersey-left")
-        .addEventListener("click", () => {
+    if (carousel && btnLeft && btnRight) {
+        const scrollAmount = 260; 
+
+        btnLeft.addEventListener("click", () => {
             carousel.scrollBy({
-                left: -250,
+                left: -scrollAmount,
                 behavior: "smooth"
             });
         });
 
-    container.querySelector(".jersey-right")
-        .addEventListener("click", () => {
+        btnRight.addEventListener("click", () => {
             carousel.scrollBy({
-                left: 250,
+                left: scrollAmount,
                 behavior: "smooth"
             });
         });
+
+        //  arrow visibility
+        const updateArrows = () => {
+            const scrollLeft = carousel.scrollLeft;
+            const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+            btnLeft.style.opacity = scrollLeft <= 30 ? "0.35" : "1";
+            btnRight.style.opacity = scrollLeft >= maxScroll - 30 ? "0.35" : "1";
+        };
+
+        carousel.addEventListener("scroll", updateArrows);
+        setTimeout(updateArrows, 350); 
+    }
 }
+
+// IMAGES FOR HERO CAROUSEL
+function renderFieldHeroCarousel(field) {
+
+    const container =
+        document.getElementById("field-hero-carousel");
+
+    if (!container) return;
+
+    const images =
+        field.images?.length
+            ? field.images
+            : [field.image];
+
+    let html = "";
+
+    images.forEach((image, index) => {
+
+        html += `
+            <div class="hero-slide">
+
+                <img
+                    src="${image}"
+                    alt="${field.name} ${index + 1}"
+                    loading="lazy"
+                    class="hero-image"
+                >
+
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+
+    // arrows
+
+    const btnLeft =
+        document.getElementById("hero-left");
+
+    const btnRight =
+        document.getElementById("hero-right");
+
+    const scrollAmount = container.clientWidth;
+
+    btnLeft.addEventListener("click", () => {
+
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth"
+        });
+
+    });
+
+    btnRight.addEventListener("click", () => {
+
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+
+    });
+
+    // arrow opacity
+
+    const updateArrows = () => {
+
+        const scrollLeft = container.scrollLeft;
+
+        const maxScroll =
+            container.scrollWidth - container.clientWidth;
+
+        btnLeft.style.opacity =
+            scrollLeft <= 10 ? "0.35" : "1";
+
+        btnRight.style.opacity =
+            scrollLeft >= maxScroll - 10 ? "0.35" : "1";
+    };
+
+    container.addEventListener("scroll", updateArrows);
+
+    setTimeout(updateArrows, 200);
+}
+
+
+
 
 function initShareButtons(field) {
     const currentUrl = window.location.href;
@@ -375,6 +473,7 @@ export function initFieldPage() {
     renderFieldSizes(field);
     renderAllowedBoots(field);
     renderAvailableJerseys(field);
+    renderFieldHeroCarousel(field);
 
     // Booking
     const cleanPhone = field.booking.phone.replace(/\D/g, "");

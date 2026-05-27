@@ -15,6 +15,14 @@ export const fields = [
     lat: -34.6158,
     lng: -58.4333,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2_xxxxx.jpg",
+
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1_xxxxx.jpg"
+    ],
+
     description: "Cancha ideal para partidos entre amigos.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -149,6 +157,12 @@ export const fields = [
     lat: -34.555,
     lng: -58.450,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+    images:[
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1_xxxxx.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg"
+    ],
+
     description: "Cancha premium techada.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["FG", "TF"],
@@ -285,6 +299,12 @@ export const fields = [
     lat: -34.600,
     lng: -58.430,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-4-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg"
+
+    ],
     description: "Potrero abierto ideal para partidos entre amigos.",
     address: "Villa Crespo, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -412,6 +432,11 @@ export const fields = [
     lat: -34.540,
     lng: -58.470,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-4-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg"
+    ],
     description: "Cancha techada moderna en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: ["FG", "TF"],
@@ -539,6 +564,11 @@ export const fields = [
     lat: -34.580,
     lng: -58.420,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+    images:[
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-5-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-3-techo_qfvkud.jpg"
+    ],
     description: "Campo abierto con buena superficie.",
     address: "Palermo, Buenos Aires",
     allowedBoots: [ "TF", "IN"],
@@ -665,6 +695,11 @@ export const fields = [
     lat: -34.610,
     lng: -58.410,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-5-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-techo_qfvkud.jpg"
+    ],
     description: "Potrero clásico de Boedo.",
     address: "Boedo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
@@ -790,6 +825,11 @@ export const fields = [
     lat: -34.575,
     lng: -58.425,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-5-sin-techo_jizma0.jpg"
+    ],
     description: "Cancha techada top en Palermo.",
     address: "Palermo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
@@ -915,6 +955,11 @@ export const fields = [
     lat: -34.565,
     lng: -58.455,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-sin-techo_o6y5xe.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-5-techo_qfvkud.jpg"
+    ],
     description: "Potrero abierto céntrico en Caballito.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -1040,6 +1085,11 @@ export const fields = [
     lat: -34.550,
     lng: -58.460,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-sin-techo_jizma0.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-4-techo_qfvkud.jpg"
+    ],
     description: "Cancha abierta con estilo en Belgrano.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["TF", "IN"],
@@ -1166,6 +1216,11 @@ export const fields = [
     lat: -34.595,
     lng: -58.435,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-5-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-3-techo_qfvkud.jpg"
+    ],
     description: "Cancha abierta ideal para partidos de barrio.",
     address: "Villa Crespo, Buenos Aires",
     allowedBoots: ["TF", "IN"],
@@ -1291,6 +1346,11 @@ export const fields = [
     lat: -34.540,
     lng: -58.470,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-4-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-techo_qfvkud.jpg"
+    ],
     description: "Cancha techada premium en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -1418,6 +1478,11 @@ export const fields = [
     lat: -34.610,
     lng: -58.410,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-6-sin-techo_mrgvjc.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-5-sin-techo_jizma0.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-sin-techo_o6y5xe.jpg"
+    ],
     description: "Cancha popular de Boedo.",
     address: "Boedo, Buenos Aires",
     allowedBoots: ["FG", "TF"],
@@ -1543,6 +1608,11 @@ export const fields = [
     lat: -34.580,
     lng: -58.420,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-4-sin-techo_o6y5xe.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-5-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453686/cancha-3-techo_qfvkud.jpg"
+    ],
     description: "Cancha abierta estilo clásico en Palermo.",
     address: "Palermo, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -1671,6 +1741,11 @@ export const fields = [
     lat: -34.555,
     lng: -58.450,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-techo_qfvkud.jpg"
+    ],
     description: "Potrero techado premium en Belgrano.",
     address: "Belgrano, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -1799,6 +1874,11 @@ export const fields = [
     lat: -34.565,
     lng: -58.455,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-3-sin-techo_ltwtj0.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-4-sin-techo_o6y5xe.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-5-sin-techo_jizma0.jpg"
+    ],
     description: "Cancha abierta con buena energía.",
     address: "Caballito, Buenos Aires",
     allowedBoots: ["FG", "TF", "IN"],
@@ -1925,6 +2005,11 @@ export const fields = [
     lat: -34.540,
     lng: -58.470,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-3-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-4-techo_qfvkud.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453684/cancha-5-techo_qfvkud.jpg"
+    ],
     description: "Cancha techada legendaria en Núñez.",
     address: "Núñez, Buenos Aires",
     allowedBoots: [ "TF", "IN"],
@@ -1989,6 +2074,11 @@ export const fields = [
     lat: -33.6875393,
     lng: -65.4375539,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-14_sbuear.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-14_sbuear.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-15_sbuear.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_sbuear.jpg"
+    ],
     description: "Cancha abierta en Villa Mercedes.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG", "TF"],
@@ -2113,6 +2203,11 @@ export const fields = [
     lat: -33.7087688,
     lng: -65.4662115,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-17_stytcw.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-17_stytcw.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-18_stytcw.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992781/cancha-19_stytcw.jpg"
+    ],
     description: "Infraestructura techada en Mercedes.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
@@ -2241,6 +2336,11 @@ export const fields = [
     lat: -33.6722699,
     lng: -65.4697574,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-15_xfdf4z.jpg",
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-15_xfdf4z.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_xfdf4z.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-17_xfdf4z.jpg"
+    ],
     description: "Potrero abierto con buena cancha.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
@@ -2365,6 +2465,11 @@ export const fields = [
     lat: -33.7148971,
     lng: -65.4696884,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_sb9zbp.jpg",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-16_sb9zbp.jpg",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-17_sb9zbp.jpg",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777992782/cancha-18_sb9zbp.jpg"
+    ],
     description: "Potrero abierto rodeado de verde.",
     address: "Villa Mercedes, San Luis",
     allowedBoots: ["FG",  "IN"],
@@ -2490,6 +2595,11 @@ export const fields = [
     lat: -34.6234,
     lng: -58.4418,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1777570021/la-bombonera-cancha-de-futbol-villavicencio-6628-768x432_bpg8xb.jpg",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777570021/la-bombonera-cancha-de-futbol-villavicencio-6628-768x432_bpg8xb.jpg",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777570021/la-bombonera-cancha-de-futbol-villavicencio-6629-768x432_bpg8xb.jpg",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1777570021/la-bombonera-cancha-de-futbol-villavicencio-6630-768x432_bpg8xb.jpg"
+    ],
     description: "Cancha La Bombonera 5",
     address: "La Boca, Buenos Aires",
     allowedBoots: ["FG",  "IN"],
@@ -2620,6 +2730,11 @@ export const fields = [
     lat: -31.4265,
     lng: -64.1888,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-20_gzohuw.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-20_gzohuw.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-21_gzohuw.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696199/cancha-22_gzohuw.avif"
+    ],
     description: "Complejo de fútbol 5 en Nueva Córdoba",
     address: "Nueva Córdoba, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
@@ -2747,6 +2862,11 @@ export const fields = [
     lat: -31.3992,
     lng: -64.1815,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-22_xjbuzx.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-23_xjbuzx.avif"
+    ],
     description: "Fútbol 5 y fútbol 7 en Alta Córdoba",
     address: "Alta Córdoba, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
@@ -2874,6 +2994,11 @@ export const fields = [
     lat: -31.3521,
     lng: -64.2486,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-22_xfa9ex.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-22_xfa9ex.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-23_xfa9ex.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696274/cancha-24_xfa9ex.avif"
+    ],
     description: "Complejo premium de fútbol amateur",
     address: "Villa Belgrano, Córdoba",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3006,6 +3131,11 @@ export const fields = [
     lat: -38.9516,
     lng: -68.0591,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-24_opuzcb.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-25_opuzcb.avif"
+    ],
     description: "Complejo moderno de fútbol 5 en Neuquén",
     address: "Centro, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3136,6 +3266,11 @@ export const fields = [
     lat: -38.9342,
     lng: -68.0845,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-24_yrvrga.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-24_yrvrga.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-25_yrvrga.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-26_yrvrga.avif"
+    ],
     description: "Canchas de fútbol amateur en Alta Barda",
     address: "Alta Barda, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3266,6 +3401,11 @@ export const fields = [
     lat: -38.9828,
     lng: -68.0987,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-sin-techo_chwki3.jpg", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-1-sin-techo_chwki3.jpg",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-25_yrvrga.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696405/cancha-26_yrvrga.avif"
+    ],
     description: "Complejo premium de fútbol en Neuquén",
     address: "Valentina Sur, Neuquén",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3399,6 +3539,11 @@ export const fields = [
     lat: -26.8167,
     lng: -65.2833,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-26_u7fykv.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-27_u7fykv.avif"
+    ],
     description: "Complejo moderno de fútbol 5 en Yerba Buena",
     address: "Yerba Buena, Tucumán",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3530,6 +3675,11 @@ export const fields = [
     lat: -26.8241,
     lng: -65.2226,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-26_oq4jcl.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-26_oq4jcl.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-27_oq4jcl.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696553/cancha-28_oq4jcl.avif"
+    ],
     description: "Canchas de fútbol amateur en el centro tucumano",
     address: "Centro, Tucumán",
     allowedBoots: ["FG", "TF"],
@@ -3659,6 +3809,11 @@ export const fields = [
     lat: -26.7321,
     lng: -65.2598,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-28_mtgupc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-29_mtgupc.avif"
+    ],
     description: "Complejo premium de fútbol amateur",
     address: "Tafí Viejo, Tucumán",
     allowedBoots: [ "TF", "IN"],
@@ -3791,6 +3946,11 @@ export const fields = [
     lat: -24.2565,
     lng: -65.2116,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-28_oil8j8.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-28_oil8j8.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-29_oil8j8.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696613/cancha-30_oil8j8.avif"
+    ],
     description: "Canchas de fútbol 5 en Palpalá",
     address: "Palpalá, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
@@ -3920,6 +4080,11 @@ export const fields = [
     lat: -24.1858,
     lng: -65.2995,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1774453685/cancha-2-techo_xbxmi4.webp",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696645/cancha-30_qlh7l8.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696645/cancha-31_qlh7l8.avif"
+    ],
     description: "Complejo techado de fútbol amateur",
     address: "Centro, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4048,6 +4213,11 @@ export const fields = [
     lat: -24.2319,
     lng: -65.2471,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-30_dv4on3.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-31_dv4on3.avif"
+    ],
     description: "Complejo premium de fútbol en Jujuy",
     address: "Alto Comedero, Jujuy",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4181,6 +4351,11 @@ export const fields = [
     lat: -32.9282,
     lng: -68.8448,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-30_ewvnhc.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-30_ewvnhc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-31_ewvnhc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696701/cancha-32_ewvnhc.avif"
+    ],
     description: "Complejo premium de fútbol en Mendoza",
     address: "Godoy Cruz, Mendoza",
     allowedBoots: ["FG", "TF"],
@@ -4310,6 +4485,11 @@ export const fields = [
     lat: -51.6230,
     lng: -69.2168,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-32_aekyin.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-33_aekyin.avif"
+    ],
     description: "Complejo de fútbol amateur en Río Gallegos",
     address: "Centro, Río Gallegos",
     allowedBoots: ["FG",  "IN"],
@@ -4438,6 +4618,11 @@ export const fields = [
     lat: -45.8641,
     lng: -67.4966,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-32_bpj0or.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-32_bpj0or.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-33_bpj0or.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696765/cancha-34_bpj0or.avif"
+    ],
     description: "Canchas de fútbol 5 en Comodoro",
     address: "Centro, Comodoro Rivadavia",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4564,6 +4749,11 @@ export const fields = [
     lat: -54.8019,
     lng: -68.3030,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-33_sb1kyc.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-33_sb1kyc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-34_sb1kyc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696794/cancha-35_sb1kyc.avif"
+    ],
     description: "Complejo techado de fútbol en Ushuaia",
     address: "Centro, Ushuaia",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4691,6 +4881,11 @@ export const fields = [
     lat: -31.5375,
     lng: -68.5364,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-31_aekyin.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-32_aekyin.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696731/cancha-33_aekyin.avif"
+    ],
     description: "Complejo moderno de fútbol amateur",
     address: "Rivadavia, San Juan",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4818,6 +5013,11 @@ export const fields = [
     lat: -29.4131,
     lng: -66.8558,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-34_oij32l.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-34_oij32l.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-35_oij32l.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696840/cancha-36_oij32l.avif"
+    ],
     description: "Canchas de fútbol amateur en La Rioja",
     address: "Centro, La Rioja",
     allowedBoots: ["FG", "TF", "IN"],
@@ -4944,6 +5144,11 @@ export const fields = [
     lat: -27.7335,
     lng: -64.2428,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-35_fu8qjh.avif",
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-35_fu8qjh.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-36_fu8qjh.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696869/cancha-37_fu8qjh.avif"
+    ],
     description: "Complejo de fútbol amateur en Santiago",
     address: "La Banda, Santiago del Estero",
     allowedBoots: ["FG", "TF", "IN"],
@@ -5072,6 +5277,11 @@ export const fields = [
     lat: -24.7612,
     lng: -65.3931,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-26_u7fykv.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-27_u7fykv.avif"
+    ],
     description: "Complejo premium de fútbol en Salta",
     address: "Tres Cerritos, Salta",
     allowedBoots: ["FG", "TF", "IN"],
@@ -5201,6 +5411,11 @@ export const fields = [
     lat: -27.4692,
     lng: -58.8306,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-28_mtgupc.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-29_mtgupc.avif"
+    ],
     description: "Complejo de fútbol amateur en Corrientes",
     address: "Centro, Corrientes",
     allowedBoots: ["FG", "TF", "IN"],
@@ -5330,6 +5545,11 @@ export const fields = [
     lat: -31.7319,
     lng: -60.5238,
     image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif", //repeated change later
+    images: [
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-23_opuzcb.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-24_opuzcb.avif",
+      "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696358/cancha-25_opuzcb.avif"
+    ],
     description: "Complejo techado de fútbol 5 en Paraná",
     address: "Centro, Paraná",
     allowedBoots: ["TF", "IN"],
@@ -5458,6 +5678,11 @@ export const fields = [
   lat: -32.9442,
   lng: -60.6505,
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif", //repeated change later
+  images: [
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-25_u7fykv.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-26_u7fykv.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696523/cancha-27_u7fykv.avif"
+  ],
   description: "Complejo premium de fútbol en Rosario",
   address: "Pichincha, Rosario",
   allowedBoots: ["FG"],
@@ -5587,6 +5812,11 @@ export const fields = [
   lat: -25.5972,
   lng: -54.5786,
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif", //repeated change later
+  images: [
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-27_mtgupc.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-28_mtgupc.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696583/cancha-29_mtgupc.avif"
+  ],
   description: "Complejo de fútbol amateur en Iguazú",
   address: "Centro, Puerto Iguazú",
   allowedBoots: ["FG"],
@@ -5716,6 +5946,11 @@ export const fields = [
   lat: -27.4514,
   lng: -58.9867,
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif", //repeated change later
+  images: [
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-21_xjbuzx.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-22_xjbuzx.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696237/cancha-23_xjbuzx.avif"
+  ],
   description: "Canchas de fútbol amateur en Resistencia",
   address: "Centro, Resistencia",
   allowedBoots: ["FG", "TF"],
@@ -5778,6 +6013,11 @@ export const fields = [
   lat: -41.1335,
   lng: -71.3103,
   image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif", //repeated change later
+  images: [
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-29_dv4on3.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-30_dv4on3.avif",
+    "https://res.cloudinary.com/dolmulmgp/image/upload/v1778696665/cancha-31_dv4on3.avif"
+  ],
   description: "Complejo techado premium en Bariloche",
   address: "Centro, Bariloche",
   allowedBoots: ["FG", "TF", "IN"],
@@ -5825,4 +6065,105 @@ export const fields = [
     whatsapp: "5492944556677"
   },
 },
+
+ //VILLA MERCEDES - SAN LUIS
+
+{
+    id: "canchas-junin-villa-mercedes",
+    name: "Canchas Junin",
+    location: "Villa Mercedes",
+    province: "San Luis",
+    city: "Villa Mercedes",
+    zone: "Centro",
+    type: "abierta",     
+    rating: 4.5,
+    priceFrom: 6500,
+    priceTo: 9500,
+    lat: -33.68196184083624,
+    lng: -65.48708051244887,
+    image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779903952/cancha-junin-villa-mercedes_jsb8kc.jpg", 
+    images: [
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1779903952/cancha-junin-villa-mercedes_jsb8kc.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1779903952/cancha-junin-villa-mercedes-2_eblqjv.jpg",
+        "https://res.cloudinary.com/dolmulmgp/image/upload/v1779903952/cancha-junin-villa-mercedes-3_eblqjv.jpg"
+    ],
+    description: "Complejo de fútbol con canchas de excelente calidad en Villa Mercedes",
+    address: "D5730 Villa Mercedes, San Luis",
+    allowedBoots: ["TF", "FG"],
+    availableJerseys: [
+        {
+            code: "plain",
+            name: "Lisas / Sin diseño",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819389/camiseta-sin-dise%C3%B1o_tmw3hl.jpg"
+        },
+        {
+            code: "boca",
+            name: "Boca Juniors",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-boca-juniors_xqkft3.avif"
+        },
+        {
+            code: "river",
+            name: "River Plate",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-river-plate_oj5z8q.avif"
+        },
+        {
+            code: "argentina",
+            name: "Selección Argentina",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779818793/camiseta-argentina_qxvpzj.png"
+        },
+        {
+            code: "independiente",
+            name: "Independiente",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779819913/camiseta-independiente_o8zf94.avif"
+        },
+        {
+            code: "racing",
+            name: "Racing",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820366/camiseta-racing-nike_rwgxe5.webp"
+        },
+        {
+            code: "san-lorenzo",
+            name: "San Lorenzo",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820508/camiseta-san-lorenzo_ponxpm.webp"
+        },
+        {
+            code: "arsenal",
+            name: "Arsenal",
+            image: "https://res.cloudinary.com/dolmulmgp/image/upload/v1779820879/camiseta-arsenal_veld8g.webp"
+        }
+    ],
+    schedule: {
+        week: "09:00 - 23:00",
+        weekend: "09:00 - 01:00"
+    },
+    features: [
+        "Vestuarios",
+        "Parking",
+        "Iluminación",
+        "Buffet"
+    ],
+    sizes: [
+        "5 vs 5",
+        "7 vs 7"
+  
+    ],
+    buffet: [
+        "Bebidas",
+        "Cerveza",
+        "Pizzas",
+        "Hamburguesas"
+    ],
+    extraInfo: [
+        "Buen estado de las canchas",
+        "Excelente atención",
+        "Ideal para partidos y torneos"
+    ],
+    booking: {
+        players: "5 vs 5 / 7 vs 7",
+        surface: "Sintético / Césped",
+        phone: "02657 58-1583",
+        whatsapp: "5492657581583"
+    },
+}
+
 ];

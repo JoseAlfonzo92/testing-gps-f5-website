@@ -7,11 +7,10 @@ export function initFieldsMap() {
     const cards = Array.from(document.querySelectorAll(".fields-page-card"));
     const locationToggle = document.getElementById("use-location-toggle");
 
-    // FIELD MAP
     const fieldMap = new Map(fields.map(field => [field.id, field]));
 
-    // INIT MAP
-    const map = L.map("map-container").setView([-34.6037, -58.3816], 12);
+    // Default view centered on Argentina
+    const map = L.map("map-container").setView([-34.6037, -58.3816], 11);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "&copy; OpenStreetMap"
@@ -22,7 +21,6 @@ export function initFieldsMap() {
     let userLocation = null;
     let routingControl = null;
 
-    // CLEAR HELPERS
     function clearMarkers() {
         markers.forEach(marker => map.removeLayer(marker));
         markers = [];
@@ -35,7 +33,7 @@ export function initFieldsMap() {
         }
     }
 
-    // USER LOCATION
+    // USER LOCATION ICON
     function enableUserLocation() {
         if (!navigator.geolocation) return;
 
@@ -46,15 +44,43 @@ export function initFieldsMap() {
 
                 if (userMarker) map.removeLayer(userMarker);
 
-                userMarker = L.marker(userLocation)
-                    .addTo(map)
-                    .bindPopup("Tu ubicación")
-                    .openPopup();
+                userMarker = L.marker(userLocation, {
+                    icon: L.divIcon({
+                        className: 'user-location-icon',
+                        html: `
+                            <div style="
+                                background: #1e88e5; 
+                                color: white; 
+                                border: 3px solid white; 
+                                border-radius: 50%; 
+                                width: 42px; 
+                                height: 42px; 
+                                display: flex; 
+                                align-items: center; 
+                                justify-content: center; 
+                                font-size: 21px; 
+                                box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.4);
+                            ">
+                                <i class="fas fa-person-walking"></i>
+                            </div>`,
+                        iconSize: [42, 42],
+                        iconAnchor: [21, 42],     
+                        popupAnchor: [0, -45]     
+                    })
+                })
+                .addTo(map)
+                .bindPopup("Tu ubicación actual", {
+                    offset: [0, -10],        
+                    closeButton: false,
+                    className: 'user-popup'
+                })
+                .openPopup();   
 
                 map.setView(userLocation, 14);
             },
             err => {
-                console.warn("Location error:", err.code, err.message);
+                console.warn("Location error:", err);
+                alert("No se pudo obtener tu ubicación");
             }
         );
     }
@@ -84,87 +110,64 @@ export function initFieldsMap() {
             addWaypoints: false,
             draggableWaypoints: false,
             fitSelectedRoutes: true,
-            createMarker: () => null
+            createMarker: () => null,
+            lineOptions: {
+                styles: [{ color: '#1e88e5', weight: 6, opacity: 0.8 }]
+            }
         }).addTo(map);
+
+        setTimeout(() => {
+            document.querySelectorAll('.leaflet-routing-container').forEach(el => {
+                el.style.display = 'none';
+            });
+        }, 500);
     }
 
-    // MARKERS
+    // MARKERS 
     function renderMarkers() {
         clearMarkers();
-
         const bounds = [];
 
         cards.forEach(card => {
             if (card.classList.contains("hidden")) return;
 
             const field = fieldMap.get(card.dataset.id);
-            if (!field) return;
+            if (!field?.lat || !field?.lng) return;
 
-            const lat = field.lat;
-            const lng = field.lng;
-            if (!lat || !lng) return;
-
-            const name = field.name;
-            const price = card.querySelector(".price")?.innerText || "";
-
-            const marker = L.marker([lat, lng])
+            const marker = L.marker([field.lat, field.lng])
                 .addTo(map)
-                .bindPopup(`
-                    <strong>${name}</strong><br>${price}
-                `);
+                .bindPopup(`<strong>${field.name}</strong><br>${card.querySelector(".price")?.innerText || ""}`);
 
             marker.on("click", () => {
                 card.scrollIntoView({ behavior: "smooth", block: "center" });
+                card.style.boxShadow = "0 0 0 3px var(--color-primary)";
+                setTimeout(() => card.style.boxShadow = "", 1800);
 
-                card.style.boxShadow = "0 0 0 2px var(--color-primary)";
-                setTimeout(() => { card.style.boxShadow = ""; }, 1500);
-
-                if (userLocation) {
-                    createRoute(lat, lng);
-                } else {
-                    alert("Activá tu ubicación para ver la ruta");
-                }
+                if (userLocation) createRoute(field.lat, field.lng);
             });
 
             markers.push(marker);
-            bounds.push([lat, lng]);
+            bounds.push([field.lat, field.lng]);
         });
 
         if (bounds.length > 0) {
-            map.fitBounds(bounds, { padding: [50, 50] });
+            map.fitBounds(bounds, { padding: [60, 60] });
         }
     }
 
-    // FILTER SYNC
+    // Observers and Event Listeners
     const observer = new MutationObserver(() => renderMarkers());
+    cards.forEach(card => observer.observe(card, { attributes: true, attributeFilter: ["class"] }));
 
-    cards.forEach(card => {
-        observer.observe(card, {
-            attributes: true,
-            attributeFilter: ["class"]
-        });
+    locationToggle?.addEventListener("change", e => {
+        if (e.target.checked) enableUserLocation();
+        else disableUserLocation();
     });
 
-    // LOCATION TOGGLE
-    locationToggle?.addEventListener("change", event => {
-        if (event.target.checked) {
-            enableUserLocation();
-        } else {
-            disableUserLocation();
-        }
-    });
-
-    // MAP RESIZE FIX
     const mapBtn = document.getElementById("map-view-btn");
-    mapBtn?.addEventListener("click", () => {
-        setTimeout(() => map.invalidateSize(), 200);
-    });
+    mapBtn?.addEventListener("click", () => setTimeout(() => map.invalidateSize(), 300));
 
-    // INIT USER LOCATION
-    if (locationToggle?.checked) {
-        enableUserLocation();
-    }
-
-    // INIT
+    // Initialize
     renderMarkers();
+    if (locationToggle?.checked) enableUserLocation();
 }
