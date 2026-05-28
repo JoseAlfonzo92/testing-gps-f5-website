@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="description" content="Fulbo 5 es un sitio dedicado a la organización de partidos de futbol 5, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
+    <meta name="description" content="Fulsap es un sitio dedicado a la organización de partidos de futbol, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fulbo 5 - Inicio</title>
+    <title>Fulsap - Inicio</title>
 
     <link rel="stylesheet" href="assets/styles/style.css">
 
@@ -41,7 +41,7 @@
 
         <!-- Logo -->
         <a href="index.html" class="logo">
-            <h1>Fulbo 5</h1>
+            <h1>Fulsap</h1>
         </a>
 
         <!-- Desktop Search -->
@@ -62,7 +62,7 @@
                         <li><a href="index.html"> Inicio</a></li>
                         <li><a href="pages/all-fields-page.html"> Todas las canchas</a></li>
                         <li><a href="pages/help-support.html"> Ayuda y soporte</a></li>
-                        <li><a href="pages/terms-conditions.html"> Términos y condiciones</a></li>
+                        <li><a href="pages/terms-page.html"> Términos y condiciones</a></li>
                         <li><a href="pages/contact.html"> Contacto</a></li>
                     </ul>
                 </li>
@@ -100,7 +100,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/all-fields-page.html">Todas las canchas</a></li>
                 <li><a href="pages/help-support.html">Ayuda y soporte</a></li>
-                <li><a href="pages/terms-conditions.html">Términos y condiciones</a></li>
+                <li><a href="pages/terms-page.html">Términos y condiciones</a></li>
                 <li><a href="pages/contact.html">Contacto</a></li>
 
                 <li>
@@ -114,15 +114,35 @@
     </div>
 </header>
 
-
-<!--  HERO  -->
 <section class="hero">
-    <div class="hero-content">
-        <h2>Encontrá la cancha perfecta para tu partido</h2>
-        <p>Las mejores canchas de fútbol 5 en tu zona. Reservá fácil y rápido.</p>
 
-        <a href="pages/all-fields-page.html" class="btn-primary">Explorar canchas <i class="fas fa-chevron-right"></i></a>
+    <div class="hero-overlay"></div>
+
+    <img
+        src="https://res.cloudinary.com/dolmulmgp/image/upload/w_1920/q_auto/f_auto/v1779978864/hero-section-image_mb24x8.jpg"
+
+        srcset="
+            https://res.cloudinary.com/dolmulmgp/image/upload/w_1080/q_auto/f_auto/v1779978864/hero-section-image_mb24x8.jpg 1080w,
+
+            https://res.cloudinary.com/dolmulmgp/image/upload/w_1920/q_auto/f_auto/v1779978864/hero-section-image_mb24x8.jpg 1920w,
+
+            https://res.cloudinary.com/dolmulmgp/image/upload/w_2400/q_auto/f_auto/v1779978864/hero-section-image_mb24x8.jpg 2400w
+        "
+        sizes="100vw"
+        alt="Cancha de fútbol"
+        class="hero-bg"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
+
+    <div class="hero-content">
+
+        <h2>Encontrá la cancha perfecta para tu partido</h2>
+            <p>Las mejores canchas de fútbol en tu zona. Reservá fácil y rápido.</p>
+                <a href="pages/all-fields-page.html" class="btn-primary">Explorar canchas <i class="fas fa-chevron-right"></i></a>
+    
     </div>
+
 </section>
 
 <!-- Featured -->
@@ -159,17 +179,16 @@
 
 </section>
 
-
 <footer class="footer">
 
     <div class="footer-container">
 
         <!-- BRAND -->
         <div class="footer-brand">
-            <a href="index.html" class="footer-logo">Fulbo 5</a>
+            <a href="index.html" class="footer-logo">Fulsap</a>
 
             <p>
-                La plataforma número 1 de Argentina para encontrar y reservar tu próxima cancha.
+                La mejor plataforma de Argentina para encontrar y reservar tu próxima cancha.
                 Jugá con amigos, nosotros nos encargamos del resto.
             </p>
         </div>
@@ -180,9 +199,9 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/all-fields-page.html">Todas las canchas</a></li>
-                <li><a href="#">Cómo funciona</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="pages/how-it-works.html">Cómo funciona</a></li>
+                <li><a href="pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
             </ul>
         </div>
 
@@ -191,7 +210,7 @@
             <h4>Contacto</h4>
             <p>Av. Calle 1234, Provincia, Argentina</p>
             <p>+54 11 1234-5678</p>
-            <p>email@fulbo5.com.ar</p>
+            <p>email@fulsap.com.ar</p>
         </div>
 
         <!-- SOCIALS -->
@@ -210,18 +229,18 @@
 
     <!-- BOTTOM -->
     <div class="footer-bottom">
-    <p>© 2026 Fulbo 5. Todos los derechos reservados.</p>
+    <p>© 2026 Fulsap. Todos los derechos reservados.</p>
 
     <p class="developer">
         Desarrollado por <a href="https://zonofal.com" target="_blank">Zonofal</a>
     </p>
 
     <div class="footer-legal">
-        <a href="#">Términos y Condiciones</a>
+        <a href="pages/terms-page.html">Términos y Condiciones</a>
         <span>•</span>
-        <a href="#">Política de Privacidad</a>
+        <a href="pages/privacy-page.html">Política de Privacidad</a>
         <span>•</span>
-        <a href="#">Sumá tu cancha</a>
+        <a href="pages/add-field.html">Sumá tu cancha</a>
     </div>
 </div>
 

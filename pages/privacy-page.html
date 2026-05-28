@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Fulsap es un sitio dedicado a la organización de partidos de futbol, donde los usuarios pueden buscar canchas, reservar horarios y gestionar sus reservas de manera fácil y rápida.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulsap - Política de Privacidad</title>
+
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/terms-policy.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest"> 
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Routing Machine CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+<!-- Routing Machine JS -->
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+<!-- prevent theme flash on load -->
+<script>
+(function () {
+    const savedTheme = localStorage.getItem("theme");
+
+    const systemDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+    ).matches;
+
+    const theme = savedTheme || (systemDark ? "dark" : "light");
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        theme
+    );
+})();
+</script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <h1>Fulsap</h1>
+        </a>
+
+        <!-- Desktop Search -->
+        <div class="search desktop-search">
+            <input type="text" class="global-search" placeholder="Buscar canchas, precios...">
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="nav desktop-nav">
+            <ul>
+
+                <li class="dropdown">
+                    <a href="#" class="quick-link">
+                        Enlaces rapidos <i class="fas fa-chevron-down arrow"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="../index.html"> Inicio</a></li>
+                        <li><a href="../pages/all-fields-page.html"> Todas las canchas</a></li>
+                        <li><a href="#"> Ayuda y soporte</a></li>
+                        <li><a href="#"> Términos y condiciones</a></li>
+                        <li><a href="#"> Contacto</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Mobile Controls -->
+        <div class="controls mobile-only">
+            <i class="fas fa-search" id="search-toggle"></i>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Search -->
+        <div class="search mobile-search" id="mobile-search">
+            <input type="text" class="global-search" placeholder="Buscar...">
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/all-fields-page.html">Todas las canchas</a></li>
+                <li><a href="#">Ayuda y soporte</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+
+                <li>
+                    <button class="theme-toggle mobile-theme">
+                        <i class="fas fa-moon"></i> Theme
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="privacy-hero">
+
+    <div class="privacy-hero-content">
+
+        <span class="privacy-badge">
+            <i class="fas fa-shield-halved"></i>
+            Privacidad y seguridad
+        </span>
+
+        <h1>
+            Política de Privacidad
+        </h1>
+
+        <p>
+            Conocé cómo recopilamos, utilizamos y protegemos tu información dentro de la plataforma.
+        </p>
+
+        <div class="privacy-meta">
+            <span>
+                <i class="fas fa-calendar"></i>
+                Última actualización: Mayo 2026
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTENT -->
+<section class="privacy-section">
+
+    <div class="privacy-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="privacy-sidebar">
+
+            <div class="privacy-sidebar-card">
+
+                <h3>
+                    Contenido
+                </h3>
+
+                <nav class="privacy-nav">
+                    <a href="#info">Información recopilada</a>
+                    <a href="#usage">Uso de la información</a>
+                    <a href="#cookies">Cookies</a>
+                    <a href="#sharing">Compartir información</a>
+                    <a href="#security">Seguridad</a>
+                    <a href="#rights">Tus derechos</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+        <div class="privacy-content">
+
+            <!-- INFO -->
+            <div class="privacy-card" id="info">
+
+                <h2>
+                    <i class="fas fa-database"></i>
+                    Información recopilada
+                </h2>
+
+                <p>
+                    En Fulbo 5 recopilamos cierta información necesaria para mejorar tu experiencia dentro de la plataforma y garantizar el correcto funcionamiento del servicio.
+                </p>
+
+                <ul>
+                    <li>Datos personales como nombre, email y teléfono.</li>
+                    <li>Información relacionada con reservas y actividad.</li>
+                    <li>Datos técnicos como navegador, IP y dispositivo.</li>
+                </ul>
+
+            </div>
+
+            <!-- USAGE -->
+            <div class="privacy-card" id="usage">
+
+                <h2>
+                    <i class="fas fa-gear"></i>
+                    Uso de la información
+                </h2>
+
+                <p>
+                    Utilizamos la información recopilada para ofrecer una experiencia más segura, rápida y personalizada.
+                </p>
+
+                <ul>
+                    <li>Gestionar reservas y notificaciones.</li>
+                    <li>Mejorar funciones y rendimiento del sitio.</li>
+                    <li>Brindar soporte y atención al usuario.</li>
+                    <li>Prevenir usos indebidos o fraudulentos.</li>
+                </ul>
+
+            </div>
+
+            <!-- COOKIES -->
+            <div class="privacy-card" id="cookies">
+
+                <h2>
+                    <i class="fas fa-cookie-bite"></i>
+                    Cookies
+                </h2>
+
+                <p>
+                    Utilizamos cookies para recordar preferencias, mantener sesiones activas y analizar el uso de la plataforma.
+                </p>
+
+                <ul>
+                    <li>Guardar configuraciones del usuario.</li>
+                    <li>Recordar preferencias de navegación.</li>
+                    <li>Analizar estadísticas y rendimiento.</li>
+                </ul>
+
+                <div class="privacy-alert">
+                    <i class="fas fa-circle-info"></i>
+
+                    <p>
+                        Podés desactivar las cookies desde tu navegador, aunque algunas funciones podrían dejar de funcionar correctamente.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- SHARING -->
+            <div class="privacy-card" id="sharing">
+
+                <h2>
+                    <i class="fas fa-share-nodes"></i>
+                    Compartir información
+                </h2>
+
+                <p>
+                    No vendemos información personal a terceros. Solo compartimos datos cuando es necesario para brindar nuestros servicios.
+                </p>
+
+                <ul>
+                    <li>Con complejos deportivos para confirmar reservas.</li>
+                    <li>Con proveedores tecnológicos autorizados.</li>
+                    <li>Cuando exista una obligación legal.</li>
+                </ul>
+
+            </div>
+
+            <!-- SECURITY -->
+            <div class="privacy-card" id="security">
+
+                <h2>
+                    <i class="fas fa-lock"></i>
+                    Seguridad
+                </h2>
+
+                <p>
+                    Aplicamos medidas de seguridad modernas para proteger tu información contra accesos no autorizados o usos indebidos.
+                </p>
+
+                <div class="privacy-grid">
+
+                    <div class="privacy-feature">
+                        <i class="fas fa-shield"></i>
+
+                        <h4>
+                            Protección
+                        </h4>
+
+                        <p>
+                            Tus datos son almacenados mediante sistemas seguros.
+                        </p>
+                    </div>
+
+                    <div class="privacy-feature">
+                        <i class="fas fa-server"></i>
+
+                        <h4>
+                            Infraestructura
+                        </h4>
+
+                        <p>
+                            Utilizamos tecnologías confiables y monitoreo constante.
+                        </p>
+                    </div>
+
+                    <div class="privacy-feature">
+                        <i class="fas fa-user-shield"></i>
+
+                        <h4>
+                            Accesos controlados
+                        </h4>
+
+                        <p>
+                            Solo personal autorizado puede acceder a determinada información.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHTS -->
+            <div class="privacy-card" id="rights">
+
+                <h2>
+                    <i class="fas fa-scale-balanced"></i>
+                    Tus derechos
+                </h2>
+
+                <p>
+                    Como usuario, podés solicitar acceso, modificación o eliminación de tus datos personales en cualquier momento.
+                </p>
+
+                <ul>
+                    <li>Solicitar una copia de tus datos.</li>
+                    <li>Corregir información desactualizada.</li>
+                    <li>Eliminar tu cuenta y datos asociados.</li>
+                    <li>Limitar determinados usos de la información.</li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="privacy-card" id="contact">
+
+                <h2>
+                    <i class="fas fa-envelope"></i>
+                    Contacto
+                </h2>
+
+                <p>
+                    Si tenés dudas sobre esta Política de Privacidad o sobre el manejo de tus datos, podés comunicarte con nosotros.
+                </p>
+
+                <a href="mailto:email@fulbo5.com.ar" class="privacy-contact-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Contactar soporte
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <a href="../index.html" class="footer-logo">Fulsap</a>
+
+            <p>
+                La mejor plataforma de Argentina para encontrar y reservar tu próxima cancha.
+                Jugá con amigos, nosotros nos encargamos del resto.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links">
+            <h4>Explorar</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/all-fields-page.html">Todas las canchas</a></li>
+                <li><a href="../pages/how-it-works.html">Cómo funciona</a></li>
+                <li><a href="../pages/faqs.html">Preguntas frecuentes</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>Av. Calle 1234, Provincia, Argentina</p>
+            <p>+54 11 1234-5678</p>
+            <p>email@fulsap.com.ar</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h4>Seguinos</h4>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+    <p>© 2026 Fulsap. Todos los derechos reservados.</p>
+
+    <p class="developer">
+        Desarrollado por <a href="https://zonofal.com" target="_blank">Zonofal</a>
+    </p>
+
+    <div class="footer-legal">
+        <a href="../pages/terms-page.html">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="../pages/privacy-page.html">Política de Privacidad</a>
+        <span>•</span>
+        <a href="../pages/add-field.html">Sumá tu cancha</a>
+    </div>
+</div>
+</footer>
+<script type="module" src="../assets/scripts/main.js"></script>
+</body>
+</html>

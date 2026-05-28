@@ -309,13 +309,7 @@
     background: var(--color-surface);
 }
 
-/* Optional: Different colors  teams */
-.jersey-item:has(i[style*="0A2C7D"]) i { color: #0A2C7D; }   /* Boca */
-.jersey-item:has(i[style*="E31C2D"]) i { color: #E31C2D; }   /* River */
-.jersey-item:has(i[style*="A50044"]) i { color: #A50044; }   /* Barcelona */
-.jersey-item:has(i[style*="FFB81C"]) i { color: #FFB81C; }   /* Real Madrid */
-.jersey-item:has(i[style*="EF0107"]) i { color: #EF0107; }   /* Arsenal */
-.jersey-item:has(i[style*="DC052D"]) i { color: #DC052D; }   /* Bayern */
+
 
 
 @media (max-width: 768px) {
